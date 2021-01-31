@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10vw ;
+  position: relative;
+
+  &__line {
+    background-image: url(../images/header_line.png);
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 20px;
+  }
+
+  &__side {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__lang {
+    color: white;
+    margin-left: 20px ;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__lang--img {
+    width: 8px;
+    height: 5px;
+    margin-top: 8px;
+  }
+}

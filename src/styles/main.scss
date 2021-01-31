@@ -1,7 +1,12 @@
 @import "utils";
 @import "fonts";
+@import "_reset.scss";
 @import "typography";
+@import "header.scss";
+@import "art.scss";
+@import "exhibition.scss";
+@import "button.scss";
 
 body {
-  background: $c-gray;
+  background: #3f5252;
 }

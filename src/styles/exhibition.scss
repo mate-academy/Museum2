@@ -1,0 +1,166 @@
+.exhibition {
+  background-color: #f1f5f4;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 150px;
+
+  &__container {
+    background-color: #f1f5f4;
+  }
+  &__img--angel {
+    position: absolute;
+
+    top: 60px;
+    left: 0;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+
+    text-align: center;
+  }
+
+  &__content {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  &__content--wrap {
+    display: flex;
+    flex-direction: column;
+
+    width: 380px;
+
+    padding-left: 35vw;
+  }
+
+  &__time {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+
+    color: #cd4d31;
+  }
+
+  &__content--title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+
+    padding: 10px 0;
+  }
+
+  &__content--text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #504f5e;
+
+    padding-bottom: 50px;
+  }
+
+  &__button {
+    padding-bottom: 92px;
+  }
+
+  &__img--people {
+    position: absolute;
+    top: 840px;
+    right: 0;
+  }
+
+  &__conseption {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__conseption--wrap {
+    padding-top: 150px;
+    padding-left: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 380px;
+    &:last-child {
+      padding-right: 25vw;
+      padding-left: 40px;
+    }
+  }
+
+  &__conseption--word {
+    color: #cd4d31;
+    font-size: 18px;
+  }
+
+  &__conseption--title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+
+    padding: 10px 0;
+  }
+
+  &__conseption--text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #504f5e;
+
+    padding-bottom: 50px;
+  }
+
+  &__title--text_first {
+    padding-left: 10vw;
+    width: 568px;
+    height: 576px;
+    background-image: url(../images/exhebitin_comseption_back_first.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__title--text_second {
+    width: 568px;
+    height: 576px;
+
+    background-image: url(../images/exhebitin_comseption_back_second.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 0 10vw;
+  }
+
+  &__img--cobzar {
+    position: absolute;
+    top: 1300px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    color: #1c1b29;
+    text-decoration: none;
+    padding-right: 100px;
+    &::after {
+      content: "";
+      position: relative;
+      top: 7px;
+      left: 20px;
+      width: 50px;
+      height: 1px;
+      background-color: #1c1b29;
+    }
+  }
+}
