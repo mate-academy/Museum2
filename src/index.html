@@ -3,11 +3,139 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Museum 2</title>
+    <link rel="icon" href="./images/museum.svg">
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    >
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+
+      <span
+        class="lang header__lang"
+        data-lang=""
+      >
+        UA
+        <svg
+          class="lang__icon"
+          width="8"
+          height="5"
+        >
+          <use
+            href="./images/sprite.svg#icon-ua"
+          >
+        </use>
+        </svg>
+      </span>
+
+      <a href="#" class="logo">NAMU</a>
+
+
+      <button
+        type="button"
+        class="menu-button"
+        aria-label="menu-button"
+        aria-expanded="false"
+        aria-controls="first-mobile"
+        data-menu-button=""
+      >
+        <svg
+          class="menu-button__icon"
+          width="22" height="22"
+          aria-label="button of menu"
+        >
+          <use
+            class="menu-button__icon--cross"
+            href="./images/sprite.svg#icon-close"
+          >
+          </use>
+          <use
+            class="menu-button__icon--menu"
+            href="./images/sprite.svg#icon-open"
+          >
+          </use>
+        </svg>
+      </button>
+
+
+      <nav class="nav" data-menu="">
+
+        <div class="addition addition__nav">
+          <p class="addition__text">Розклад сьогодні: <span class="addition__modifier">12:00 - 19:00</span></p>
+          <p class="addition__text">Адреса: <span class="addition__modifier">Київ, вул. М. Грушевсьвського, 6</span></p>
+        </div>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              Спланувати візит
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+               class="nav__link"
+            >
+              Виставка та події
+            </a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="#"
+              class="nav__link"
+            >
+              Колекція
+            </a>
+          </li>
+        </ul>
+        <div class="nav__btn">
+          <button class="button nav__button" type="button">Купити квиток</button>
+          <button class="button nav__button nav__button--color" type="button">Стати членом</button>
+        </div>
+        <div class="nav__picture"></div>
+
+      </nav>
+    </header>
+    <main class="main">
+
+      <div class="wrapper wrapper__main">
+        <div class="content content__wrapper">
+          <p class="content__date">10 серпня - 10 листопада</p>
+          <h1 class="content__title">Мистецтво
+            <span class="content__line">
+              ХІХ - ХХ ст.
+            </span>
+          </h1>
+          <p class="content__description">Внесок українських митців у світову культуру 19-20 ст.</p>
+          <button class="button content__button">Купити квиток</button>
+          <p class="content__duration">10.08 - 10.10</p>
+          <picture>
+            <source media="(max-width: 767px)" srcset="./images/girl-phone.png">
+            <source media="(max-width: 1279px)" srcset="./images/girl-tablet.png">
+            <source media="(min-width: 1280px)" srcset="./images/girl-desktop.png">
+            <img
+              src="./images/girl-header.png"
+              alt="girl from podolye"
+              class="content__img"
+            >
+          </picture>
+          <p class="content__person">Дівчина з Поділля В. Тропінinін</p>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="scripts/menu.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

@@ -1,1 +1,54 @@
+// Breakpoints of screen;
+$bp-mobile: 320px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;
+
+// Type of fonts;
+$Raleway: raleway, sans-serif;
+$Playfair: "Playfair Display", sans-serif;
+
+// Font sizes;
+$fs-biggest: 96px;
+$fs-bigger: 72px;
+$fs-big: 48px;
+$fs-medium: 36px;
+$fs-small: 24px;
+$fs-smaller: 16px;
+$fs-smallest: 14px;
+
+// Font weights;
+$fw-light: 200;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-extra-bold: 900;
+
+// Line heights;
+$lh-100: 100%;
+$lh-125: 125%;
+$lh-150: 150%;
+
+// Heights;
+$h-header: 80px;
+
+// Colors;
+$c-main: #3f5252;
+$c-white: #f1f4f5;
+$c-secondary: #cd4d31;
 $c-gray: #eee;
+$c-line: #c4c4c4;
+
+// Margins bottom;
+$mb-tenth: 10px;
+$mb-twenty: 20px;
+$mb-thirty: 30px;
+$mb-forty: 40px;
+$mb-fifty: 50px;
+$mb-sixty: 60px;
+$mb-seventy: 70px;
+$mb-eighty: 80px;
+
+//durations;
+$d-second: 1s;
+$d-half: 500ms;
+$d-quarter: 250ms;

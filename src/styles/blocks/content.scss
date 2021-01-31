@@ -1,0 +1,144 @@
+.content {
+  color: $c-white;
+  padding: 80px 20px 100px;
+
+  &__date {
+    margin-bottom: $mb-twenty;
+
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  &__title {
+    margin-bottom: $mb-thirty;
+    width: 279px;
+
+    font-family: $Playfair;
+    font-size: $fs-big;
+    font-weight: $fw-bold;
+  }
+
+  &__line {
+    display: block;
+  }
+
+  &__description {
+    margin-bottom: $mb-fifty;
+
+    width: 267px;
+
+    line-height: 1.5rem;
+  }
+
+  &__button {
+    width: 280px;
+    transition: background-color $d-half, transform $d-quarter;
+    outline: none;
+
+    &:hover {
+      background-color: rgba($c-secondary, $alpha: 0.7);
+    }
+
+    &:active {
+      transform: scale(1.02);
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+  }
+
+  &__duration {
+    display: none;
+  }
+
+  &__img {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__person {
+    display: none;
+  }
+}
+
+@include tablet {
+  .content {
+    padding: 100px 100px 180px;
+
+    &__date {
+      margin-bottom: $mb-tenth;
+    }
+
+    &__title {
+      width: 569px;
+      margin-bottom: $mb-forty;
+      font-size: $fs-bigger;
+    }
+
+    &__line {
+      margin-left: 45px;
+    }
+
+    &__description {
+      margin-bottom: $mb-eighty;
+    }
+  }
+}
+
+@include desktop {
+  .content {
+    padding: 100px 55px 52px;
+
+    &__title {
+      font-size: $fs-biggest;
+    }
+
+    &__line {
+      margin: 10px 0 0 100px;
+      width: 544px;
+    }
+
+    &__description {
+      margin: 0 0 $mb-sixty 100px;
+      width: 370px;
+    }
+
+    &__button {
+      margin: 0 0 110px 100px;
+    }
+
+    &__duration {
+      position: relative;
+
+      display: block;
+
+      font-family: $Playfair;
+      font-size: $fs-smallest;
+      font-weight: $fw-bold;
+      line-height: 1.3em;
+
+      &::after {
+        position: absolute;
+        left: 102px;
+        right: 0;
+        bottom: 7px;
+        content: "";
+        display: block;
+        height: 1px;
+
+        background-color: rgba($c-white, $alpha: 0.3);
+      }
+    }
+
+    &__person {
+      position: absolute;
+      right: 54px;
+      bottom: 319px;
+
+      display: block;
+      width: 136px;
+      line-height: 1.5rem;
+    }
+  }
+}

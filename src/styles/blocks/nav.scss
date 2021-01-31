@@ -1,0 +1,168 @@
+.nav {
+  @include absolute-left-transform(0, -100%);
+  top: $h-header;
+  right: 0;
+  z-index: 1;
+
+  display: block;
+  padding: 60px 0 72px;
+
+  background-color: $c-main;
+
+  visibility: hidden;
+  opacity: 0;
+
+  pointer-events: none;
+  overflow: auto;
+
+  transition: transform 500ms linear, opacity 500ms;
+
+  &.is-open {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+    pointer-events: initial;
+  }
+
+  &__item {
+    margin-bottom: $mb-forty;
+
+    font-family: $Playfair;
+    font-size: $fs-small;
+    font-weight: $fw-bold;
+    line-height: $lh-100;
+
+    color: $c-white;
+
+    &:last-child {
+      margin-bottom: $mb-eighty;
+    }
+  }
+
+  &__link {
+    color: $c-white;
+    text-decoration: none;
+    transition: color $d-quarter;
+
+    &:hover {
+      color: $c-secondary;
+    }
+
+    &:active {
+      color: salmon;
+    }
+  }
+
+  &__button {
+    display: block;
+    width: 280px;
+    outline: none;
+
+    transition: background-color $d-half, border-color $d-quarter;
+
+    &:hover {
+      background-color: rgba($c-secondary, $alpha: 0.7);
+    }
+
+    &:active {
+      border-color: $c-white;
+    }
+
+    &--color {
+      background-color: transparent;
+      border-color: $c-white;
+
+      &:hover {
+        background-color: rgba($c-white, $alpha: 0.3);
+      }
+
+      &:active {
+        border-color: $c-secondary;
+      }
+    }
+
+    &:first-child {
+      margin-bottom: $mb-twenty;
+    }
+  }
+
+  &__picture {
+    display: none;
+  }
+}
+
+@include tablet {
+  .nav {
+    padding: 10px 0 119px;
+
+    &__item {
+      position: relative;
+
+      margin-bottom: $mb-fifty;
+
+      font-size: $fs-big;
+      line-height: 58px;
+
+      &:last-child {
+        margin-bottom: 116px;
+      }
+
+      &:last-child::after {
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -55px;
+        content: "";
+
+        display: block;
+        background-color: $c-line;
+        height: 1px;
+      }
+    }
+
+    &__button {
+      display: inline-block;
+      width: 270px;
+
+      &:first-child {
+        margin: 0 30px 0 0;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .nav {
+    padding: 10px 57px 109px;
+
+    &.is-open {
+      display: block;
+    }
+
+    &__item {
+      margin-bottom: $mb-sixty;
+
+      &:last-child {
+        margin-bottom: 121px;
+      }
+
+      &:last-child::after {
+        bottom: -60px;
+        right: calc(100% - 570px);
+      }
+    }
+
+    &__picture {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 624px;
+      height: 800px;
+      background: url("../images/boy-header.png");
+    }
+  }
+}

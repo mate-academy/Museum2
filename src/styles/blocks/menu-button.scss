@@ -1,0 +1,25 @@
+.menu-button {
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__icon {
+    transition: transform $d-second, fill $d-half;
+    fill: $c-white;
+
+    &:hover {
+      fill: purple;
+      transform: scale(1.2);
+    }
+  }
+
+  &__icon--cross,
+  &.is-open &__icon--menu {
+    display: none;
+  }
+
+  &.is-open &__icon--cross {
+    display: block;
+  }
+}

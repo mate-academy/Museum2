@@ -1,0 +1,22 @@
+.header {
+  position: relative;
+
+  @include flex-align(space-between, center);
+
+  height: $h-header;
+  padding: 0 20px;
+
+  background-color: $c-main;
+}
+
+@include tablet {
+  .header {
+    padding: 0 134px 0 40px;
+  }
+}
+
+@include desktop {
+  .header {
+    padding: 0 146px 0 56px;
+  }
+}

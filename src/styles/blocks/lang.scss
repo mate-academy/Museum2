@@ -1,0 +1,37 @@
+.lang {
+  position: absolute;
+  top: 30px;
+  right: 72px;
+
+  display: none;
+  align-items: center;
+  font-size: $fs-smaller;
+  font-weight: $fw-medium;
+  line-height: 1.5rem;
+  color: $c-white;
+
+  cursor: pointer;
+
+  &__icon {
+    margin-left: 5px;
+    fill: currentColor;
+  }
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+@include tablet {
+  .lang {
+    display: flex;
+    top: 28px;
+    right: 60px;
+  }
+}
+
+@include desktop {
+  .lang {
+    right: 72px;
+  }
+}

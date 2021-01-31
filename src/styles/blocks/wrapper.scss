@@ -1,0 +1,21 @@
+.wrapper {
+  position: relative;
+
+  &__main {
+    position: relative;
+
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+
+    background-color: $c-main;
+  }
+}
+
+@include desktop {
+  .wrapper {
+    &__main {
+      display: block;
+    }
+  }
+}
