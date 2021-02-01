@@ -6,6 +6,15 @@
 @import "art.scss";
 @import "exhibition.scss";
 @import "button.scss";
+@import "event.scss";
+@import "visit.scss";
+@import "news.scss";
+@import "subscribe.scss";
+@import "footer.scss";
+
+html {
+  font-family: "Raleway", sans-serif;
+}
 
 body {
   background: #3f5252;
