@@ -13,7 +13,6 @@
   &__img {
     padding-top: 20px;
 
-    // background-image: url(../images/event_first.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,6 +40,8 @@
 
   &__container--second {
     grid-template-columns: 1fr 2fr;
+
+    padding-bottom: 150px;
   }
 
   &__wrap {
@@ -71,14 +72,14 @@
 
   &__content {
     padding-left: 50px;
-    width: 470px;
+    max-width: 470px;
   }
 
   &__content--title {
     font-weight: 200;
     font-size: 14px;
     line-height: 20px;
-    opacity: 0.3;
+
     color: #1c1b29;
   }
 
@@ -99,4 +100,38 @@
     color: #504f5e;
   }
 
+}
+
+@media screen and (max-width: 930px) {
+  .event {
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .event {
+
+    &__container {
+      padding: 0;
+    }
+
+    &__wrap {
+      padding-top: 30px;
+    }
+
+    &__place {
+      display: none;
+    }
+
+    &__container--first {
+      grid-template-columns: 1fr;
+    }
+
+    &__content {
+      padding: 0 10px ;
+    }
+  }
 }
