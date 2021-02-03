@@ -1,0 +1,178 @@
+.event {
+  padding: 100px 20px 80px;
+  color: $c-text;
+
+  &__title {
+    margin-bottom: $mb-sixty;
+
+    font-family: $Playfair;
+    font-size: $fs-medium;
+    font-weight: $fw-bold;
+    line-height: 45px;
+  }
+
+  &__list {
+    margin-bottom: 60px;
+  }
+
+  &__type {
+    margin-bottom: $mb-twenty;
+
+    font-weight: $fw-light;
+    font-size: $fs-smallest;
+    line-height: 1.25rem;
+  }
+
+  &__date {
+    font-weight: $fw-normal;
+    line-height: 1.5rem;
+
+    color: $c-secondary;
+    &--tablet {
+      display: none;
+    }
+  }
+
+  &__time {
+    margin-right: 20px;
+
+    font-weight: $fw-normal;
+    line-height: 1.5rem;
+
+    color: $c-secondary;
+  }
+
+  &__subtitle {
+    margin-bottom: $mb-twenty;
+
+    font-family: $Playfair;
+    font-weight: $fw-bold;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  &__text {
+    margin-bottom: $mb-forty;
+
+    line-height: 1.5rem;
+
+    color: $c-text-secondary;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+
+    transition: background-color $d-half;
+
+    &:hover {
+      background-color: rgba($c-secondary, $alpha: 0.5);
+    }
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+}
+
+@include tablet {
+  .event {
+    padding: 0 99px 120px;
+
+    &__list {
+      padding-left: 100px;
+    }
+
+    &__type {
+      position: relative;
+    }
+
+    &__phone {
+      display: none;
+    }
+
+    &__date {
+      position: absolute;
+      top: 0;
+      right: calc(100% + 30px);
+
+      display: flex;
+      font-family: $Playfair;
+      font-weight: $fw-bold;
+      font-size: $fs-medium;
+      -webkit-text-stroke: 1px $c-secondary;
+      color: transparent;
+
+      &--phone {
+        display: none;
+      }
+
+      &--tablet {
+        display: inline;
+      }
+    }
+
+    &__time {
+      position: absolute;
+      top: $fs-medium + 10px;
+      right: calc(100% + 30px);
+
+      display: block;
+      margin: 0;
+
+      font-family: $Playfair;
+      font-size: $fs-small;
+      font-weight: $fw-bold;
+    }
+
+    &__text {
+      margin-bottom: $mb-thirty;
+    }
+
+    &__button {
+      margin: 0;
+    }
+  }
+}
+
+@include desktop {
+  .event {
+    padding: 0 55px;
+
+    &__title {
+      width: max-content;
+      margin: 0 auto 63px;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &--odd {
+        padding-left: 200px;
+      }
+
+      &--even {
+        flex-direction: row-reverse;
+        padding: 0;
+      }
+    }
+
+    &__img {
+      display: block;
+
+      &--odd {
+        margin-left: 130px;
+      }
+
+      &--even {
+        margin-right: 230px;
+      }
+    }
+  }
+}

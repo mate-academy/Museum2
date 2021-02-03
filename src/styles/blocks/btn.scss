@@ -1,0 +1,42 @@
+.btn {
+  position: relative;
+  padding: 0 20px 10px;
+
+  font-weight: $fw-normal;
+  font-size: $fs-smaller;
+  line-height: 1rem;
+
+  color: $c-text;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: color $d-half;
+
+  &::after {
+    position: absolute;
+    top: calc(#{$fs-smaller} + 10px);
+    right: 0;
+    left: 0;
+    content: "";
+
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+    transform: rotate(0);
+    transition: transform $d-half, color $d-half;
+  }
+
+  &:hover {
+    color: $c-secondary;
+  }
+
+  &:active,
+  &:focus {
+    transform: scale(1.2);
+    color: darkmagenta;
+  }
+}

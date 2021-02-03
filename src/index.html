@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,61 +8,37 @@
     <link rel="icon" href="./images/museum.svg">
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&display=swap"
-      rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;800;900&display=swap"
+      rel="stylesheet">
   </head>
+
   <body>
     <header class="header">
 
-      <span
-        class="lang header__lang"
-        data-lang=""
-      >
+      <span class="lang header__lang" data-lang="">
         UA
         <svg
           class="lang__icon"
           width="8"
           height="5"
         >
-          <use
-            href="./images/sprite.svg#icon-ua"
-          >
-        </use>
+          <use href="./images/sprite.svg#icon-ua">
+          </use>
         </svg>
       </span>
 
       <a href="#" class="logo">NAMU</a>
 
 
-      <button
-        type="button"
-        class="menu-button"
-        aria-label="menu-button"
-        aria-expanded="false"
-        aria-controls="first-mobile"
-        data-menu-button=""
-      >
-        <svg
-          class="menu-button__icon"
-          width="22" height="22"
-          aria-label="button of menu"
-        >
-          <use
-            class="menu-button__icon--cross"
-            href="./images/sprite.svg#icon-close"
-          >
+      <button type="button" class="menu-button" aria-label="menu-button" aria-expanded="false"
+        aria-controls="first-mobile" data-menu-button="">
+        <svg class="menu-button__icon" width="22" height="22" aria-label="button of menu">
+          <use class="menu-button__icon--cross" href="./images/sprite.svg#icon-close">
           </use>
-          <use
-            class="menu-button__icon--menu"
-            href="./images/sprite.svg#icon-open"
-          >
+          <use class="menu-button__icon--menu" href="./images/sprite.svg#icon-open">
           </use>
         </svg>
       </button>
@@ -76,26 +53,17 @@
 
         <ul class="nav__list">
           <li class="nav__item">
-            <a
-              href="#"
-              class="nav__link"
-            >
+            <a href="#" class="nav__link">
               Спланувати візит
             </a>
           </li>
           <li class="nav__item">
-            <a
-              href="#"
-               class="nav__link"
-            >
+            <a href="#" class="nav__link">
               Виставка та події
             </a>
           </li>
           <li class="nav__item">
-            <a
-              href="#"
-              class="nav__link"
-            >
+            <a href="#" class="nav__link">
               Колекція
             </a>
           </li>
@@ -110,8 +78,8 @@
     </header>
     <main class="main">
 
-      <div class="wrapper wrapper__main">
-        <div class="content content__wrapper">
+      <section class="surface surface__main">
+        <article class="content content__surface">
           <p class="content__date">10 серпня - 10 листопада</p>
           <h1 class="content__title">Мистецтво
             <span class="content__line">
@@ -125,17 +93,198 @@
             <source media="(max-width: 767px)" srcset="./images/girl-phone.png">
             <source media="(max-width: 1279px)" srcset="./images/girl-tablet.png">
             <source media="(min-width: 1280px)" srcset="./images/girl-desktop.png">
-            <img
-              src="./images/girl-header.png"
-              alt="girl from podolye"
-              class="content__img"
-            >
+            <img src="./images/girl-header.png" alt="girl from podolye" class="content__img">
           </picture>
           <p class="content__person">Дівчина з Поділля В. Тропінinін</p>
-        </div>
-      </div>
+        </article>
+      </section>
+
+      <section class="actual actual__main">
+        <article class="art art__actual">
+          <h2 class="art__title">
+            Актуальтні виставки
+          </h2>
+
+          <ul class="art__item">
+            <li class="art__list art__list--odd">
+              <p class="art__date art__date--active">11.07 - 22.09</p>
+              <h3 class="art__subtitle">
+                Кураторська
+                <span class="art__transition">
+                  виставка &#x275DАнгели&#x275E
+                </span>
+              </h3>
+              <p class="art__description">
+                Виставковий проект &#xabАнгели&#xbb знакова подія
+                для української культури і водночас наймасштабніший...
+              </p>
+              <div class="art__picture art__picture--first">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/angel.png">
+                  <source media="(max-width: 1279px)" srcset="./images/angel-tablet.png">
+                  <source media="(min-width: 1280px)" srcset="./images/angel-desktop.png">
+                  <img
+                    src="./images/angel.png"
+                    alt="angel-art"
+                    class="art__img"
+                  >
+                </picture>
+              </div>
+              <button class="button art__button">Купити квиток</button>
+            </li>
+            <li class="art__list art__list--even">
+              <p class="art__date">Діє постійно</p>
+              <h3 class="art__subtitle">
+                Мистецтво
+                <span class="art__transition">
+                  ХХ ст. — XXI ст.
+                </span>
+              </h3>
+              <p class="art__description art__description--left">
+
+                Знакові роботи
+                <span class="art__description--mobile">А.</span>
+                <span class="art__description--tablet">Алли</span>
+                Горської,
+                <span class="art__description--mobile">М.</span>
+                <span class="art__description--tablet">Миколи</span>
+                Самокиша,
+                <span class="art__description--mobile">Ф.</span>
+                <span class="art__description--tablet">Федора</span>
+                Кричевського та інших митців.
+              </p>
+              <div class="art__picture art__picture--shift">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/couple-phone.png">
+                  <source media="(max-width: 1279px)" srcset="./images/couple-tablet.png">
+                  <source media="(min-width: 1280px)" srcset="./images/couple-desktop.png">
+                  <img
+                    src="./images/couple-phone.png"
+                    alt="angel-art"
+                    class="art__img"
+                  >
+                </picture>
+              </div>
+              <button class="button art__button">Купити квиток</button>
+            </li>
+            <li class="art__list art__list--odd">
+              <p class="art__date ">Діє постійно</p>
+              <h3 class="art__subtitle">
+                Стародавнє мистецтво
+              </h3>
+              <p class="art__description">
+                Визначні приклади стародавнього українського
+                іконопису та живопису
+              </p>
+              <div class="art__picture art__picture--top">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./images/cossack-phone.png">
+                  <source media="(max-width: 1279px)" srcset="./images/cossack-tablet.png">
+                  <source media="(min-width: 1280px)" srcset="./images/cossack-desktop.png">
+                  <img
+                    src="./images/cossack-phone.png"
+                    alt="angel-art"
+                    class="art__img"
+                  >
+                </picture>
+              </div>
+              <button class="button art__button">Купити квиток</button>
+            </li>
+          </ul>
+          <button class="btn art__btn">
+            Архів виставок
+          </button>
+        </article>
+      </section>
+
+      <section class="event event__main">
+        <h2 class="event__title">
+          Найближчі події
+        </h2>
+        <ul class="event__item">
+          <li class="event__list event__list--odd">
+            <div class="event__wrapper">
+              <p class="event__type">
+                <span class="event__date">
+                  14
+                  <span class="event__date--phone">
+                    серпня
+                  </span>
+                  <span class="event__date--tablet">
+                    .08
+                  </span>
+                </span>
+                <span class="event__time">
+                  13:00
+                </span>
+                Eкскурсія
+              </p>
+              <h3 class="event__subtitle">
+                Кураторські екскурсії від Павла Гудімова
+              </h3>
+              <p class="event__text">
+                Таємниці підготовки, історії експонатів,
+                магія дійства до і в момент вашої
+                присутності – розгортатиметься...
+              </p>
+              <button
+              class="button event__button"
+              >
+              Зареєструватися
+              </button>
+            </div>
+            <img
+              src="./images/glasses-man.jpg"
+              alt="guide"
+              class="event__img event__img--odd"
+            >
+          </li>
+          <li class="event__list event__list--even">
+            <div class="event__wrapper">
+              <p class="event__type">
+                <span class="event__date">
+                  18
+                  <span class="event__date--phone">
+                    серпня
+                  </span>
+                  <span class="event__date--tablet">
+                    .08
+                  </span>
+                </span>
+                <span class="event__time">
+                  14:00
+                </span>
+                Майстер-клас
+              </p>
+              <h3 class="event__subtitle">
+                Подорож до Австралії
+              </h3>
+              <p class="event__text">
+                Цієї неділі о 14:00 на арт-мандрівників
+                чекає останній пункт кругосвітньої
+                подорожі - Австралія.
+              </p>
+              <button
+               class="button event__button"
+              >
+                Зареєструватися
+              </button>
+            </div>
+
+            <img
+              src="./images/woman-statue.jpg"
+              alt="girl visits a museum"
+              class="event__img event__img--even"
+            >
+          </li>
+        </ul>
+        <button class="btn event__button">
+          Календар подій
+        </button>
+      </section>
     </main>
     <script type="text/javascript" src="scripts/menu.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
+
 </html>

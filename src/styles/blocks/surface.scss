@@ -1,0 +1,14 @@
+.surface {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  background-color: $c-main;
+}
+
+@include desktop {
+  .surface {
+    display: block;
+  }
+}
