@@ -33,12 +33,29 @@
       <a href="#" class="logo">NAMU</a>
 
 
-      <button type="button" class="menu-button" aria-label="menu-button" aria-expanded="false"
-        aria-controls="first-mobile" data-menu-button="">
-        <svg class="menu-button__icon" width="22" height="22" aria-label="button of menu">
-          <use class="menu-button__icon--cross" href="./images/sprite.svg#icon-close">
+      <button
+        type="button"
+        class="menu-button"
+        aria-label="menu-button"
+        aria-expanded="false"
+        aria-controls="first-mobile"
+        data-menu-button=""
+      >
+        <svg
+          class="menu-button__icon"
+          width="22"
+          height="22"
+          aria-label="button of menu"
+        >
+          <use
+            class="menu-button__icon--cross"
+            href="./images/sprite.svg#icon-close"
+          >
           </use>
-          <use class="menu-button__icon--menu" href="./images/sprite.svg#icon-open">
+          <use
+            class="menu-button__icon--menu"
+            href="./images/sprite.svg#icon-open"
+          >
           </use>
         </svg>
       </button>
@@ -47,8 +64,18 @@
       <nav class="nav" data-menu="">
 
         <div class="addition addition__nav">
-          <p class="addition__text">Розклад сьогодні: <span class="addition__modifier">12:00 - 19:00</span></p>
-          <p class="addition__text">Адреса: <span class="addition__modifier">Київ, вул. М. Грушевсьвського, 6</span></p>
+          <p class="addition__text">
+            Розклад сьогодні:
+            <span class="addition__modifier">
+              12:00 - 19:00
+            </span>
+          </p>
+          <p class="addition__text">
+            Адреса:
+            <span class="addition__modifier">
+              Київ, вул. М. Грушевсьвського, 6
+            </span>
+          </p>
         </div>
 
         <ul class="nav__list">
@@ -93,7 +120,11 @@
             <source media="(max-width: 767px)" srcset="./images/girl-phone.png">
             <source media="(max-width: 1279px)" srcset="./images/girl-tablet.png">
             <source media="(min-width: 1280px)" srcset="./images/girl-desktop.png">
-            <img src="./images/girl-header.png" alt="girl from podolye" class="content__img">
+            <img
+              src="./images/girl-header.png"
+              alt="girl from podolye"
+              class="content__img"
+            >
           </picture>
           <p class="content__person">Дівчина з Поділля В. Тропінinін</p>
         </article>
@@ -278,9 +309,26 @@
             >
           </li>
         </ul>
-        <button class="btn event__button">
+        <button class="btn event__btn">
           Календар подій
         </button>
+      </section>
+
+      <section class="plan">
+        <h2 class="plan__title">
+          Сплануйте візит до музею
+        </h2>
+        <p class="plan__text">
+          Оберіть зручний день,
+          зареєструйтесь на події,
+          що цікавлять, купіть квиток заздалегідь,
+          щоб ніщо не завадило вам
+          насолоджуватись мистецтвом
+        </p>
+        <button class="button plan__button">
+          Почати
+        </button>
+        <div class="plan__back"></div>
       </section>
     </main>
     <script type="text/javascript" src="scripts/menu.js"></script>
