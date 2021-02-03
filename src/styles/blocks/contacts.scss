@@ -1,0 +1,68 @@
+.contacts {
+  grid-area: contacts;
+  color: $c-white;
+  width: 280px;
+
+  &__footer {
+    margin: 0 auto 60px;
+  }
+
+  &__title {
+    margin-bottom: $mb-thirty;
+
+    font-family: $Playfair;
+    font-weight: $fw-bold;
+    font-size: $fs-small;
+    line-height: 30px;
+  }
+
+  &__text {
+    line-height: 1.5rem;
+  }
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+
+    transition: color $d-half;
+
+    &--modifier {
+      display: block;
+      margin-left: 33px;
+    }
+
+    &:hover {
+      color: $c-secondary;
+    }
+  }
+  &__item {
+    margin-top: 20px;
+
+    display: flex;
+  }
+
+  &__list {
+    margin-right: 20px;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    fill: $c-white;
+
+    transition: fill $d-half;
+
+    &:hover {
+      fill: $c-secondary;
+    }
+  }
+}
+
+@include desktop {
+  .contacts {
+    &__items {
+      margin-top: 36px;
+    }
+  }
+}

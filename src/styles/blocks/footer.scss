@@ -1,0 +1,50 @@
+.footer {
+  padding: 80px 20px 40px;
+  background-color: $c-main;
+
+  &__text {
+    margin: 0 auto;
+    width: 110px;
+
+    font-size: $fs-smallest;
+    font-weight: $fw-light;
+    line-height: 1.25rem;
+
+    color: $c-white;
+
+    &::after {
+      content: "© 2010 — 2020";
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    padding: 120px 99px 35px;
+
+    display: grid;
+    grid-template-areas: "contacts schedule" "about programs" "text text";
+
+    &__text {
+      width: max-content;
+      grid-area: text;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        content: "© 2010 — 2020";
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .footer {
+    padding: 160px 55px 60px;
+    display: grid;
+    grid-template-areas: "contacts schedule about programs" ". text text .";
+  }
+}

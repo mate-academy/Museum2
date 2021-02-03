@@ -1,0 +1,22 @@
+.schedule {
+  grid-area: schedule;
+  width: 280px;
+  color: $c-white;
+
+  &__footer {
+    margin: 0 auto 60px;
+  }
+
+  &__title {
+    margin-bottom: $mb-thirty;
+
+    font-family: $Playfair;
+    font-weight: $fw-bold;
+    font-size: $fs-small;
+    line-height: 30px;
+  }
+
+  &__list {
+    line-height: 1.5rem;
+  }
+}

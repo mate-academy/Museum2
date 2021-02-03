@@ -1,0 +1,39 @@
+.about {
+  grid-area: about;
+  width: 280px;
+  color: $c-white;
+
+  &__footer {
+    margin: 0 auto 60px;
+  }
+
+  &__title {
+    margin-bottom: $mb-thirty;
+
+    font-family: $Playfair;
+    font-weight: $fw-bold;
+    font-size: $fs-small;
+    line-height: 30px;
+  }
+
+  &__list {
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    line-height: 1.5rem;
+    text-decoration: none;
+
+    color: inherit;
+
+    transition: color $d-half;
+
+    &:hover {
+      color: $c-secondary;
+    }
+  }
+}
