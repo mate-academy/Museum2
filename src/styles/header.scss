@@ -29,4 +29,40 @@
     height: 5px;
     margin-top: 8px;
   }
+
+  &__list--lang {
+    position: absolute;
+    width: 50px;
+    top: 34px;
+    right: 9vw;
+    color: #3f5252;
+    visibility: hidden;
+    z-index: -1;
+  }
+
+  &__list--item {
+    list-style: none;
+    padding: 5px 0 5px 7px;
+  }
+
+  &__list--lang--active {
+    visibility: visible;
+    box-shadow: 8px 9px 22px -7px #212b2b;
+    background-color: #f1f5f4;
+    transition: background-color 0.35s ease-in , box-shadow 0.4s ease-in;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .header {
+    padding: 20px;
+
+    &__lang {
+      display: none;
+    }
+
+    &__lang--img {
+      display: none;
+    }
+  }
 }

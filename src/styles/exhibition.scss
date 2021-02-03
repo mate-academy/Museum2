@@ -6,10 +6,12 @@
 
   &__container {
     background-color: #f1f5f4;
+    position: relative;
   }
   &__img--angel {
     position: absolute;
-
+    max-width: 500px;
+    object-fit: cover;
     top: 60px;
     left: 0;
   }
@@ -29,13 +31,15 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+
+    position: relative;
   }
 
   &__content--wrap {
     display: flex;
     flex-direction: column;
 
-    width: 380px;
+    max-width: 380px;
 
     padding-left: 35vw;
   }
@@ -145,6 +149,7 @@
   &__img--cobzar {
     position: absolute;
     top: 1300px;
+    left: 1vw;
   }
 
   &__link {
@@ -161,6 +166,154 @@
       width: 50px;
       height: 1px;
       background-color: #1c1b29;
+    }
+  }
+}
+
+@media screen and (max-width:1120px) {
+  .exhibition {
+    &__img--people {
+      width: 375px;
+    }
+
+    &__conseption--wrap {
+      padding-left: 20vw;
+    }
+  }
+}
+
+@media screen and (max-width:1120px) {
+  .exhibition {
+    &__img--cobzar {
+      width: 375px;
+    }
+
+    &__img--angel {
+      top: 150px;
+      width: 375px;
+    }
+  }
+}
+
+@media screen and (max-width:815px) {
+  .exhibition {
+    &__img--cobzar {
+      left: -50px;
+      top: 1350px;
+    }
+
+    &__link {
+      justify-content: center;
+      padding-right: 0;
+
+      &::after {
+        width: 0;
+      }
+    }
+
+    &__link--text {
+      padding-top: 50px;
+      width: 116px;
+      border-bottom: 1px solid #1c1b29;
+    }
+  }
+}
+
+@media screen and (max-width:730px) {
+  .exhibition {
+
+    &__content {
+      align-items: inherit;
+      position: relative;
+    }
+
+    &__conseption--midel {
+
+      &::before {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+
+        background-image: url(../images/people_320.png);
+        background-position: center;
+        background-size: cover;
+        content: "";
+        left: -40px;
+        bottom: 20px;
+        z-index: 0;
+      }
+    }
+    &__content--wrap {
+      padding-left: 0;
+
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/exhibition_angel.png);
+        background-position: center;
+        background-size: cover;
+        width: 205px;
+        height: 255px;
+        top: 200px;
+        right: -50px;
+        transform: scaleX(-1);
+        z-index: 0;
+      }
+    }
+
+    &__img--angel {
+      display: none;
+    }
+
+    &__img--people {
+      display: none;
+    }
+
+    &__title--text_first {
+      display: none;
+    }
+
+    &__title--text_second {
+      display: none;
+    }
+    &__img--cobzar {
+      display: none;
+    }
+
+    &__conseption--wrap {
+      position: relative;
+      padding-left: 50vw;
+      padding-top: 0;
+
+      &:last-child {
+
+        padding-left: 0;
+        max-width: 250px;
+        &::before {
+          content: "";
+          background-image: url(../images/cobzar.png);
+          background-position: center;
+          background-size: cover;
+          width: 203px;
+          height: 174px;
+          position: absolute;
+          right: -75px;
+          top: 40px;
+        }
+      }
+    }
+
+    &__button {
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (max-width:395px) {
+  .exhibition {
+    &__content--text {
+      max-width: 200px;
     }
   }
 }
