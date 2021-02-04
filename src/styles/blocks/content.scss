@@ -32,17 +32,21 @@
 
   &__button {
     width: 280px;
-    transition: background-color $d-half, transform $d-quarter;
     outline: none;
 
+    transition: background-color $d-half, box-shadow $d-half;
+
     &:hover {
-      background-color: rgba($c-secondary, $alpha: 0.7);
+      box-shadow: $bs-hover;
+      background-color: rgba($c-secondary, $alpha: 0.9);
     }
 
     &:active {
-      transform: scale(1.02);
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
-        0 10px 10px rgba(0, 0, 0, 0.22);
+      box-shadow: $bs-active;
+    }
+
+    &:focus {
+      box-shadow: $bs-focus;
     }
   }
 

@@ -1,6 +1,9 @@
 .art {
+  position: relative;
+
   $padding-side: 20px;
-  padding: 60px $padding-side 100px;
+  $padding-bottom: 100px;
+  padding: 60px $padding-side $padding-bottom;
   overflow: hidden;
 
   &__title {
@@ -10,14 +13,15 @@
     font-family: $Playfair;
     font-size: $fs-medium;
     font-weight: $fw-bold;
-    line-height: 45px;
+    line-height: 2.81rem;
 
     color: $c-text;
   }
 
   &__list {
-    width: 280px;
     position: relative;
+
+    width: 280px;
 
     &--odd {
       margin-left: auto;
@@ -221,7 +225,8 @@
 @include desktop {
   .art {
     $padding-side: 255px;
-    padding: 160px $padding-side 260px;
+    $padding-bottom: 260px;
+    padding: 160px $padding-side $padding-bottom;
 
     &__title {
       margin: 0 0 100px 100px;
@@ -287,15 +292,32 @@
     }
 
     &__button {
+      position: relative;
+
       display: block;
       margin-left: 0;
       margin-bottom: 226px;
+      outline: none;
+      transition: background-color $d-half, box-shadow $d-half;
+
+      &:hover {
+        box-shadow: $bs-hover;
+        background-color: rgba($c-secondary, $alpha: 0.9);
+      }
+
+      &:active {
+        box-shadow: $bs-active;
+      }
+
+      &:focus {
+        box-shadow: $bs-focus;
+      }
     }
 
     &__btn {
-      margin-top: 205px;
-      margin-left: auto;
-      margin-right: 0;
+      position: absolute;
+      bottom: $padding-bottom;
+      right: 150px;
     }
   }
 }

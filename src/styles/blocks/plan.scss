@@ -24,10 +24,20 @@
     margin: 0 auto;
     width: 280px;
 
-    transition: background-color $d-half;
+    outline: none;
+    transition: background-color $d-half, box-shadow $d-half;
 
     &:hover {
-      background-color: rgba($c-secondary, $alpha: 0.5);
+      box-shadow: $bs-hover;
+      background-color: rgba($c-secondary, $alpha: 0.9);
+    }
+
+    &:active {
+      box-shadow: $bs-active;
+    }
+
+    &:focus {
+      box-shadow: $bs-focus;
     }
   }
 }

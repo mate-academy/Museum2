@@ -1,4 +1,6 @@
 .event {
+  position: relative;
+
   padding: 100px 20px 80px;
   color: $c-text;
 
@@ -12,7 +14,7 @@
   }
 
   &__list {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   &__type {
@@ -64,10 +66,20 @@
     margin: 0 auto;
     width: 280px;
 
-    transition: background-color $d-half;
+    outline: none;
+    transition: background-color $d-half, box-shadow $d-half;
 
     &:hover {
-      background-color: rgba($c-secondary, $alpha: 0.5);
+      box-shadow: $bs-hover;
+      background-color: rgba($c-secondary, $alpha: 0.9);
+    }
+
+    &:active {
+      box-shadow: $bs-active;
+    }
+
+    &:focus {
+      box-shadow: $bs-focus;
     }
   }
 
@@ -142,7 +154,8 @@
 
 @include desktop {
   .event {
-    padding: 0 55px;
+    $padding-bottom: 184px;
+    padding: 0 55px $padding-bottom;
 
     &__title {
       width: max-content;
@@ -159,7 +172,7 @@
 
       &--even {
         flex-direction: row-reverse;
-        padding: 0;
+        padding: 0 0 60px;
       }
     }
 
@@ -176,7 +189,9 @@
     }
 
     &__btn {
-      margin: 0 0 184px auto;
+      position: absolute;
+      bottom: $padding-bottom;
+      right: 150px;
     }
   }
 }

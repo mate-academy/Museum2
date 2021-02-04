@@ -1,4 +1,6 @@
 .news {
+  position: relative;
+
   padding: 80px 20px;
 
   color: $c-text;
@@ -99,9 +101,11 @@
 
 @include desktop {
   .news {
-    padding: 120px 55px 184px;
+    $padding-bottom: 184px;
+    padding: 120px 55px $padding-bottom;
 
     &__item {
+      margin-bottom: 60px;
       grid-template-columns: repeat(3, 370px);
     }
 
@@ -122,6 +126,12 @@
     &__img {
       margin-bottom: $mb-twenty;
       width: 370px;
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: $padding-bottom;
+      right: 150px;
     }
   }
 }
