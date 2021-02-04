@@ -1,13 +1,7 @@
 'use strict';
-// let selectSide = document.querySelector('.header__side');
-// let currentLang = document.querySelector('.header__lang');
-// let listLang = document.querySelector('.header__list--lang');
-// let imgLang = document.querySelector('.header__lang--img');
 
-// selectSide.addEventListener('click' , ()=>{
-//   currentLang.classList.toggle('.header__list--lang--active');
-//   console.log(currentLang)
-// });
+const lang = document.querySelector('.header__lang');
+
 (() => {
   const buttonLine = document.querySelector('.header__line');
   const art = document.querySelector('.art');
@@ -16,5 +10,30 @@
   buttonLine.addEventListener('click', () => {
     art.classList.toggle('art__close');
     nav.classList.toggle('nav__open');
+    buttonLine.classList.toggle('header__chrest');
+  });
+})();
+
+(() => {
+  const list = document.querySelector('.header__list--lang');
+
+  lang.addEventListener('click', () => {
+    list.classList.toggle('header__list--open');
+  });
+})();
+
+(() => {
+  const listItemUa = document.querySelector('.item__en');
+
+  listItemUa.addEventListener('click', () => {
+    lang.innerHTML = 'EN';
+  });
+})();
+
+(() => {
+  const listItemUa = document.querySelector('.item__ua');
+
+  listItemUa.addEventListener('click', () => {
+    lang.innerHTML = 'UA';
   });
 })();

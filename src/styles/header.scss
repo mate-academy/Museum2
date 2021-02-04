@@ -10,8 +10,17 @@
     background-position: center;
     width: 25px;
     height: 20px;
+
+    cursor: pointer;
   }
 
+  &__chrest {
+    background-image: url(../images/header_chrest.png);
+    background-size: cover;
+    background-position: center;
+    width: 25px;
+    height: 20px;
+  }
   &__side {
     display: flex;
     justify-content: space-between;
@@ -22,6 +31,8 @@
     margin-left: 20px ;
     font-weight: 500;
     font-size: 16px;
+
+    cursor: pointer;
   }
 
   &__lang--img {
@@ -33,23 +44,27 @@
   &__list--lang {
     position: absolute;
     width: 50px;
-    top: 34px;
-    right: 9vw;
+    top: 30px;
+    right: 15px;
     color: #3f5252;
     visibility: hidden;
     z-index: -1;
   }
 
+  &__list--open {
+    z-index: 1;
+    visibility: visible;
+    color: white;
+  }
+
   &__list--item {
     list-style: none;
     padding: 5px 0 5px 7px;
-  }
+    transition: color 1s;
 
-  &__list--lang--active {
-    visibility: visible;
-    box-shadow: 8px 9px 22px -7px #212b2b;
-    background-color: #f1f5f4;
-    transition: background-color 0.35s ease-in , box-shadow 0.4s ease-in;
+    &:hover {
+      color: #cd4d31;
+    }
   }
 }
 
