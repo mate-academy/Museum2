@@ -1,0 +1,140 @@
+.nav {
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 50px 0 0 50px;
+  position: absolute;
+  top: 80px;
+  transform: translateX(-100%);
+  width: 100%;
+  background-color: #3f5252;
+  z-index: 1;
+
+  &__open {
+    opacity: 1;
+    transform: translateX(0%);
+    pointer-events: initial;
+
+  }
+  &__img {
+    background-image: url(../images/nav_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 650px;
+    height: 800px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 40vw;
+
+    padding-bottom: 70px;
+  }
+
+  &__date--text,
+  &__adress--text {
+    opacity: 0.5;
+  }
+
+  &__date--text,
+  &__date--time,
+  &__adress--text,
+  &__adress--place {
+    color: #f1f5f4;
+  }
+
+  &__item {
+    list-style: none;
+    padding: 40px 0;
+
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+
+    color: #f1f5f4;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 50vw;
+
+    border-top: 1px solid #f1f5f4;
+
+    margin-bottom: 100px;
+  }
+
+  &__button {
+    color: #f1f5f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 70px;
+    padding: 20px 90px;
+    text-align: center;
+    border: 1px solid transparent;
+    background: #cd4d31;
+    cursor: pointer;
+
+    transition: all 1s;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid #f1f5f4;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .nav {
+    grid-template-columns: 1fr;
+
+    &__img {
+      display: none;
+    }
+
+    &__header {
+      flex-direction: column;
+    }
+
+    &__adress,
+    &__date {
+      display: flex;
+    }
+
+    &__footer {
+      max-width: 80vw;
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .nav {
+    padding: 0 20px;
+    justify-content: center;
+    &__footer {
+      flex-direction: column;
+      border: none;
+    }
+
+    &__header {
+      display: none;
+    }
+
+    &__item {
+      font-size: 24px;
+      padding: 20px 0;
+    }
+
+    &__button {
+      padding: 20px 40px;
+    }
+
+    &__button--color {
+      margin-top: 20px;
+    }
+  }
+}
