@@ -226,7 +226,7 @@
   .art {
     $padding-side: 255px;
     $padding-bottom: 260px;
-    padding: 160px $padding-side $padding-bottom;
+    padding: 160px $padding-side 260px;
 
     &__title {
       margin: 0 0 100px 100px;
@@ -316,7 +316,7 @@
 
     &__btn {
       position: absolute;
-      bottom: $padding-bottom;
+      bottom: 0;
       right: 150px;
     }
   }

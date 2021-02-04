@@ -1,19 +1,26 @@
 .dropdown {
-  visibility: hidden;
-  opacity: 0;
-
-  background-color: $c-white;
   padding: 5px;
 
+  background-color: $c-white;
+
+  visibility: hidden;
+  opacity: 0;
   transition: opacity $d-second;
 
   &--active {
-    opacity: 1;
     visibility: visible;
+    opacity: 1;
   }
 
   &__text {
     font-weight: $fw-medium;
     line-height: 1.5rem;
+
+    pointer-events: visible;
+
+    &:hover {
+      background-color: $c-secondary;
+      color: red;
+    }
   }
 }

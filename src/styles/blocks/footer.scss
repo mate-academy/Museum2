@@ -6,11 +6,13 @@
   padding: $padding-top $padding-side 40px;
   background-color: $c-main;
 
-  &__icon {
+  &__link {
     position: absolute;
     top: $padding-top;
     right: $padding-side;
+  }
 
+  &__icon {
     width: 20px;
     height: 20px;
 
@@ -59,7 +61,7 @@
     display: grid;
     grid-template-areas: "contacts schedule" "about programs" "text text";
 
-    &__icon {
+    &__link {
       top: $padding-top;
       right: $padding-side;
     }
@@ -88,7 +90,7 @@
 
     grid-template-areas: "contacts schedule about programs" ". text text .";
 
-    &__icon {
+    &__link {
       top: $padding-top;
       right: $padding-side;
     }

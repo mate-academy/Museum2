@@ -56,6 +56,14 @@
     margin-bottom: $mb-twenty;
 
     object-fit: cover;
+    cursor: pointer;
+
+    transition: transform $d-second, box-shadow $d-second;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: $bs-hover;
+    }
   }
 
   &__btn {

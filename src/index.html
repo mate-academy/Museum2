@@ -16,9 +16,9 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
 
-      <a href="#" class="logo">NAMU</a>
+      <a href="#footer" class="logo">NAMU</a>
 
       <button
       type="button"
@@ -443,17 +443,26 @@
             type="submit"
             class="follow__button"
           >
+            <svg class="follow__icon">
+              <use href="./images/sprite.svg#icon-arrow-horisontal">
+              </use>
+            </svg>
           </button>
         </form>
       </section>
     </main>
-    <footer class="footer">
-      <svg class="footer__icon">
-        <use
-          href="./images/sprite.svg#icon-arrow"
-        >
-      </use>
-      </svg>
+    <footer class="footer" id="footer">
+      <a
+        href="#header"
+        class="footer__link"
+      >
+        <svg class="footer__icon">
+          <use
+            href="./images/sprite.svg#icon-arrow"
+          >
+        </use>
+        </svg>
+      </a>
       <div class="contacts contacts__footer">
         <h2 class="contacts__title">
           Контакт

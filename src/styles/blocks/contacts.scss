@@ -51,10 +51,13 @@
 
     fill: $c-white;
 
-    transition: fill $d-half;
+    transition: fill $d-half, transform $d-half;
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       fill: $c-secondary;
+      transform: scale(1.2);
     }
   }
 }

@@ -1,7 +1,7 @@
 .follow {
-  background-color: $c-secondary;
   padding: 80px 20px;
 
+  background-color: $c-secondary;
   color: $c-white;
 
   &__wrapper,
@@ -24,12 +24,20 @@
     line-height: 1.5rem;
   }
 
+  &__icon {
+    width: 21px;
+    height: 21px;
+    fill: $c-white;
+
+    transition: fill $d-half;
+  }
+
   &__button {
     width: 42px;
     height: 42px;
 
     border-radius: 50px;
-    background: url(../images/arrow-button.svg) no-repeat center;
+    background-color: transparent;
     border: 1px solid $c-white;
     outline: none;
 
@@ -39,6 +47,26 @@
     &:hover,
     &:focus {
       border-color: $c-main;
+    }
+
+    &:hover .follow__icon {
+      fill: $c-main;
+    }
+
+    animation: move 5s infinite;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+
+    75% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      transform: translateX(0);
     }
   }
 

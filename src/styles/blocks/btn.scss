@@ -27,7 +27,6 @@
     display: block;
     height: 1px;
     background-color: currentColor;
-    transform: rotate(0);
     transition: transform $d-half, color $d-half;
   }
 
@@ -38,7 +37,7 @@
   &:active,
   &:focus {
     transform: scale(1.2);
-    color: darkmagenta;
+    color: violet;
   }
 }
 
