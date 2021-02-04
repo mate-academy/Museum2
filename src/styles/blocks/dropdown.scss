@@ -1,12 +1,7 @@
 .dropdown {
-  position: absolute;
-
   visibility: hidden;
   opacity: 0;
 
-  top: 60px;
-  right: 55px;
-  z-index: 2;
   background-color: $c-white;
   padding: 5px;
 

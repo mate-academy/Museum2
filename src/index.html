@@ -20,23 +20,14 @@
 
       <a href="#" class="logo">NAMU</a>
 
-      <div class="dropdown dropdown__header">
-        <p class="dropdown__text">UA</p>
-        <p class="dropdown__text">PL</p>
-        <p class="dropdown__text">ENG</p>
-        <p class="dropdown__text">NL</p>
-      </div>
-
-
-
       <button
-        type="button"
-        class="menu-button"
-        aria-label="menu-button"
-        aria-expanded="false"
-        aria-controls="first-mobile"
-        data-menu-button=""
-        >
+      type="button"
+      class="menu-button"
+      aria-label="menu-button"
+      aria-expanded="false"
+      aria-controls="first-mobile"
+      data-menu-button=""
+      >
         <svg
           tabindex="0"
           class="menu-button__icon"
@@ -47,33 +38,42 @@
           <use
             class="menu-button__icon--cross"
             href="./images/sprite.svg#icon-close"
-          >
+            >
           </use>
           <use
-            class="menu-button__icon--menu"
-            href="./images/sprite.svg#icon-open"
+          class="menu-button__icon--menu"
+          href="./images/sprite.svg#icon-open"
           >
-          </use>
+        </use>
         </svg>
       </button>
 
-      <span
+      <div
+        tabindex="0"
         class="lang header__lang"
         data-lang=""
-        tabindex="0"
       >
-        UA
-        <svg
-          class="lang__icon"
-          width="8"
-          height="5"
+        <span
+        class="lang__text"
         >
-          <use href="./images/sprite.svg#icon-ua">
-          </use>
-        </svg>
-      </span>
+        UA
+          <svg
+            class="lang__icon"
+            width="8"
+            height="5"
+          >
+            <use href="./images/sprite.svg#icon-ua">
+        </use>
+          </svg>
+        </span>
 
-
+        <ul class="dropdown dropdown__header">
+          <li class="drop__text">UA</li>
+          <li class="drop__text">PL</li>
+          <li class="drop__text">ENG</li>
+          <li class="drop__text">NL</li>
+        </ul>
+      </div>
 
       <nav class="nav" data-menu="">
 
@@ -99,7 +99,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a href="#" class="nav__link">
+            <a href="#event" class="nav__link">
               Виставка та події
             </a>
           </li>
@@ -243,7 +243,7 @@
       </section>
 
       <section class="event event__main">
-        <h2 class="event__title">
+        <h2 class="event__title" id="event">
           Найближчі події
         </h2>
         <ul class="event__item">

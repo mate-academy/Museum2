@@ -1,25 +1,29 @@
 .lang {
   position: absolute;
+
+  visibility: hidden;
+
   top: 30px;
   right: 72px;
-
-  display: none;
-  align-items: center;
-  font-size: $fs-smaller;
-  font-weight: $fw-medium;
-  line-height: 1.5rem;
-  color: $c-white;
-
-  cursor: pointer;
+  z-index: 2;
   outline: none;
 
-  transition: color $d-half, transform $d-half;
+  &__text {
+    font-size: $fs-smaller;
+    font-weight: $fw-medium;
+    line-height: 1.5rem;
 
-  &:hover,
-  &:focus,
-  &:active {
+    color: $c-white;
+    cursor: pointer;
+    outline: none;
+
+    transition: color $d-half linear;
+  }
+
+  &:hover > &__text,
+  &:focus > &__text,
+  &:active > &__text {
     color: $c-secondary;
-    transform: scale(1.2);
   }
 
   &__icon {
@@ -28,13 +32,13 @@
   }
 
   &.is-open {
-    display: flex;
+    visibility: visible;
   }
 }
 
 @include tablet {
   .lang {
-    display: flex;
+    visibility: visible;
     top: 28px;
     right: 60px;
   }

@@ -44,15 +44,17 @@
 
   &__link {
     color: $c-white;
+
     text-decoration: none;
-    transition: color $d-quarter;
+    transition: color $d-half, text-shadow $d-half;
 
-    &:hover {
-      color: $c-secondary;
-    }
+    outline: none;
 
+    &:hover,
+    &:focus,
     &:active {
-      color: salmon;
+      text-shadow: 0 2px 2px rgba(255, 255, 255, 0.4);
+      color: $c-secondary;
     }
   }
 
