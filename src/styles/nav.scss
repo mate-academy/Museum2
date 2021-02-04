@@ -14,7 +14,7 @@
     opacity: 1;
     transform: translateX(0%);
     pointer-events: initial;
-
+    overflow-x: hidden;
   }
   &__img {
     background-image: url(../images/nav_img.png);
@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 730px) {
   .nav {
-    padding: 0 40px;
+    padding: 0;
     justify-content: center;
     &__footer {
       flex-direction: column;
@@ -136,5 +136,11 @@
     &__button--color {
       margin-top: 20px;
     }
+
+    &__container {
+      max-width: 280px;
+      padding: 0 30px;
+    }
   }
+
 }

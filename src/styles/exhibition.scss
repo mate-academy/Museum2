@@ -245,7 +245,7 @@
       }
     }
     &__content--wrap {
-      padding-left: 0;
+      padding-left: 10px;
 
       &::after {
         position: absolute;
@@ -315,6 +315,14 @@
   .exhibition {
     &__content--text {
       max-width: 200px;
+    }
+
+    &__conseption {
+      padding-right: 10px;
+    }
+
+    &__conseption--last {
+      padding-right: 10px;
     }
   }
 }
