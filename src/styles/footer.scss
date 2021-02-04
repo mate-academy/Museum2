@@ -75,3 +75,21 @@
     }
   }
 }
+
+@media screen  and (max-width:900px) {
+  .footer {
+    &__container {
+      grid-template-columns: repeat(2 ,1fr);
+      row-gap: 30px;
+      grid-template-rows: repeat(2 ,1fr);
+    }
+  }
+}
+
+@media screen  and (max-width:500px) {
+  .footer {
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

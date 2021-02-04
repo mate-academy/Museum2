@@ -35,7 +35,7 @@
   }
 
   &__text {
-    width: 570px;
+    max-width: 570px;
 
     font-weight: normal;
     font-size: 16px;
@@ -46,8 +46,9 @@
   }
 
   &__email {
+    display: block;
     box-shadow: none;
-    width: 300px;
+    max-width: 300px;
 
     background-image: none;
     background-color: transparent;
@@ -58,5 +59,40 @@
     border-bottom: 1px solid #f1f5f4;
     color: #f1f5f4;
     outline: none;
+  }
+}
+
+@media screen and (max-width:950px) {
+  .subscribe {
+    &__content {
+      flex-direction: column;
+
+      &::after {
+        bottom: 0;
+      }
+    }
+
+    &__email {
+      padding-top: 100px;
+    }
+  }
+}
+
+@media screen and (max-width:480px) {
+  .subscribe {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__content {
+
+      &::after {
+        width: 0;
+      }
+    }
+
+    &__wrap {
+      padding: 100px 10px;
+    }
   }
 }
