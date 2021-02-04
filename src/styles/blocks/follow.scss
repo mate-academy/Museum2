@@ -1,0 +1,107 @@
+.follow {
+  background-color: $c-secondary;
+  padding: 80px 20px;
+
+  color: $c-white;
+
+  &__wrapper,
+  &__form {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  &__title {
+    margin-bottom: $mb-forty;
+
+    font-family: $Playfair;
+    font-weight: $fw-bold;
+    font-size: $fs-medium;
+    line-height: 2.25rem;
+  }
+
+  &__text {
+    margin-bottom: $mb-sixty;
+    line-height: 1.5rem;
+  }
+
+  &__button {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50px;
+    background: url(../images/arrow-button.svg) no-repeat center;
+    border: 1px solid $c-white;
+    outline: none;
+
+    cursor: pointer;
+    transition: border-color $d-half;
+
+    &:hover,
+    &:focus {
+      border-color: $c-main;
+    }
+  }
+
+  &__input {
+    width: 228px;
+
+    transition: border-color $d-half;
+
+    &:hover,
+    &:focus {
+      border-color: $c-main;
+    }
+
+    .follow__button {
+      display: none;
+    }
+    &:placeholder-shown ~ .follow__button {
+      visibility: hidden;
+    }
+
+    &::placeholder {
+      color: $c-white;
+    }
+  }
+}
+
+@include tablet {
+  .follow {
+    padding: 110px 99px 120px;
+
+    &__wrapper,
+    &__form {
+      width: 570px;
+    }
+
+    &__title {
+      margin-bottom: $mb-thirty;
+      font-size: $fs-big;
+      line-height: 3.6rem;
+    }
+
+    &__text {
+      margin-bottom: $mb-eighty;
+    }
+
+    &__input {
+      width: 300px;
+    }
+  }
+}
+
+@include desktop {
+  .follow {
+    display: flex;
+    align-items: flex-end;
+    padding: 160px 55px;
+
+    &__title {
+      margin-bottom: $mb-forty;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+}
