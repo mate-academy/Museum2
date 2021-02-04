@@ -11,6 +11,16 @@
   color: $c-white;
 
   cursor: pointer;
+  outline: none;
+
+  transition: color $d-half, transform $d-half;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $c-secondary;
+    transform: scale(1.2);
+  }
 
   &__icon {
     margin-left: 5px;

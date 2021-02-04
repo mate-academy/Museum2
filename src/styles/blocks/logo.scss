@@ -1,7 +1,22 @@
 .logo {
   font-family: "NAMU", sans-serif;
+
   color: $c-white;
   font-size: $fs-medium;
-  line-height: 40px;
+  line-height: 2.5rem;
   text-decoration: none;
+
+  outline: none;
+
+  transition: color $d-half, transform $d-half;
+
+  &:hover {
+    color: $c-secondary;
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    color: purple;
+    transform: scale(1.05);
+  }
 }

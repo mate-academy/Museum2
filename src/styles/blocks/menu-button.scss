@@ -1,25 +1,33 @@
 .menu-button {
   background-color: transparent;
-  outline: transparent;
+
+  outline: none;
   border: none;
+
   cursor: pointer;
 
   &__icon {
-    transition: transform $d-second, fill $d-half;
     fill: $c-white;
+    transition: transform $d-second, fill $d-half;
 
-    &:hover {
-      fill: purple;
+    &:hover,
+    &:focus,
+    &:active {
       transform: scale(1.2);
+      fill: $c-secondary;
+      outline: none;
     }
   }
 
   &__icon--cross,
   &.is-open &__icon--menu {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $d-second;
   }
 
   &.is-open &__icon--cross {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 }

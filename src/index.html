@@ -18,19 +18,15 @@
   <body>
     <header class="header">
 
-      <span class="lang header__lang" data-lang="">
-        UA
-        <svg
-          class="lang__icon"
-          width="8"
-          height="5"
-        >
-          <use href="./images/sprite.svg#icon-ua">
-          </use>
-        </svg>
-      </span>
-
       <a href="#" class="logo">NAMU</a>
+
+      <div class="dropdown dropdown__header">
+        <p class="dropdown__text">UA</p>
+        <p class="dropdown__text">PL</p>
+        <p class="dropdown__text">ENG</p>
+        <p class="dropdown__text">NL</p>
+      </div>
+
 
 
       <button
@@ -40,8 +36,9 @@
         aria-expanded="false"
         aria-controls="first-mobile"
         data-menu-button=""
-      >
+        >
         <svg
+          tabindex="0"
           class="menu-button__icon"
           width="22"
           height="22"
@@ -59,6 +56,23 @@
           </use>
         </svg>
       </button>
+
+      <span
+        class="lang header__lang"
+        data-lang=""
+        tabindex="0"
+      >
+        UA
+        <svg
+          class="lang__icon"
+          width="8"
+          height="5"
+        >
+          <use href="./images/sprite.svg#icon-ua">
+          </use>
+        </svg>
+      </span>
+
 
 
       <nav class="nav" data-menu="">
@@ -623,6 +637,7 @@
       </p>
     </footer>
     <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/dropdown.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 
