@@ -10,7 +10,7 @@
     font-size: 48px;
     line-height: 120%;
 
-    color: #f1f5f4;
+    color: $bc-white;
   }
 
   &__content {
@@ -41,7 +41,7 @@
     font-size: 16px;
     line-height: 150%;
 
-    color: #f1f5f4;
+    color: $bc-white;
     opacity: 0.6;
   }
 
@@ -56,8 +56,8 @@
     font-weight: 400;
     line-height: 24px;
     border: none;
-    border-bottom: 1px solid #f1f5f4;
-    color: #f1f5f4;
+    border-bottom: 1px solid $bc-white;
+    color: $bc-white;
     outline: none;
   }
 }

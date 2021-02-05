@@ -1,12 +1,12 @@
 .exhibition {
-  background-color: #f1f5f4;
+  background-color: $bc-white;
   position: relative;
   box-sizing: border-box;
   padding-top: 150px;
 
   overflow: hidden;
   &__container {
-    background-color: #f1f5f4;
+    background-color: $bc-white;
     position: relative;
   }
   &__img--angel {
@@ -51,7 +51,7 @@
     font-size: 48px;
     line-height: 120%;
 
-    color: #cd4d31;
+    color: $bc-red;
   }
 
   &__content--title {
@@ -102,7 +102,7 @@
   }
 
   &__conseption--word {
-    color: #cd4d31;
+    color: $bc-red;
     font-size: 18px;
   }
 
@@ -129,10 +129,8 @@
     padding-left: 10vw;
     width: 568px;
     height: 576px;
-    background-image: url(../images/exhebitin_comseption_back_first.png);
+    background: url(../images/exhebitin_comseption_back_first.png) no-repeat center;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   &__title--text_second {

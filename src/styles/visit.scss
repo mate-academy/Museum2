@@ -18,7 +18,7 @@
   &__title {
     padding-top: 25vh;
 
-    color: white;
+    color: $bc-white;
     font-style: normal;
     font-weight: bold;
     font-size: 96px;
@@ -26,7 +26,7 @@
   }
 
   &__text {
-    color: #f1f5f4;
+    color: $bc-white;
     opacity: 0.6;
 
     font-style: normal;

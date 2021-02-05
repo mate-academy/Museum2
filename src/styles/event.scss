@@ -1,5 +1,5 @@
 .event {
-  background-color: #f1f5f4;
+  background-color: $bc-white;
 
   &__head {
     padding-top: 30vh;
@@ -53,9 +53,9 @@
     padding-left: 55px;
   }
   &__date {
-    text-shadow: -1px 0 #cd4d31, 0 1px #cd4d31, 1px 0 #cd4d31, 0 -1px #cd4d31;
+    text-shadow: -1px 0 $bc-red, 0 1px $bc-red, 1px 0 $bc-red, 0 -1px $bc-red;
     left: -30px;
-    color: #f1f5f4;
+    color: $bc-white;
     margin-bottom: 10px;
     font-size: 55px;
     line-height: 55px;
@@ -67,7 +67,7 @@
     font-size: 36px;
     line-height: 100%;
 
-    color: #cd4d31;
+    color: $bc-red;
   }
 
   &__content {

@@ -1,6 +1,6 @@
 .art {
   position: relative;
-  color: #f1f5f4;
+  color: $bc-white;
   overflow: hidden;
 
   &__close {
@@ -10,31 +10,35 @@
 
   &__container {
     position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 190px 9vw;
 
     &::before {
+
       position: absolute;
       top: 40px;
       right: 0;
       bottom: 0;
+
       display: block;
       width: 673px;
       height: 753px;
+
       content: "";
+
       background-image: url(../images/art_back.png);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-
     }
   }
 
   &__title {
     font-weight: bold;
-    font-size: 96px;
+    font-size: 6rem;
     line-height: 100%;
   }
   &__content {
@@ -43,26 +47,30 @@
 
   &__content--text {
     padding: 5vh 0;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 150%;
     max-width: 370px;
   }
 
   &__time {
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 0.85rem;
+    font-weight: $fw-bold;
     opacity: 0.7;
     bottom: 40px;
     position: relative;
     &::after {
-      content: "";
       position: absolute;
       left: 100px;
       bottom: 45%;
+
       width: 800px;
       height: 1px;
-      background-color: #f1f5f4;
+
+      background-color: $bc-white;
       opacity: 0.3;
+
+      content: "";
+
       overflow: hidden;
       z-index: 0;
     }
@@ -143,7 +151,7 @@
     }
 
     &__title {
-      font-size: 48px;
+      font-size: 3rem;
     }
     &__content--text {
       width: 250px ;

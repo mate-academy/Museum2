@@ -10,7 +10,7 @@ const lang = document.querySelector('.header__lang');
   buttonLine.addEventListener('click', () => {
     art.classList.toggle('art__close');
     nav.classList.toggle('nav__open');
-    buttonLine.classList.toggle('header__chrest');
+    buttonLine.classList.toggle('header__cross');
   });
 })();
 
@@ -23,7 +23,7 @@ const lang = document.querySelector('.header__lang');
 })();
 
 (() => {
-  const listItemUa = document.querySelector('.item__en');
+  const listItemUa = document.querySelector('.header__item--en');
 
   listItemUa.addEventListener('click', () => {
     lang.innerHTML = 'EN';
@@ -31,7 +31,7 @@ const lang = document.querySelector('.header__lang');
 })();
 
 (() => {
-  const listItemUa = document.querySelector('.item__ua');
+  const listItemUa = document.querySelector('.header__item--ua');
 
   listItemUa.addEventListener('click', () => {
     lang.innerHTML = 'UA';

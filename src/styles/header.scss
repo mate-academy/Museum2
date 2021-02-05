@@ -14,7 +14,7 @@
     cursor: pointer;
   }
 
-  &__chrest {
+  &__cross {
     background-image: url(../images/header_chrest.png);
     background-size: cover;
     background-position: center;
@@ -27,7 +27,7 @@
   }
 
   &__lang {
-    color: white;
+    color: $bc-white;
     margin-left: 20px ;
     font-weight: 500;
     font-size: 16px;
@@ -48,16 +48,15 @@
     right: 15px;
     color: #3f5252;
     visibility: hidden;
-    z-index: -1;
   }
 
   &__list--open {
     z-index: 1;
     visibility: visible;
-    color: white;
+    color: $bc-white;
   }
 
-  &__list--item {
+  &__item {
     list-style: none;
     padding: 5px 0 5px 7px;
     transition: color 1s;

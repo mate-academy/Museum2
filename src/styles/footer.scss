@@ -10,9 +10,8 @@
       content: "";
 
       position: absolute;
-      background-image: url(../images/footer_arrow.png);
+      background: url(../images/footer_arrow.png) no-repeat;
       background-size: cover;
-      background-repeat: no-repeat;
       width: 20px;
       height: 20px;
 
@@ -26,7 +25,7 @@
     font-size: 24px;
     line-height: 125%;
 
-    color: #f1f5f4;
+    color: $bc-white;
   }
 
   &__item--text {
@@ -36,7 +35,7 @@
     font-size: 16px;
     line-height: 150%;
 
-    color: #f1f5f4;
+    color: $bc-white;
   }
 
   &__item--massenge {
@@ -45,7 +44,7 @@
 
   &__item--icon {
     list-style: none;
-    color: #f1f5f4;
+    color: $bc-white;
     padding-top: 10px;
   }
 
@@ -59,7 +58,7 @@
 
   &__item--link {
     text-decoration: none;
-    color: #f1f5f4;
+    color: $bc-white;
   }
 
   &__wrap {
@@ -69,10 +68,15 @@
   }
 
   &__nav--item {
-    color: #f1f5f4;
+    color: $bc-white;
     &:last-child {
       padding-left: 40px;
     }
+  }
+
+  &__item--adress {
+    text-decoration: none;
+    color: $bc-white;
   }
 }
 

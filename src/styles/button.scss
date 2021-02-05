@@ -1,8 +1,15 @@
 .button {
-  background: #cd4d31;
+  background: $bc-red;
   padding: 20px 0;
   width: 270px;
-  border: 1px solid #cd4d31;
+  border: 1px solid $bc-red;
 
-  color: white;
+  color: $bc-white;
+
+  transition: all 1s;
+  &:hover {
+    color: $bc-red;
+    background-color: transparent;
+    border: 1px solid $bc-red;
+  }
 }
