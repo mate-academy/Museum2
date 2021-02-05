@@ -8,7 +8,7 @@
 
   &__icon {
     fill: $c-white;
-    transition: transform $d-second, fill $d-half;
+    transition: transform $duration-one, fill $duration-half;
 
     &:hover,
     &:focus,
@@ -23,7 +23,7 @@
   &.is-open &__icon--menu {
     visibility: hidden;
     opacity: 0;
-    transition: opacity $d-second;
+    transition: opacity $duration-one;
   }
 
   &.is-open &__icon--cross {

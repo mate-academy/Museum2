@@ -7,7 +7,7 @@
 
   &__title {
     width: 280px;
-    margin: 0 auto $mb-sixty;
+    margin: 0 auto 60px;
 
     font-family: $Playfair;
     font-size: $fs-medium;
@@ -28,11 +28,12 @@
   &__date {
     font-weight: $fw-light;
     font-size: $fs-smallest;
-    line-height: 20px;
+    line-height: 1.25rem;
   }
 
   &__subtitle {
-    margin-bottom: $mb-tenth;
+    margin-bottom: 10px;
+
     font-family: $Playfair;
     font-size: 18px;
     font-weight: $fw-bold;
@@ -53,12 +54,12 @@
 
   &__img {
     display: block;
-    margin-bottom: $mb-twenty;
+    margin-bottom: 20px;
 
     object-fit: cover;
     cursor: pointer;
 
-    transition: transform $d-second, box-shadow $d-second;
+    transition: transform $duration-one, box-shadow $duration-one;
 
     &:hover {
       transform: scale(1.05);
@@ -111,10 +112,19 @@
   .news {
     $padding-bottom: 184px;
     padding: 120px 55px $padding-bottom;
+    max-width: 1920px;
+
+    &__main {
+      margin: 0 auto;
+    }
 
     &__item {
       margin-bottom: 60px;
       grid-template-columns: repeat(3, 370px);
+    }
+
+    &__title {
+      margin-left: calc((100% - 770px) / 2);
     }
 
     &__list {
@@ -132,7 +142,7 @@
     }
 
     &__img {
-      margin-bottom: $mb-twenty;
+      margin-bottom: 20px;
       width: 370px;
     }
 

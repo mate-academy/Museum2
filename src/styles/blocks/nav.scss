@@ -28,17 +28,17 @@
   }
 
   &__item {
-    margin-bottom: $mb-forty;
+    margin-bottom: 40px;
 
     font-family: $Playfair;
     font-size: $fs-small;
     font-weight: $fw-bold;
-    line-height: $lh-100;
+    line-height: 100%;
 
     color: $c-white;
 
     &:last-child {
-      margin-bottom: $mb-eighty;
+      margin-bottom: 80px;
     }
   }
 
@@ -46,7 +46,7 @@
     color: $c-white;
 
     text-decoration: none;
-    transition: color $d-half, text-shadow $d-half;
+    transition: color $duration-half, text-shadow $duration-half;
 
     outline: none;
 
@@ -63,7 +63,7 @@
     width: 280px;
     outline: none;
 
-    transition: background-color $d-half, border-color $d-quarter;
+    transition: background-color $duration-half, border-color $duration-quarter;
 
     &:hover {
       background-color: rgba($c-secondary, $alpha: 0.7);
@@ -87,7 +87,7 @@
     }
 
     &:first-child {
-      margin-bottom: $mb-twenty;
+      margin-bottom: 20px;
     }
   }
 
@@ -103,7 +103,7 @@
     &__item {
       position: relative;
 
-      margin-bottom: $mb-fifty;
+      margin-bottom: 50px;
 
       font-size: $fs-big;
       line-height: 58px;
@@ -145,7 +145,7 @@
     }
 
     &__item {
-      margin-bottom: $mb-sixty;
+      margin-bottom: 60px;
 
       &:last-child {
         margin-bottom: 121px;

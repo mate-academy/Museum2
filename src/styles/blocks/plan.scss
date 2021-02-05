@@ -4,7 +4,7 @@
   background-color: $c-main;
 
   &__title {
-    margin-bottom: $mb-forty;
+    margin-bottom: 40px;
 
     font-family: $Playfair;
     font-size: $fs-big;
@@ -14,7 +14,7 @@
   }
 
   &__text {
-    margin-bottom: $mb-sixty;
+    margin-bottom: 60px;
     line-height: 24px;
 
     color: $c-white;
@@ -25,7 +25,7 @@
     width: 280px;
 
     outline: none;
-    transition: background-color $d-half, box-shadow $d-half;
+    transition: background-color $duration-half, box-shadow $duration-half;
 
     &:hover {
       box-shadow: $bs-hover;
@@ -49,7 +49,7 @@
     padding: 120px 99px 170px;
 
     &__title {
-      margin-bottom: $mb-eighty;
+      margin-bottom: 80px;
       width: 523px;
 
       font-size: $fs-bigger;
@@ -82,9 +82,14 @@
 @include desktop {
   .plan {
     padding: 190px 25px 160px 555px;
+    max-width: 1920px;
+
+    &__planning {
+      margin: 0 auto;
+    }
 
     &__title {
-      margin-bottom: $mb-sixty;
+      margin-bottom: 60px;
       width: 700px;
 
       font-size: $fs-biggest;
@@ -92,7 +97,7 @@
     }
 
     &__text {
-      margin: 0 0 $mb-sixty 100px;
+      margin: 0 0 60px 100px;
       width: 470px;
       height: 70px;
     }

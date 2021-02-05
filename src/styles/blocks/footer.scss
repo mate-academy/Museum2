@@ -1,10 +1,12 @@
 .footer {
-  position: relative;
+  background-color: $c-main;
   $padding-top: 80px;
   $padding-side: 20px;
 
-  padding: $padding-top $padding-side 40px;
-  background-color: $c-main;
+  &__container {
+    position: relative;
+    padding: $padding-top $padding-side 40px;
+  }
 
   &__link {
     position: absolute;
@@ -56,10 +58,11 @@
   .footer {
     $padding-top: 120px;
     $padding-side: 99px;
-    padding: $padding-top $padding-side 35px;
-
-    display: grid;
-    grid-template-areas: "contacts schedule" "about programs" "text text";
+    &__container {
+      display: grid;
+      grid-template-areas: "contacts schedule" "about programs" "text text";
+      padding: $padding-top $padding-side 35px;
+    }
 
     &__link {
       top: $padding-top;
@@ -86,9 +89,13 @@
   .footer {
     $padding-top: 160px;
     $padding-side: 55px;
-    padding: $padding-top $padding-side 60px;
 
-    grid-template-areas: "contacts schedule about programs" ". text text .";
+    &__container {
+      grid-template-areas: "contacts schedule about programs" ". text text .";
+      padding: $padding-top $padding-side 60px;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
 
     &__link {
       top: $padding-top;

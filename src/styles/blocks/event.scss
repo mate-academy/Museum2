@@ -5,7 +5,7 @@
   color: $c-text;
 
   &__title {
-    margin-bottom: $mb-sixty;
+    margin-bottom: 60px;
 
     font-family: $Playfair;
     font-size: $fs-medium;
@@ -18,7 +18,7 @@
   }
 
   &__type {
-    margin-bottom: $mb-twenty;
+    margin-bottom: 20px;
 
     font-weight: $fw-light;
     font-size: $fs-smallest;
@@ -45,7 +45,7 @@
   }
 
   &__subtitle {
-    margin-bottom: $mb-twenty;
+    margin-bottom: 20px;
 
     font-family: $Playfair;
     font-weight: $fw-bold;
@@ -54,7 +54,7 @@
   }
 
   &__text {
-    margin-bottom: $mb-forty;
+    margin-bottom: 40px;
 
     line-height: 1.5rem;
 
@@ -67,7 +67,7 @@
     width: 280px;
 
     outline: none;
-    transition: background-color $d-half, box-shadow $d-half;
+    transition: background-color $duration-half, box-shadow $duration-half;
 
     &:hover {
       box-shadow: $bs-hover;
@@ -143,7 +143,7 @@
     }
 
     &__text {
-      margin-bottom: $mb-thirty;
+      margin-bottom: 30px;
     }
 
     &__button {
@@ -156,6 +156,11 @@
   .event {
     $padding-bottom: 184px;
     padding: 0 55px $padding-bottom;
+    max-width: 1920px;
+
+    &__main {
+      margin: 0 auto;
+    }
 
     &__title {
       width: max-content;

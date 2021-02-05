@@ -11,7 +11,7 @@
   }
 
   &__title {
-    margin-bottom: $mb-forty;
+    margin-bottom: 40px;
 
     font-family: $Playfair;
     font-weight: $fw-bold;
@@ -20,7 +20,7 @@
   }
 
   &__text {
-    margin-bottom: $mb-sixty;
+    margin-bottom: 60px;
     line-height: 1.5rem;
   }
 
@@ -29,7 +29,7 @@
     height: 21px;
     fill: $c-white;
 
-    transition: fill $d-half;
+    transition: fill $duration-half;
   }
 
   &__button {
@@ -42,7 +42,7 @@
     outline: none;
 
     cursor: pointer;
-    transition: border-color $d-half;
+    transition: border-color $duration-half;
 
     &:hover,
     &:focus {
@@ -73,7 +73,7 @@
   &__input {
     width: 228px;
 
-    transition: border-color $d-half;
+    transition: border-color $duration-half;
 
     &:hover,
     &:focus {
@@ -103,13 +103,13 @@
     }
 
     &__title {
-      margin-bottom: $mb-thirty;
+      margin-bottom: 30px;
       font-size: $fs-big;
       line-height: 3.6rem;
     }
 
     &__text {
-      margin-bottom: $mb-eighty;
+      margin-bottom: 80px;
     }
 
     &__input {
@@ -123,9 +123,14 @@
     display: flex;
     align-items: flex-end;
     padding: 160px 55px;
+    max-width: 1920px;
+
+    &__main {
+      margin: 0 auto;
+    }
 
     &__title {
-      margin-bottom: $mb-forty;
+      margin-bottom: 40px;
     }
 
     &__text {

@@ -31,7 +31,6 @@
   &__date {
     margin-bottom: 10px;
 
-    font-size: $fs-smaller;
     line-height: 1.5rem;
 
     color: $c-secondary;
@@ -42,17 +41,17 @@
       font-family: $Playfair;
       font-weight: $fw-bold;
       font-size: $fs-small;
-      line-height: $lh-thirty;
+      line-height: 1.88rem;
     }
   }
 
   &__subtitle {
-    margin-bottom: $mb-thirty;
+    margin-bottom: 30px;
 
     font-family: $Playfair;
     font-size: $fs-small;
     font-weight: $fw-bold;
-    line-height: $lh-thirty;
+    line-height: 1.88rem;
 
     color: $c-text;
   }
@@ -62,8 +61,7 @@
   }
 
   &__description {
-    margin-bottom: $mb-seventy;
-    margin-top: $mb-thirty;
+    margin: 30px 0 70px;
     width: 130px;
     height: 120px;
 
@@ -79,7 +77,9 @@
     &--left {
       margin-left: 150px;
     }
+  }
 
+  &__mode {
     &--tablet {
       display: none;
     }
@@ -154,12 +154,12 @@
         margin: 0 0 20px -100px;
 
         font-size: $fs-big;
-        line-height: 58px;
+        line-height: 3.62rem;
       }
     }
 
     &__subtitle {
-      margin-bottom: $mb-twenty;
+      margin-bottom: 20px;
       width: 370px;
     }
 
@@ -177,7 +177,8 @@
       -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       text-overflow: ellipsis;
-
+    }
+    &__mode {
       &--mobile {
         display: none;
       }
@@ -227,6 +228,12 @@
     $padding-side: 255px;
     $padding-bottom: 260px;
     padding: 160px $padding-side 260px;
+
+    max-width: 1920px;
+
+    &__main {
+      margin: 0 auto;
+    }
 
     &__title {
       margin: 0 0 100px 100px;
@@ -298,7 +305,7 @@
       margin-left: 0;
       margin-bottom: 226px;
       outline: none;
-      transition: background-color $d-half, box-shadow $d-half;
+      transition: background-color $duration-half, box-shadow $duration-half;
 
       &:hover {
         box-shadow: $bs-hover;

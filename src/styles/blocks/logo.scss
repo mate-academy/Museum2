@@ -8,7 +8,7 @@
 
   outline: none;
 
-  transition: color $d-half, transform $d-half;
+  transition: color $duration-half, transform $duration-half;
 
   &:hover {
     color: $c-secondary;

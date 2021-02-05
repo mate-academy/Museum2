@@ -15,7 +15,7 @@
 
   cursor: pointer;
 
-  transition: color $d-half;
+  transition: color $duration-half;
 
   &::after {
     position: absolute;
@@ -27,7 +27,7 @@
     display: block;
     height: 1px;
     background-color: currentColor;
-    transition: transform $d-half, color $d-half;
+    transition: transform $duration-half, color $duration-half;
   }
 
   &:hover {

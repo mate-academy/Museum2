@@ -1,16 +1,25 @@
 .content {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
   color: $c-white;
   padding: 80px 20px 100px;
 
+  &__surface {
+    margin: 0 auto;
+  }
+
   &__date {
-    margin-bottom: $mb-twenty;
+    margin-bottom: 20px;
 
     font-size: 1rem;
     line-height: 1.25rem;
   }
 
   &__title {
-    margin-bottom: $mb-thirty;
+    margin-bottom: 30px;
     width: 279px;
 
     font-family: $Playfair;
@@ -23,7 +32,7 @@
   }
 
   &__description {
-    margin-bottom: $mb-fifty;
+    margin-bottom: 50px;
 
     width: 267px;
 
@@ -34,7 +43,7 @@
     width: 280px;
     outline: none;
 
-    transition: background-color $d-half, box-shadow $d-half;
+    transition: background-color $duration-half, box-shadow $duration-half;
 
     &:hover {
       box-shadow: $bs-hover;
@@ -71,12 +80,12 @@
     padding: 100px 100px 180px;
 
     &__date {
-      margin-bottom: $mb-tenth;
+      margin-bottom: 10px;
     }
 
     &__title {
       width: 569px;
-      margin-bottom: $mb-forty;
+      margin-bottom: 40px;
       font-size: $fs-bigger;
     }
 
@@ -85,13 +94,15 @@
     }
 
     &__description {
-      margin-bottom: $mb-eighty;
+      margin-bottom: 80px;
     }
   }
 }
 
 @include desktop {
   .content {
+    display: block;
+    max-width: 1920px;
     padding: 100px 55px 52px;
 
     &__title {
@@ -104,7 +115,7 @@
     }
 
     &__description {
-      margin: 0 0 $mb-sixty 100px;
+      margin: 0 0 60px 100px;
       width: 370px;
     }
 

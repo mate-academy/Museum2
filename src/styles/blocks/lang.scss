@@ -17,7 +17,7 @@
     cursor: pointer;
     outline: none;
 
-    transition: color $d-half linear;
+    transition: color $duration-half linear;
   }
 
   &:hover > &__text,

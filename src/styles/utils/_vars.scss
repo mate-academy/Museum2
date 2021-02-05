@@ -23,12 +23,6 @@ $fw-medium: 500;
 $fw-bold: 700;
 $fw-extra-bold: 900;
 
-// Line heights;
-$lh-100: 100%;
-$lh-125: 125%;
-$lh-150: 150%;
-$lh-thirty: 30px;
-
 // Heights;
 $h-header: 80px;
 
@@ -41,21 +35,10 @@ $c-line: #c4c4c4;
 $c-text: #1c1b29;
 $c-text-secondary: #504f5e;
 
-// Margins bottom;
-$mb-tenth: 10px;
-$mb-twenty: 20px;
-$mb-thirty: 30px;
-$mb-forty: 40px;
-$mb-fifty: 50px;
-$mb-sixty: 60px;
-$mb-seventy: 70px;
-$mb-eighty: 80px;
-$mb-ninety: 90px;
-
 //durations;
-$d-second: 1s;
-$d-half: 500ms;
-$d-quarter: 250ms;
+$duration-one: 1s;
+$duration-half: 500ms;
+$duration-quarter: 250ms;
 
 $bs-hover: rgba(50, 50, 93, 0.25) 0 50px 100px -20px,
   rgba(0, 0, 0, 0.3) 0 30px 60px -30px,
