@@ -9,7 +9,8 @@
   width: 100%;
   background-color: #3f5252;
   z-index: 1;
-
+  opacity: 0;
+  transition: all 1.5s;
   &__open {
     opacity: 1;
     transform: translateX(0%);
