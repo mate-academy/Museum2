@@ -17,16 +17,13 @@
 
   <body>
     <header  class="header" id="header">
-      <div class="header__container container">
+      <div class="header__container">
 
         <a href="#footer" class="logo">NAMU</a>
 
         <button
           type="button"
           class="menu-button"
-          aria-label="menu-button"
-          aria-expanded="false"
-          aria-controls="first-mobile"
           data-menu-button=""
         >
           <svg
@@ -51,7 +48,7 @@
 
         <div
           tabindex="0"
-          class="lang header__lang"
+          class="lang lang__header"
           data-lang=""
         >
           <span
@@ -76,7 +73,7 @@
           </ul>
         </div>
 
-        <nav class="nav" data-menu="">
+        <nav class="nav nav__header" data-menu="">
 
           <div class="addition addition__nav">
             <p class="addition__text">
@@ -132,13 +129,17 @@
     <main class="main">
       <section class="surface surface__main">
         <section class="content content__surface">
-          <p class="content__date">10 серпня - 10 листопада</p>
+          <p class="content__date">
+            10 серпня - 10 листопада
+          </p>
           <h1 class="content__title">Мистецтво
             <span class="content__line">
               ХІХ - ХХ ст.
             </span>
           </h1>
-          <p class="content__description">Внесок українських митців у світову культуру 19-20 ст.</p>
+          <p class="content__description">
+            Внесок українських митців у світову культуру 19-20 ст.
+          </p>
           <button class="button content__button">Купити квиток</button>
           <p class="content__duration">10.08 - 10.10</p>
           <picture>
@@ -151,7 +152,9 @@
               class="content__img"
             >
           </picture>
-          <p class="content__person">Дівчина з Поділля В. Тропінін</p>
+          <p class="content__person">
+            Дівчина з Поділля В. Тропінін
+          </p>
         </section>
       </section>
 
@@ -162,7 +165,9 @@
 
         <ul class="art__item">
           <li class="art__list art__list--odd">
-            <p class="art__date art__date--active">11.07 - 22.09</p>
+            <p class="art__date art__date--active">
+              11.07 - 22.09
+            </p>
             <h3 class="art__subtitle">
               Кураторська
               <span class="art__transition">
@@ -180,7 +185,7 @@
                 <source media="(min-width: 1280px)" srcset="./images/angel-desktop.png">
                 <img
                   src="./images/angel.png"
-                  alt="angel-art"
+                  alt="angel art"
                   class="art__img"
                 >
               </picture>
@@ -188,7 +193,9 @@
             <button class="button art__button">Купити квиток</button>
           </li>
           <li class="art__list art__list--even">
-            <p class="art__date">Діє постійно</p>
+            <p class="art__date">
+              Діє постійно
+            </p>
             <h3 class="art__subtitle">
               Мистецтво
               <span class="art__transition">
@@ -216,7 +223,7 @@
                 <source media="(min-width: 1280px)" srcset="./images/couple-desktop.png">
                 <img
                   src="./images/couple-phone.png"
-                  alt="angel-art"
+                  alt="angel art"
                   class="art__img"
                 >
               </picture>
@@ -224,7 +231,9 @@
             <button class="button art__button">Купити квиток</button>
           </li>
           <li class="art__list art__list--odd">
-            <p class="art__date ">Діє постійно</p>
+            <p class="art__date ">
+              Діє постійно
+            </p>
             <h3 class="art__subtitle">
               Стародавнє мистецтво
             </h3>
@@ -239,7 +248,7 @@
                 <source media="(min-width: 1280px)" srcset="./images/cossack-desktop.png">
                 <img
                   src="./images/cossack-phone.png"
-                  alt="angel-art"
+                  alt="angel art"
                   class="art__img"
                 >
               </picture>
@@ -283,9 +292,9 @@
                 присутності – розгортатиметься...
               </p>
               <button
-              class="button event__button"
+                class="button event__button"
               >
-              Зареєструватися
+                Зареєструватися
               </button>
             </div>
             <img
@@ -320,7 +329,7 @@
                 подорожі - Австралія.
               </p>
               <button
-              class="button event__button"
+                class="button event__button"
               >
                 Зареєструватися
               </button>
@@ -437,6 +446,7 @@
 
         <form
           action="#"
+          method="POST"
           name="follow"
           class="follow__form"
         >
@@ -472,9 +482,7 @@
           class="footer__link"
         >
           <svg class="footer__icon">
-            <use
-              href="./images/sprite.svg#icon-arrow"
-            >
+            <use href="./images/sprite.svg#icon-arrow">
           </use>
           </svg>
         </a>
@@ -514,8 +522,8 @@
           <ul class="contacts__item">
             <li class="contacts__list">
               <a
-              href="#"
-              class="contacts__link"
+                href="#"
+                class="contacts__link"
               >
                 <svg
                   class="contacts__icon"
@@ -527,8 +535,8 @@
             </li>
             <li class="contacts__list">
               <a
-              href="#"
-              class="contacts__link"
+                href="#"
+                class="contacts__link"
               >
                 <svg
                   class="contacts__icon"
@@ -540,8 +548,8 @@
             </li>
             <li class="contacts__list">
               <a
-              href="#"
-              class="contacts__link"
+                href="#"
+                class="contacts__link"
               >
                 <svg
                   class="contacts__icon"
@@ -553,8 +561,8 @@
             </li>
             <li class="contacts__list">
               <a
-              href="#"
-              class="contacts__link"
+                href="#"
+                class="contacts__link"
               >
                 <svg
                   class="contacts__icon"

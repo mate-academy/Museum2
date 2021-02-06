@@ -5,7 +5,10 @@
 @include tablet {
   .addition {
     display: block;
-    margin-bottom: 55px;
+
+    &__nav {
+      margin-bottom: 55px;
+    }
 
     &__text {
       font-size: $fs-smallest;
@@ -25,7 +28,9 @@
 
 @include desktop {
   .addition {
-    margin-bottom: 80px;
+    &__nav {
+      margin-bottom: 80px;
+    }
 
     &__text {
       display: inline-block;

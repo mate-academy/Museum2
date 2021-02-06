@@ -9,24 +9,28 @@
   &__icon {
     fill: $c-white;
     transition: transform $duration-one, fill $duration-half;
+    outline: none;
 
     &:hover,
-    &:focus,
     &:active {
-      transform: scale(1.2);
+      transform: scale(1.05);
       fill: $c-secondary;
-      outline: none;
+    }
+
+    &:focus {
+      transform: scale(1.2);
     }
   }
 
   &__icon--cross,
-  &.is-open &__icon--menu {
+  &--backdrop &__icon--menu {
     visibility: hidden;
     opacity: 0;
     transition: opacity $duration-one;
+    z-index: 3;
   }
 
-  &.is-open &__icon--cross {
+  &--backdrop &__icon--cross {
     visibility: visible;
     opacity: 1;
   }

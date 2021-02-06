@@ -1,12 +1,14 @@
 .lang {
-  position: absolute;
+  &__header {
+    position: absolute;
 
-  visibility: hidden;
+    visibility: hidden;
 
-  top: 30px;
-  right: 72px;
-  z-index: 2;
-  outline: none;
+    top: 30px;
+    right: 72px;
+    z-index: 2;
+    outline: none;
+  }
 
   &__text {
     font-size: $fs-smaller;
@@ -31,21 +33,25 @@
     fill: currentColor;
   }
 
-  &.is-open {
+  &--visible {
     visibility: visible;
   }
 }
 
 @include tablet {
   .lang {
-    visibility: visible;
-    top: 28px;
-    right: 60px;
+    &__header {
+      visibility: visible;
+      top: 28px;
+      right: 60px;
+    }
   }
 }
 
 @include desktop {
   .lang {
-    right: 72px;
+    &__header {
+      right: 72px;
+    }
   }
 }
