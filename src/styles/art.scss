@@ -83,7 +83,7 @@
   }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: $bp-large-navart) {
   .art {
     &__container {
       padding: 130px 9vw 190px;
@@ -118,7 +118,7 @@
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: $bp-midle-art) {
   .art {
     &__container {
       padding: 130px 9vw 100px;
@@ -135,7 +135,7 @@
   }
 }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: $bp-litle-art) {
   .art {
     &__container {
       padding: 130px 20px 100px;

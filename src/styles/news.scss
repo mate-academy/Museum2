@@ -52,7 +52,7 @@
     font-size: 16px;
     line-height: 150%;
 
-    color: #504f5e;
+    color: $bc-gray;
     opacity: 0.7;
   }
 
@@ -73,7 +73,7 @@
     font-size: 16px;
     line-height: 1rem;
 
-    color: #1c1b29;
+    color: $bc-black;
     background-color: transparent;
 
     padding-right: 80px;
@@ -95,7 +95,7 @@
   }
 }
 
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: $bp-large-navart) {
   .news {
     &__wrap {
       grid-template-columns: repeat(2 ,1fr);
@@ -125,7 +125,7 @@
   }
 }
 
-@media screen and (max-width: 785px) {
+@media screen and (max-width: $bp-midium-news) {
   .news {
     &__container {
       padding: 0 20px;

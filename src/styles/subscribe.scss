@@ -1,5 +1,5 @@
 .subscribe {
-  background-color: #cd4d31;
+  background-color: $bc-red;
 
   &__wrap {
     padding: 160px 40px;
@@ -62,7 +62,7 @@
   }
 }
 
-@media screen and (max-width:950px) {
+@media screen and (max-width: $bp-large-event) {
   .subscribe {
     &__content {
       flex-direction: column;
@@ -74,11 +74,12 @@
 
     &__email {
       padding-top: 100px;
+      width: 90vw;
     }
   }
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: $bp-large-small) {
   .subscribe {
     &__title {
       font-size: 36px;

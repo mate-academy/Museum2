@@ -72,7 +72,7 @@
     font-size: 16px;
     line-height: 150%;
 
-    color: #504f5e;
+    color: $bc-gray;
 
     padding-bottom: 50px;
   }
@@ -158,7 +158,7 @@
   &__link {
     display: flex;
     justify-content: flex-end;
-    color: #1c1b29;
+    color: $bc-black;
     text-decoration: none;
     padding-right: 100px;
     &::after {
@@ -168,13 +168,22 @@
       left: 20px;
       width: 50px;
       height: 1px;
-      background-color: #1c1b29;
+      background-color: $bc-black;
     }
   }
 }
 
-@media screen and (max-width:1120px) {
+@media screen and (max-width:$bp-large-navart) {
   .exhibition {
+    &__img--cobzar {
+      width: 375px;
+    }
+
+    &__img--angel {
+      top: 150px;
+      width: 375px;
+    }
+
     &__img--people {
       width: 375px;
     }
@@ -185,20 +194,7 @@
   }
 }
 
-@media screen and (max-width:1120px) {
-  .exhibition {
-    &__img--cobzar {
-      width: 375px;
-    }
-
-    &__img--angel {
-      top: 150px;
-      width: 375px;
-    }
-  }
-}
-
-@media screen and (max-width:815px) {
+@media screen and (max-width: $bp-midium-exhibition) {
   .exhibition {
     &__img--cobzar {
       left: -50px;
@@ -217,12 +213,12 @@
     &__link--text {
       padding-top: 50px;
       width: 116px;
-      border-bottom: 1px solid #1c1b29;
+      border-bottom: 1px solid $bc-black;
     }
   }
 }
 
-@media screen and (max-width:730px) {
+@media screen and (max-width: $bp-midle-art) {
   .exhibition {
 
     &__content {
@@ -313,7 +309,7 @@
   }
 }
 
-@media screen and (max-width:395px) {
+@media screen and (max-width: $bp-small-exhibition) {
   .exhibition {
     &__content--text {
       max-width: 200px;

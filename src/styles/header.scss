@@ -46,7 +46,7 @@
     width: 50px;
     top: 30px;
     right: 15px;
-    color: #3f5252;
+    color: $bc-main;
     visibility: hidden;
   }
 
@@ -62,12 +62,12 @@
     transition: color 1s;
 
     &:hover {
-      color: #cd4d31;
+      color: $bc-red;
     }
   }
 }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: $bp-litle-art) {
   .header {
     padding: 20px;
 
