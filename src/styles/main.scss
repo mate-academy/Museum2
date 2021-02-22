@@ -1,7 +1,21 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  margin: 0;
   background: $c-gray;
+  font-family: Playfair Display, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.block {
+  margin: 0 auto;
+  max-width: 1280px;
 }
