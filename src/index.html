@@ -7,7 +7,71 @@
     <link rel="stylesheet" href="./styles/main.scss">
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo">
+          <img src="../src/images/header-logo.svg" alt="logo-namu">
+        </a>
+        <div class="header__panel wrapper">
+          <input
+            type="checkbox"
+            id="checkbox"
+            class="wrapper__checkbox"
+          >
+          <label for="checkbox" class="wrapper__button">
+            <span class="wrapper__button-line"></span>
+            <span class="wrapper__button-line"></span>
+            <span class="wrapper__button-line"></span>
+          </label>
+          <div class="wrapper__menu ">
+            <a href="#" class="wrapper__menu-link">Спланувати візит</a>
+            <a href="#" class="wrapper__menu-link">Виставка та події</a>
+            <a href="#" class="wrapper__menu-link">Колекція</a>
+          </div>
+        </div>
+        <div class="header__lang option">
+          <div class="option__lang">
+            UA
+          </div>
+          <img
+            class="option__icon"
+            src="../src/images/header-lang-icon.svg"
+            alt="lang-icon"
+          >
+          <ul class="option__lang-list">
+            <li class="option__lang-item option--ua">
+              UA
+            </li>
+            <li class="option__lang-item option--en">
+              EN
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="info">
+        <div class="container">
+          <div class="info__container">
+            <div class="info__text-1">
+              <span>10 серпня - 10 листопада</span>
+              <h1 class="info__heading">Мистецтво</h1>
+              <div class="info__text-2">
+                <h2 class="info__heading">ХІХ - ХХ ст.</h2>
+                <span class="info__text-3">Внесок українських митців у світову культуру 19-20ст</span>
+                <button class="button">
+                  Купити квиток
+                </button>
+              </div>
+              <div class="info__text-4">
+                <span>10.08 - 10.10</span>
+                <div class="info__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

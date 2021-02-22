@@ -1,0 +1,23 @@
+.option {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  width: 50px;
+  background-color: $colorGray;
+  cursor: pointer;
+  z-index: 1;
+
+  &__lang {
+    margin-right: 5px;
+  }
+
+  &__lang-list {
+    position: absolute;
+    width: 50px;
+    top: 34px;
+    color: $colorGray;
+    visibility: hidden;
+    z-index: -1;
+  }
+}

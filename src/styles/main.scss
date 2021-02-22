@@ -1,7 +1,15 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "reset";
+@import "header";
+@import "header-menu";
+@import "option";
+@import "info";
+@import "button";
 
-body {
-  background: $c-gray;
+.container {
+  margin: 0 auto;
+  max-width: 1260px;
+  width: 100%;
 }

@@ -1,0 +1,69 @@
+.wrapper {
+  width: 100%;
+  background-size: cover;
+}
+
+.wrapper__checkbox {
+  display: none;
+}
+
+.wrapper__menu {
+  position: fixed;
+  top: 60px;
+  right: -100%;
+  width: 100%;
+  height: 740px;
+  background: $colorGray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 320px 40px;
+  transition: right 0.4s;
+}
+
+.wrapper__menu-link {
+  font-size: 48px;
+  line-height: 1.2;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-bottom: 30px;
+  padding: 5px 10px;
+  transition: all 2s linear;
+  &:hover {
+    padding-right: 20px;
+  }
+}
+
+.wrapper__checkbox:checked ~ .wrapper__menu {
+  right: 0;
+  z-index: 2;
+}
+
+.wrapper__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  right: 400px;
+  cursor: pointer;
+  color: $colorLightWhite;
+  z-index: 3;
+}
+
+.wrapper__button-line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  background: $colorLightWhite;
+  margin: 2px 0;
+  position: relative;
+  transition: all 1s linear 0.2s;
+  color: $colorLightWhite;
+}
