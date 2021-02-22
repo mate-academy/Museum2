@@ -5,47 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="header__container container">
+      <div class="header__container container wrapper">
         <a href="#" class="header__logo">
           <img src="../src/images/header-logo.svg" alt="logo-namu">
         </a>
-        <div class="header__panel wrapper">
-          <input
-            type="checkbox"
-            id="checkbox"
-            class="wrapper__checkbox"
-          >
-          <label for="checkbox" class="wrapper__button">
-            <span class="wrapper__button-line"></span>
-            <span class="wrapper__button-line"></span>
-            <span class="wrapper__button-line"></span>
-          </label>
-          <div class="wrapper__menu ">
-            <a href="#" class="wrapper__menu-link">Спланувати візит</a>
-            <a href="#" class="wrapper__menu-link">Виставка та події</a>
-            <a href="#" class="wrapper__menu-link">Колекція</a>
+        <div class="">
+          <div class="header__panel">
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="wrapper__checkbox"
+            >
+            <label for="checkbox" class="wrapper__button">
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+              <span class="wrapper__button-line"></span>
+            </label>
+            <div class="wrapper__menu ">
+              <a href="#" class="wrapper__menu-link">Спланувати візит</a>
+              <a href="#" class="wrapper__menu-link">Виставка та події</a>
+              <a href="#" class="wrapper__menu-link">Колекція</a>
+            </div>
           </div>
-        </div>
-        <div class="header__lang option">
-          <div class="option__lang">
-            UA
-          </div>
-          <img
-            class="option__icon"
-            src="../src/images/header-lang-icon.svg"
-            alt="lang-icon"
-          >
-          <ul class="option__lang-list">
-            <li class="option__lang-item option--ua">
+          <div class="header__lang option">
+            <div class="option__lang">
               UA
-            </li>
-            <li class="option__lang-item option--en">
-              EN
-            </li>
-          </ul>
+            </div>
+            <img
+              class="option__icon"
+              src="../src/images/header-lang-icon.svg"
+              alt="lang-icon"
+            >
+            <ul class="option__lang-list">
+              <li class="option__lang-item option--ua">
+                UA
+              </li>
+              <li class="option__lang-item option--en">
+                EN
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -59,13 +65,132 @@
               <div class="info__text-2">
                 <h2 class="info__heading">ХІХ - ХХ ст.</h2>
                 <span class="info__text-3">Внесок українських митців у світову культуру 19-20ст</span>
-                <button class="button">
+                <button class="button ">
                   Купити квиток
                 </button>
               </div>
               <div class="info__text-4">
                 <span>10.08 - 10.10</span>
                 <div class="info__line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="exhibitions">
+        <div class="container">
+          <div class="exhibitions__container">
+            <h3 class="exhibitions__heading">Актуальні виставки</h3>
+            <div class="exhibitions__block block-1">
+              <div class="exhibitions__background">
+                <img
+                  class="exhibitions__photo-1"
+                  src="../src/images/angels.svg"
+                  alt="photo-ancient-art"
+                >
+              </div>
+              <div class="exhibitions__date">
+                <div class="exhibitions__time">11.07 - 22.09</div>
+                <div class="exhibitions__info">
+                  <p class="exhibitions__name">Кураторська виставка “Ангели”</p>
+                  <p class="exhibitions__text">Виставковий проект «Ангели» – знакова подія для української культури і водночас наймасштабніший...</p>
+                  <button class="button exhibitions__button">
+                    Купити квиток
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="exhibitions__block block-2">
+              <div class="exhibitions__date">Діє постійно
+                <div class="exhibitions__info">
+                  <p class="exhibitions__name">Мистецтво ХХ ст. — XXI ст.</p>
+                  <p class="exhibitions__text">Знакові роботи Алли Горської, Миколи Самокиша, Федора Кричевського та інших митців.</p>
+                  <button class="button exhibitions__button">
+                    Купити квиток
+                  </button>
+                </div>
+              </div>
+              <div class="exhibitions__background">Мисте цтво ХХ ст. - ХХі ст.
+                <img
+                  class="exhibitions__photo-2"
+                  src="../src/images/art-20-21-c.svg"
+                  alt="art-20-21-c"
+                >
+              </div>
+            </div>
+            <div class="exhibitions__block block-3">
+              <div class="exhibitions__background">Старо давнє мисте цтво
+                <img
+                  class="exhibitions__photo-3"
+                  src="../src/images/ancient-art.svg"
+                  alt="photo-ancient-art"
+                >
+              </div>
+              <div class="exhibitions__date">Діє постійно
+                <div class="exhibitions__info">
+                  <p class="exhibitions__name">Стародавнє мистецтво</p>
+                  <p class="exhibitions__text">Визначні приклади стародавнього українського іконопису та живопису</p>
+                  <button class="button exhibitions__button">
+                    Купити квиток
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="events">
+        <div class="container">
+          <div class="events__container">
+            <h3 class="events__heading">Найближчі події</h3>
+            <div class="events__box">
+              <div class="events__date">
+                <p>14.08</p>
+                <p>13:00</p>
+              </div>
+              <div class="events__info">
+                <p>Екскурсія</p>
+                <p>Кураторські екскурсії від Павла Гудімова</p>
+                <p>Таємниці підготовки, історії експонатів, магія дійства до і в момент вашої присутності – розгортатиметься...</p>
+                <button class="button">
+                 Зареєструватися
+                </button>
+              </div>
+              <div class="events__photo">
+                <img src="../src/images/man.jpg" alt="phoro-men">
+              </div>
+            </div>
+            <div class="events__box">
+              <div class="events__photo">
+                <img src="../src/images/girl.jpg" alt="phoro-woman">
+              </div>
+              <div class="events__date">
+                <p>14.08</p>
+                <p>13:00</p>
+              </div>
+              <div class="events__info">
+                <p>Екскурсія</p>
+                <p>Кураторські екскурсії від Павла Гудімова</p>
+                <p>Таємниці підготовки, історії експонатів, магія дійства до і в момент вашої присутності – розгортатиметься...</p>
+                <button class="button">
+                 Зареєструватися
+                </button>
+              </div>
+            </div>
+            <div class="events__calendar">Календар подій</div>
+          </div>
+        </div>
+      </section>
+      <section class="visit">
+        <div class="container">
+          <div class="visit__container">
+            <div class="visit__text">
+              <h4 class="visit__heading">Сплануйте візит до музею</h4>
+              <div>
+                <p class="visit__info">Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не завадило вам насолоджуватись мистецтвом</p>
+                <button class="button visit__button">
+                  Почати
+                </button>
               </div>
             </div>
           </div>

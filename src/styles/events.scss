@@ -1,0 +1,34 @@
+.events__heading {
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  padding-top: 210px;
+  padding-bottom: 63px;
+}
+
+.events__box {
+  display: flex;
+}
+
+.events__date {
+  flex: 8.12%;
+}
+
+.events__info {
+  flex: 51.28%;
+}
+
+.events__photo {
+  width: 40.6%;
+}
+
+.events__calendar {
+  display: flex;
+  justify-content: flex-end;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding-bottom: 184px;
+}

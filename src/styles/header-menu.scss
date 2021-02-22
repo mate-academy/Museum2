@@ -1,6 +1,7 @@
 .wrapper {
-  width: 100%;
+  position: relative;
   background-size: cover;
+  max-width: 1260px;
 }
 
 .wrapper__checkbox {
@@ -18,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 320px 40px;
+  padding: 0 700px 40px;
   transition: right 0.4s;
 }
 
@@ -49,8 +50,8 @@
   width: 50px;
   height: 50px;
   position: absolute;
-  top: 15px;
-  right: 400px;
+  top: -5px;
+  right: 50px;
   cursor: pointer;
   color: $colorLightWhite;
   z-index: 3;
