@@ -1,0 +1,56 @@
+.news__heading {
+  font-family: $fontPlayfair;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  color: $colorDarkViolet;
+}
+
+.news__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  gap: 30px;
+  justify-content: space-around;
+  margin: 75px 85px;
+}
+
+.news__box {
+  cursor: pointer;
+  transition: transform 300ms;
+
+}
+
+.news__box:hover {
+  transform: scale(1.1);
+}
+
+.news__date {
+  font-family: $fontRaleway;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  color: $colorDarkViolet;
+  padding-top: 30px;
+}
+
+.news__title {
+  font-family: $fontPlayfair;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  color: $colorDarkViolet;
+}
+
+.news__text {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: $colorLightViolet;
+}

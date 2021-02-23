@@ -1,7 +1,15 @@
+@import "variables";
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "button";
 @import "header";
+@import "exhibition";
+@import "events";
+@import "planning";
+@import "news";
+@import "subscription";
+@import "footer";
 
 * {
   box-sizing: border-box;
@@ -10,9 +18,13 @@
 body {
   margin: 0;
   background: $c-gray;
-  font-family: Playfair Display, sans-serif;
+  font-family: $fontPlayfair;
   font-style: normal;
   font-weight: normal;
+}
+
+.section {
+  padding-top: 160px;
 }
 
 .block {

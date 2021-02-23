@@ -1,0 +1,62 @@
+.subscription {
+  height: 460px;
+  background-color: $colorLightRed;
+}
+
+.subscription__content {
+  margin: 85px;
+  padding-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscription__title {
+  font-family: $fontPlayfair;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: $colorWhite;
+}
+
+.subscription__text {
+  max-width: 570px;
+  font-family: $fontRaleway;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: $colorWhite;
+}
+
+.subscription__input {
+  display: flex;
+  padding-right: 130px;
+  padding-top: 100px;
+}
+
+.email-input {
+  background-color: $colorLightRed;
+  color: $colorWhite;
+  border: 0;
+  width: 300px;
+  border-bottom: 1px solid $colorWhite;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.input_button {
+  padding-left: 20px;
+}
+
+.email-input::placeholder {
+  font-family: $fontRaleway;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: $colorWhite;
+}
