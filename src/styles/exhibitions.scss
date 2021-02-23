@@ -1,80 +1,83 @@
-.exhibitions__info {
-  padding-left: 20px;
-}
+.exhibitions {
 
-.exhibitions__block {
-  display: flex;
-}
+  &__info {
+    padding-left: 20px;
+  }
 
-.exhibitions__heading {
-  display: flex;
-  justify-content: center;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  padding-top: 160px;
-}
+  &__block {
+    display: flex;
+  }
 
-.exhibitions__date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex: 50%;
-  padding-top: 100px;
-}
+  &__heading {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    padding-top: 157px;
+    padding-right: 134px;
+  }
 
-.exhibitions__time {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  color: $colorOrange;
-}
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 90px;
+  }
 
-.exhibitions__name {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-}
+  &__time {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: $colorOrange;
+  }
 
-.exhibitions__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-}
+  &__name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+  }
 
-.exhibitions__background {
-  position: relative;
-  font-size: 144px;
-  width: 50%;
-  font-family: Playfair Display, serif;
-  text-transform: uppercase;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1;
-  color: $colorLightWhite;
-  text-shadow: 1px 1px 1px $colorGray;
-}
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+  }
 
-.exhibitions__photo-1 {
-  position: absolute;
-  left: 0;
-  top: -230px;
-}
+  &__background {
+    position: relative;
+    font-size: 144px;
+    width: 50%;
+    font-family: Playfair Display, serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    color: $colorLightWhite;
+    text-shadow: 1px 1px 1px $colorGray;
+  }
 
-.exhibitions__photo-2 {
-  position: absolute;
-  left: 45px;
-  bottom: 20px;
-}
+  &__photo-1 {
+    position: absolute;
+    left: 0;
+    top: -200px;
+  }
 
-.exhibitions__photo-3 {
-  position: absolute;
-  right: 40px;
-  top: 30px;
-}
+  &__photo-2 {
+    position: absolute;
+    right: 0;
+    top: 60px;
+  }
 
-.exhibitions__button {
-  margin-top: 50px;
-  margin-bottom: 92px;
+  &__photo-3 {
+    position: absolute;
+    left: 0;
+    top: -10px;
+  }
+
+  &__button {
+    margin-top: 50px;
+    margin-bottom: 92px;
+  }
 }

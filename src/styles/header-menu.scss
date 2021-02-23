@@ -1,70 +1,119 @@
-.wrapper {
-  position: relative;
-  background-size: cover;
-  max-width: 1260px;
-}
+// <header class="header">
+// <div class="container">
+//   <div class="header__container wrapper">
+//     <a href="#" class="header__logo">
+//       <img src="../src/images/header-logo.svg" alt="logo-namu">
+//     </a>
+//     <div class="">
+//       <div class="header__panel">
+//         <input
+//           type="checkbox"
+//           id="checkbox"
+//           class="wrapper__checkbox"
+//         >
+//         <label for="checkbox" class="wrapper__button">
+//           <span class="wrapper__button-line"></span>
+//           <span class="wrapper__button-line"></span>
+//           <span class="wrapper__button-line"></span>
+//         </label>
+//         <div class="wrapper__menu ">
+//           <div class="wrapper__menu-link">
+//             <a href="#" >Спланувати візит</a>
+//           </div>
+//           <div class="wrapper__menu-link">
+//             <a href="#" class="wrapper__menu-link">Виставка та події</a>
+//           </div>
+//           <div class="wrapper__menu-link">
+//             <a href="#" class="wrapper__menu-link">Колекція</a>
+//           </div>
+//         </div>
+//       </div>
+//       <div class="header__lang option">
+//         <div class="option__lang">
+//           UA
+//         </div>
+//         <img
+//           class="option__icon"
+//           src="../src/images/header-lang-icon.svg"
+//           alt="lang-icon"
+//         >
+//         <ul class="option__lang-list">
+//           <li class="option__lang-item option--ua">
+//             UA
+//           </li>
+//           <li class="option__lang-item option--en">
+//             EN
+//           </li>
+//         </ul>
+//       </div>
+//     </div>
+//   </div>
+// </div>
+// </header>
 
-.wrapper__checkbox {
-  display: none;
-}
+// .wrapper {
+//   position: relative;
+//   background-size: cover;
+// }
 
-.wrapper__menu {
-  position: fixed;
-  top: 60px;
-  right: -100%;
-  width: 100%;
-  height: 740px;
-  background: $colorGray;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 700px 40px;
-  transition: right 0.4s;
-}
+// .wrapper__checkbox {
+//   display: none;
+// }
 
-.wrapper__menu-link {
-  font-size: 48px;
-  line-height: 1.2;
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-bottom: 30px;
-  padding: 5px 10px;
-  transition: all 2s linear;
-  &:hover {
-    padding-right: 20px;
-  }
-}
+// .wrapper__menu {
+//   position: absolute;
+//   z-index: -1;
+//   top: 60px;
+//   right: -100%;
+//   width: 100%;
+//   height: 720px;
+//   background-color: $colorGray;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: flex-start;
+//   transition: right 1s ease;
+// }
 
-.wrapper__checkbox:checked ~ .wrapper__menu {
-  right: 0;
-  z-index: 2;
-}
+// .wrapper__menu-link {
+//   font-size: 48px;
+//   line-height: 1.2;
+//   color: $colorLightWhite;
+//   text-decoration: none;
+//   transition: padding-right 0.5s ease;
+//   &:hover {
+//     padding-right: 20px;
+//   }
+// }
 
-.wrapper__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  top: -5px;
-  right: 50px;
-  cursor: pointer;
-  color: $colorLightWhite;
-  z-index: 3;
-}
+// .wrapper__checkbox:checked ~ .wrapper__menu {
+//   right: 0;
+//   z-index: 2;
+// }
 
-.wrapper__button-line {
-  display: block;
-  width: 30px;
-  height: 3px;
-  border-radius: 5px;
-  background: $colorLightWhite;
-  margin: 2px 0;
-  position: relative;
-  transition: all 1s linear 0.2s;
-  color: $colorLightWhite;
-}
+// .wrapper__button {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+//   width: 50px;
+//   height: 50px;
+//   position: absolute;
+//   top: -5px;
+//   right: 50px;
+//   cursor: pointer;
+//   color: $colorLightWhite;
+//   z-index: 3;
+// }
+
+// .wrapper__button-line {
+//   display: block;
+//   width: 30px;
+//   height: 3px;
+//   border-radius: 5px;
+//   background: $colorLightWhite;
+//   margin: 2px 0;
+//   position: relative;
+//   transition: all 1s linear 0.2s;
+//   color: $colorLightWhite;
+// }

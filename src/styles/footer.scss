@@ -1,0 +1,10 @@
+.footer {
+  height: 548px;
+  background-color: $colorGray;
+  color: $colorLightWhite;
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+}

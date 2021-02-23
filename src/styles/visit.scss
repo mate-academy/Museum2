@@ -1,40 +1,44 @@
 .visit {
-  background-color: $colorGray;
-  color: $colorLightWhite;
-}
-
-.visit__container {
   height: 800px;
   background-image: url(../images/vizit-girl.svg);
   background-repeat: no-repeat;
   background-position: left;
-  position: relative;
-}
+  background-color: $colorGray;
+  color: $colorLightWhite;
 
-.visit__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  text-align: flex-end;
-}
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: flex-end;
+  }
 
-.visit__heading {
-  width: 700px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 96px;
-  padding-top: 190px;
-  padding-bottom: 60px;
-}
+  &__heading {
+    line-height: 100%;
+    width: 700px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 96px;
+    padding-top: 190px;
+    padding-bottom: 60px;
+    margin-right: 20px;
+  }
 
-.visit__info {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  width: 470px;
-}
+  &__body {
+    margin-top: 6px;
+    margin-right: 155px;
+    line-height: 150%;
+  }
 
-.visit__button {
-  margin-top: 60px;
+  &__info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    width: 470px;
+  }
+
+  &__button {
+    margin-top: 60px;
+  }
 }

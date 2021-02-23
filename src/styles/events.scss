@@ -1,34 +1,80 @@
-.events__heading {
-  display: flex;
-  justify-content: center;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  padding-top: 210px;
-  padding-bottom: 63px;
-}
+.events {
+  padding-top: 260px;
 
-.events__box {
-  display: flex;
-}
+  &__heading {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 63px;
+  }
 
-.events__date {
-  flex: 8.12%;
-}
+  &__excursions {
+    display: flex;
+    padding-top: 77px;
+  }
 
-.events__info {
-  flex: 51.28%;
-}
+  &__info {
+    max-width: 470px;
+  }
 
-.events__photo {
-  width: 40.6%;
-}
+  &__date--number {
+    width: 200px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 100%;
+    color: $colorLightWhite;
+    text-shadow: 1px 1px 1px $colorOrange;
+  }
 
-.events__calendar {
-  display: flex;
-  justify-content: flex-end;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  padding-bottom: 184px;
+  &__date--time {
+    margin-right: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: right;
+  }
+
+  &__paragraph--info {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__paragraph--name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 125%;
+    padding-bottom: 8px;
+  }
+
+  &__paragraph--text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 60px;
+  }
+
+  &__photo--man {
+    margin-left: 130px;
+  }
+
+  &__photo--woman {
+    margin-right: 30px;
+    margin-bottom: 60px;
+  }
+
+  &__calendar {
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 95px 244px 184px;
+    text-align: right;
+  }
 }
