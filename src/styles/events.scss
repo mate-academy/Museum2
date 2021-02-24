@@ -1,5 +1,5 @@
 .events {
-  padding-top: 260px;
+  padding-top: 190px;
 
   &__heading {
     display: flex;
@@ -7,16 +7,29 @@
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-    padding-bottom: 63px;
+    padding-bottom: 58px;
   }
 
   &__excursions {
     display: flex;
-    padding-top: 77px;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__excursions--two {
+    padding-top: 73px;
+  }
+
+  &__date {
+    padding-top: 86px;
   }
 
   &__info {
-    max-width: 470px;
+    width: 440px;
+    padding-top: 86px;
   }
 
   &__date--number {
@@ -47,25 +60,36 @@
 
   &__paragraph--name {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 125%;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
   }
 
   &__paragraph--text {
     font-weight: normal;
     font-size: 16px;
     line-height: 150%;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
   }
 
   &__photo--man {
-    margin-left: 130px;
+    max-width: 100%;
+    transition: border-radius 1s ease 0s, transform 1s ease 0s;
+    cursor: zoom-in;
+    &:hover {
+      transform: scale(1.5);
+      border-radius: 55px;
+    }
   }
 
   &__photo--woman {
-    margin-right: 30px;
-    margin-bottom: 60px;
+    max-width: 100%;
+    transition: border-radius 1s ease 0s, transform 1s ease 0s;
+    cursor: zoom-in;
+    &:hover {
+      transform: scale(1.3);
+      border-radius: 55px;
+    }
   }
 
   &__calendar {
@@ -74,7 +98,18 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    padding: 95px 244px 184px;
+    padding: 0 144px 175px;
     text-align: right;
+  }
+}
+
+@media (max-width: 1240px) {
+  .events {
+    &__photo--man {
+      display: none;
+    }
+    &__photo--woman {
+      display: none;
+    }
   }
 }

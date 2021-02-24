@@ -1,11 +1,15 @@
 .exhibitions {
 
-  &__info {
-    padding-left: 20px;
-  }
-
   &__block {
     display: flex;
+  }
+
+  &__block--2 {
+    justify-content: flex-end;
+  }
+
+  &__background--hidden {
+    visibility: hidden;
   }
 
   &__heading {
@@ -15,15 +19,21 @@
     font-weight: bold;
     font-size: 48px;
     padding-top: 157px;
-    padding-right: 134px;
+    padding-right: 74px;
   }
 
   &__date {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 90px;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
   }
 
   &__time {
@@ -37,47 +47,91 @@
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
+    padding-top: 30px;
+    max-width: 468px;
   }
 
   &__text {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
+    padding-bottom: 25px;
+    max-width: 370px;
   }
 
   &__background {
+    max-width: 100%;
     position: relative;
-    font-size: 144px;
-    width: 50%;
-    font-family: Playfair Display, serif;
-    text-transform: uppercase;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 1;
-    color: $colorLightWhite;
-    text-shadow: 1px 1px 1px $colorGray;
   }
 
   &__photo-1 {
     position: absolute;
     left: 0;
-    top: -200px;
+    top: -175px;
+    transition: transform 0.4s linear 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.4);
+    }
   }
 
   &__photo-2 {
     position: absolute;
     right: 0;
-    top: 60px;
+    top: 35px;
+    transition: transform 0.4s linear 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.4);
+    }
   }
 
   &__photo-3 {
     position: absolute;
-    left: 0;
+    left: 40px;
     top: -10px;
+    transition: transform 0.4s linear 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.6);
+    }
   }
 
   &__button {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 92px;
+  }
+
+  &__archive {
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 0 210px 35px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 1240px) {
+  .exhibitions {
+    &__photo-1 {
+      width: 253px;
+      height: 366px;
+      top: 0;
+    }
+    &__photo-2 {
+      width: 324px;
+      height: 371px;
+      top: 0;
+    }
+    &__photo-3 {
+      width: 400px;
+      height: 355px;
+      left: 15px;
+    }
   }
 }

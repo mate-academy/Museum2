@@ -1,16 +1,32 @@
 .info {
   background-color: $colorGray;
   color: $colorLightWhite;
-  height: 740px;
-  background-image: url(../images/Girl_from_Podolye.svg);
-  background-repeat: no-repeat;
-  background-position: right;
+  height: 720px;
   position: relative;
 
+  &__photo {
+    position: absolute;
+    right: 0;
+    top: -34px;
+    max-width: 100%;
+  }
+
+  &__photo--about {
+    position: absolute;
+    right: 0;
+    top: 400px;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
   &__date {
+    position: relative;
     display: flex;
     flex-direction: column;
-    padding-top: 120px;
+    padding-top: 100px;
   }
 
   &__text-2 {
@@ -31,12 +47,34 @@
   }
 
   &__line {
-    border: 1px solid;
+    border: 0.5px solid;
     height: 1px;
     width: 492px;
   }
 
   &__heading {
     font-size: 96px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .info {
+    height: 682px;
+    &__photo {
+      width: 445px;
+      top: 184px;
+    }
+    &__photo--about {
+      display: none;
+    }
+    &__heading {
+      font-size: 72px;
+    }
+    &__date {
+      padding-top: 0;
+    }
+    &__line {
+      width: 292px;
+    }
   }
 }

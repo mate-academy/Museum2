@@ -2,6 +2,7 @@
 @import "fonts";
 @import "typography";
 @import "reset";
+@import "style";
 @import "header";
 @import "header-menu";
 @import "option";
@@ -13,19 +14,3 @@
 @import "news";
 @import "subscribe";
 @import "footer";
-
-.container-background {
-  margin: 0 auto;
-  max-width: 1280px;
-  width: calc(100% - 40px);
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1170px;
-  width: calc(100% - 150px);
-}
-
-.section {
-  background-color: $colorGray;
-}
