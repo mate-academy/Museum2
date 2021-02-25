@@ -24,10 +24,24 @@
   }
 
   &__info {
-    width: 570px;
+    max-width: 570px;
   }
 
   &__email {
     padding-right: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .subscribe {
+    &__heading {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 100%;
+    }
+    &__email {
+      display: none;
+    }
   }
 }

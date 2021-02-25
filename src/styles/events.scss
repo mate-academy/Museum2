@@ -33,7 +33,7 @@
   }
 
   &__date--number {
-    width: 200px;
+    max-width: 200px;
     font-style: normal;
     font-weight: bold;
     font-size: 55px;
@@ -110,6 +110,56 @@
     }
     &__photo--woman {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .events {
+    &__excursions {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__heading {
+      padding-bottom: 0;
+    }
+
+    &__date--number {
+      text-align: left;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    &__date--time {
+      text-align: left;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+    &__date {
+      padding-top: 16px;
+    }
+
+    &__info {
+      max-width: 240px;
+      padding-top: 16px;
+    }
+
+    &__paragraph--text {
+      max-width: 280px;
+    }
+
+    &__paragraph--name {
+      max-width: 280px;
+    }
+
+    &__calendar {
+      padding: 20px 0 75px;
+      text-align: center;
     }
   }
 }

@@ -76,5 +76,40 @@
     &__line {
       width: 292px;
     }
+    &__text-2 {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .info {
+    height: 584px;
+    &__photo {
+      max-width: 273px;
+      top: 280px;
+    }
+    &__photo--about {
+      display: none;
+    }
+    &__heading {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 100%;
+    }
+    &__date {
+      padding-top: 100px;
+    }
+    &__line {
+      display: none;
+    }
+    &__text-2 {
+      padding-left: 0;
+      max-width: 280px;
+    }
+    &__text-4 {
+      display: none;
+    }
   }
 }
