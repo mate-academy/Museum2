@@ -1,4 +1,4 @@
-@media (max-width: 1120px) {
+@media (max-width: 1200px) {
   .header__image {
     position: absolute;
     max-width: 399px;
@@ -57,6 +57,10 @@
   .masterclass__image {
     display: none;
   }
+
+  .burger__picture {
+    display: none;
+  }
 }
 
 @media (max-width:1000px) {
@@ -95,6 +99,8 @@
     width: 450px;
     font-size: 100px;
   }
+
+ 
 }
 
 @media (max-width: 825px) {
@@ -164,8 +170,8 @@
   }
 
   .subscription__content {
-    margin: 20px;
-    padding-top: 1px;
+    padding: 20px;
+    padding-top: 100px;
     display: block;
     justify-content: space-between;
     align-items: center;
@@ -257,7 +263,7 @@
   }
 }
 
-@media (max-width: 570px) {
+@media (max-width: 605px) {
 
   .header__title {
     font-family: $fontPlayfair;
@@ -373,13 +379,21 @@
     padding-left: 20px;
   }
 
+  .subscription__content {
+    padding: 20px;
+    padding-top: 20px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   .footer__back {
     height: 1134px;
     background-color: $colorDarkGreen;
   }
 
   .footer__boxes {
-    margin: 0 20px;
+    padding: 0 20px;
     padding-top: 90px;
     display: grid;
     gap: 20px;

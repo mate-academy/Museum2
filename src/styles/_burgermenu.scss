@@ -1,0 +1,135 @@
+.burger__button {
+  display: block;
+  position: relative;
+  padding-right: 40px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.burger__menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 6;
+  left: 0;
+  top: 0;
+  height: 800px;
+  width: 100%;
+  background-color: $colorDarkGreen;
+}
+
+.burger__nav {
+  flex-direction: column;
+
+  &::after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid $colorWhite;
+    width: 570px;
+    opacity: 0.3;
+  }
+}
+
+.burger__item {
+  padding-bottom: 32px;
+  padding-left: 21px;
+  list-style-type: none;
+  font-family: $fontPlayfair;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+}
+
+.burger__link {
+  text-decoration: none;
+  color: $colorWhite;
+}
+
+.button__member {
+  height: 60px;
+  width: 270px;
+  background: $colorDarkGreen;
+  font-family: $fontRaleway;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: $colorWhite;
+  border: 1px solid $colorWhite;
+  padding: 0;
+  cursor: pointer;
+  transition: background-color 500ms;
+
+  &:hover {
+    background-color: $colorDarkRed;
+    border: 0;
+  }
+}
+
+.burger__top {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  padding: 80px 60px;
+}
+
+.burger-border {
+  height: 1px;
+  width: 570px;
+  color: $colorWhite;
+  opacity: 0.3;
+}
+
+.burger__toggler {
+  display: none;
+}
+
+.top-schedule-title {
+  font-family: $fontRaleway;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.top-schedule-time {
+  font-family: $fontRaleway;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.top-address-title {
+  font-family: $fontRaleway;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.top-address-place {
+  font-family: $fontRaleway;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.burger__buttons {
+  padding: 60px;
+}
+
+.burger__picture {
+  position: absolute;
+  right: 0;
+}
+
+.burger__button::before {
+  content: url(/images/menu-on.svg);
+
+}
+
+.burger__toggler:checked ~ .burger__button::before {
+  content: url(/images/menu-off.svg);
+  display: block;
+}
+
+.burger__toggler:checked ~ .burger__menu {
+  display: flex;
+}

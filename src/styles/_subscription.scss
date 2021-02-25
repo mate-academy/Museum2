@@ -7,7 +7,7 @@
   }
 
   &__content {
-    margin: 85px;
+    padding: 85px;
     padding-top: 110px;
     display: flex;
     justify-content: space-between;
@@ -37,6 +37,7 @@
   &__input {
     display: flex;
     padding-top: 100px;
+    width: 300px;
   }
 }
 
@@ -44,7 +45,7 @@
   background-color: $colorLightRed;
   color: $colorWhite;
   border: 0;
-  width: 300px;
+  width: 100%;
   border-bottom: 1px solid $colorWhite;
   padding-left: 10px;
   font-size: 16px;
@@ -53,6 +54,8 @@
 
 .input_button {
   padding-left: 20px;
+  border: none;
+  background: none;
 }
 
 .email-input::placeholder {

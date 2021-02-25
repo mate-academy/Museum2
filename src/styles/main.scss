@@ -11,9 +11,14 @@
 @import "subscription";
 @import "footer";
 @import "mediaquaries";
+@import "burgermenu";
 
 * {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -30,5 +35,5 @@ body {
 
 .block {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1440px;
 }

@@ -22,12 +22,42 @@
 
         <div class="header__items">
 
-          <div class="header__menu">
-            <img
-              src="../src/images/menu.png"
-              class="menu__img"
-              alt="menu-image"
-            >
+          <input
+          type="checkbox"
+          id="burger__toggler"
+          class="burger__toggler"
+        >
+          <label for="burger__toggler" class="burger__button"></label>
+
+          <div class="burger__menu">
+            <div class="burger__top">
+              <div class="top-schedule">
+                <div class="top-schedule-title">Розклад сьогодні</div>
+                <div class="top-schedule-time">12:00 - 19:00</div>
+              </div>
+              <div class="top-address">
+                <div class="top-address-title">Адреса</div>
+                <div class="top-address-place">Київ, вул. М. Грушевського, 6</div>
+              </div>
+            </div>
+            <ul class="burger__nav">
+              <li class="burger__item"><a href="#" class="burger__link">Спланувати візит</a></li>
+              <li class="burger__item"><a href="#" class="burger__link">Виставки та події</a></li>
+              <li class="burger__item"><a href="#" class="burger__link">Колекція</a></li>
+            </ul>
+            <div class="burger__buttons">
+              <button class="button button__buy">Купити квиток</button>
+              <button class="button__member">Стати членом</button>
+            </div>
+
+            <div class="burger__picture">
+              <img
+                class="burger-img"
+                alt="boy-picture"
+                src="../src/images/bur-img.png"
+              >
+            </div>
+
           </div>
 
           <select class="header__language">
@@ -67,7 +97,7 @@
     </header>
 
     <main>
-      <section class="section">
+      <section class="section block">
         <h2 class="heading exhibition__heading">Актуальтні виставки</h2>
         <div class="exhibition__angels">
           <div class="angels__picture">
@@ -136,7 +166,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section block">
         <div class="events">
           <h2 class="heading events__heading">Найближчі події</h2>
           <div class="events__excursion">
@@ -200,31 +230,33 @@
       </section>
 
       <section class="section">
-        <div class="planning">
-          <div class="planning__picture">
-            <img
-              class="planning__picture-img"
-              src="../src/images/plan.png"
-              alt="art"
-            >
-          </div>
-
-          <div class="planning__textblock">
-            <h1 class="planning__title">Сплануйте візит до музею</h1>
-            <div class="planning__description">
-              <p class="planning__text">
-                Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не
-                завадило вам насолоджуватись мистецтвом
-              </p>
-
-              <button class="button planning__button">Почати</button>
+        <div class="planning__back">
+          <div class="planning block">
+            <div class="planning__picture">
+              <img
+                class="planning__picture-img"
+                src="../src/images/plan.png"
+                alt="art"
+              >
             </div>
 
+            <div class="planning__textblock">
+              <h1 class="planning__title">Сплануйте візит до музею</h1>
+              <div class="planning__description">
+                <p class="planning__text">
+                  Оберіть зручний день, зареєструйтесь на події, що цікавлять, купіть квиток заздалегідь, щоб ніщо не
+                  завадило вам насолоджуватись мистецтвом
+                </p>
+
+                <button class="button planning__button">Почати</button>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <section class="section block">
         <div class="news">
           <h2 class="heading news__heading">Новини</h2>
           <div class="news__boxes">
@@ -269,29 +301,33 @@
 
       <section class="section">
         <div class="subscription">
-          <div class="subscription__content">
+          <div class="subscription__content block">
             <div class="subscription__textblock">
               <h2 class="subscription__title">Підпишіться на дайджест</h2>
               <p class="subscription__text">Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів</p>
             </div>
+            <form class="form">
+              <div class="subscription__input">
+                <label class="input" for="input">
+                  <input
+                    type="email"
+                    placeholder="e-mail"
+                    class="email-input"
+                    name="input"
+                    id="input"
+                    required
+                  >
+                </label>
 
-            <div class="subscription__input">
-              <input
-                type="email"
-                placeholder="e-mail"
-                class="email-input"
-                name="input"
-                id="input"
-                required
-              >
-              <label class="input_button" for="input">
-                <img
-                  class="input_button-img"
-                  src="../src/images/email.svg"
-                  alt="arrow"
-                >
-              </label>
-            </div>
+                <button class="input_button">
+                  <img
+                    class="input_button-img"
+                    src="../src/images/email.svg"
+                    alt="arrow"
+                  >
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -300,7 +336,7 @@
 
     <footer class="footer">
       <div class="footer__back">
-        <div class="footer__boxes">
+        <div class="footer__boxes block">
           <div class="footer__box">
             <h3 class="box__title">Контакти</h3>
             <p class="box__text">Київ,</p>
@@ -308,28 +344,36 @@
             <p class="box__text">тел.<a class="box__link" href="tel:278-13-57">278-13-57</a>,<br>
               <span class="text__padding"><a class="box__link" href="tel:278-74-54">278-74-54</a></span>
             </p>
-            <p class="box__text">info@namu.kiev.ua</p>
+            <p class="box__text"><a class="box__link" href="email:info@namu.kiev.ua">info@namu.kiev.ua</a></p>
             <div class="box__networks">
-              <img
-                class="network_icon"
-                src="../src/images/face.svg"
-                alt="facebook"
-              >
-              <img
-                class="network_icon"
-                src="../src/images/twit.svg"
-                alt="twitter"
-              >
-              <img
-                class="network_icon"
-                src="../src/images/tel.svg"
-                alt="telegram"
-              >
-              <img
-                class="network_icon"
-                src="../src/images/insta.svg"
-                alt="instagram"
-              >
+              <a href="#" class="box__link">
+                <img
+                  class="network_icon"
+                  src="../src/images/face.svg"
+                  alt="facebook"
+                >
+              </a>
+              <a href="#" class="box__link">
+                <img
+                  class="network_icon"
+                  src="../src/images/twit.svg"
+                  alt="twitter"
+                >
+              </a>
+              <a href="#" class="box__link">
+                <img
+                  class="network_icon"
+                  src="../src/images/tel.svg"
+                  alt="telegram"
+                >
+              </a>
+              <a href="#" class="box__link">
+                <img
+                  class="network_icon"
+                  src="../src/images/insta.svg"
+                  alt="instagram"
+                >
+              </a>
             </div>
           </div>
 
@@ -361,7 +405,7 @@
         </div>
 
         <div class="footer__text">
-          © 2010 — 2020 <span class="footer__text-right">Privacy — Terms</span>
+          © 2010 — 2021 <span class="footer__text-right">Privacy — Terms</span>
         </div>
       </div>
 

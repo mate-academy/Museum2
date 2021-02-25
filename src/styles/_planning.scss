@@ -1,9 +1,12 @@
 .planning {
-  height: 800px;
-  background-color: $colorDarkGreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &__back {
+    height: 800px;
+    background-color: $colorDarkGreen;
+  }
 
   &__textblock {
     padding-right: 25px;
