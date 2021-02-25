@@ -11,8 +11,8 @@
   border: 0;
   cursor: pointer;
   transition: background-color 500ms;
-}
 
-.button:hover {
-  background-color: $colorDarkRed;
+  &:hover {
+    background-color: $colorDarkRed;
+  }
 }

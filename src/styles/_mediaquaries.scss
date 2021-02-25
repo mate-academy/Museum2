@@ -1,0 +1,416 @@
+@media (max-width: 1120px) {
+  .header__image {
+    position: absolute;
+    max-width: 399px;
+    max-height: 455px;
+    right: 0;
+    top: 354px;
+    z-index: 5;
+  }
+
+  .header-img {
+    max-height: 455px;
+    max-width: 399px;
+  }
+
+  .image__description {
+    display: none;
+  }
+
+  .header__information {
+    color: $colorWhite;
+    padding-top: 110px;
+    padding-left: 40px;
+  }
+
+  .masterclass__textblock {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .news__box-three {
+    display: none;
+  }
+
+  .planning__title {
+    max-width: 700px;
+    font-family: $fontPlayfair;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+  }
+
+  .planning__picture-img {
+    width: 360px;
+    padding-top: 303px;
+  }
+
+  .excursion__image {
+    display: none;
+  }
+
+  .masterclass__image {
+    display: none;
+  }
+}
+
+@media (max-width:1000px) {
+
+  .art__information {
+    margin: 0;
+    padding-bottom: 70px;
+  }
+
+  .angels__picture-img {
+    width: 400px;
+  }
+
+  .art-image {
+    display: none;
+    width: 400px;
+  }
+
+  .back-text-art {
+    display: none;
+  }
+
+  .exhibition__ancient {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .ancient-image {
+    width: 400px;
+  }
+
+  .back-text-ancient {
+    height: 470;
+    width: 450px;
+    font-size: 100px;
+  }
+}
+
+@media (max-width: 825px) {
+  .header {
+    height: 800px;
+    width: 100%;
+
+    &__title {
+      font-family: $fontPlayfair;
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 100%;
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    &__down {
+      display: none;
+    }
+
+    &__description {
+      max-width: 250px;
+      padding-left: 0;
+    }
+
+    &__button {
+      margin-left: 0;
+      margin-bottom: 110px;
+    }
+
+  }
+
+  .news__image {
+    width: 270px;
+    height: 270px;
+  }
+
+  .events__excursion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 20px;
+  }
+
+  .events__masterclass {
+    display: flex;
+    align-items: center;
+    margin: 60px 20px;
+  }
+
+  .masterclass__textblock {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .masterclass__photo {
+    display: none;
+  }
+
+  .excursion__photo {
+    display: none;
+  }
+
+  .subscription__title {
+    font-size: 36px;
+  }
+
+  .subscription__content {
+    margin: 20px;
+    padding-top: 1px;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subscription__input {
+    display: flex;
+    padding-right: 130px;
+    padding-top: 50px;
+  }
+
+  .footer__back {
+    height: 730px;
+    background-color: $colorDarkGreen;
+  }
+
+  .footer__boxes {
+    margin: 0 20px;
+    padding-top: 160px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 250px);
+    justify-content: space-between;
+    padding-bottom: 55px;
+  }
+
+  .angels__button {
+    margin-left: 0;
+  }
+
+  .angels__picture {
+    margin-top: -36px;
+  }
+
+  .angels__picture-img {
+    width: 200px;
+  }
+
+  .angels__date {
+    font-size: 38px;
+  }
+
+  .angels__title {
+    margin-left: 0;
+  }
+
+  .angels__text {
+    margin-left: 0;
+  }
+
+  .ancient-image {
+    width: 200px;
+  }
+
+  .back-text-ancient {
+    height: 470;
+    width: 200px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 760px) {
+  .planning__title {
+    max-width: 700px;
+    font-family: $fontPlayfair;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+  }
+
+  .planning__picture {
+    display: none;
+  }
+
+  .art__pictures {
+    display: none;
+  }
+
+  .planning__description {
+    padding-left: 0;
+  }
+
+  .planning__textblock {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+
+  .header__title {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  .header__language {
+    display: none;
+  }
+
+  .title__century {
+    padding-left: 0;
+  }
+
+  .header__information {
+    color: $colorWhite;
+    padding-top: 110px;
+    padding-left: 0;
+  }
+
+  .header__image {
+    position: absolute;
+    max-width: 245px;
+    max-height: 273px;
+    right: 0;
+    top: 527px;
+    z-index: 5;
+  }
+
+  .header-img {
+    max-height: 273px;
+    max-width: 245px;
+  }
+
+  .angels__information {
+    padding-left: 30px;
+    margin-right: 0;
+  }
+
+  .ancient__information {
+    margin-right: 0;
+    padding-left: 30px;
+  }
+
+  .ancient__pictures {
+    display: none;
+  }
+
+  .art__information {
+    padding-left: 30px;
+  }
+
+  .excursion__textblock {
+    display: block;
+  }
+
+  .excursion__information {
+    padding-right: 0;
+  }
+
+  .masterclass__textblock {
+    display: block;
+    justify-content: space-between;
+    padding-left: 0;
+  }
+
+  .excursion_date {
+    padding-bottom: 20px;
+  }
+
+  .masterclass_date {
+    padding-bottom: 20px;
+  }
+
+  .news__image {
+    width: 270px;
+    height: 270px;
+  }
+
+  .news__box-two {
+    display: none;
+  }
+
+  .news__box-one {
+    width: 270px;
+  }
+
+  .planning__title {
+    max-width: 700px;
+    font-family: $fontPlayfair;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+  }
+
+  .planning__picture {
+    display: none;
+  }
+
+  .planning__description {
+    padding-left: 0;
+  }
+
+  .planning__textblock {
+    padding-left: 20px;
+  }
+
+  .footer__back {
+    height: 1134px;
+    background-color: $colorDarkGreen;
+  }
+
+  .footer__boxes {
+    margin: 0 20px;
+    padding-top: 90px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 250px;
+    justify-content: space-between;
+    padding-bottom: 55px;
+  }
+
+  .angels__picture {
+    display: none;
+  }
+
+  .ancient-image {
+    display: none;
+  }
+
+  .back-text-ancient {
+    display: none;
+  }
+
+  .archive {
+    top: 20px;
+    left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__description {
+    max-width: 250px;
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+
+}

@@ -22,53 +22,57 @@
 
 .excursion_date {
   padding-right: 50px;
+
+  &-day {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    text-shadow: -1px 0 $colorLightRed,
+      0 1px $colorLightRed,
+      1px 0 $colorLightRed,
+      0 -1px $colorLightRed;
+    color: $colorLightWhite;
+  }
+
+  &-time {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: $colorLightRed;
+    padding-left: 80px;
+  }
 }
 
-.excursion_date-day {
-  font-family: $fontPlayfair;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 100%;
-  text-shadow: -1px 0 $colorLightRed,
-    0 1px $colorLightRed,
-    1px 0 $colorLightRed,
-    0 -1px $colorLightRed;
-  color: $colorLightWhite;
-}
+.excursion__information {
+  padding-right: 50px;
 
-.excursion_date-time {
-  font-family: $fontPlayfair;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 100%;
-  color: $colorLightRed;
-  padding-left: 80px;
-}
+  &-type {
+    font-family: $fontRaleway;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorDarkViolet;
+  }
 
-.excursion__information-type {
-  font-family: $fontRaleway;
-  font-weight: 200;
-  font-size: 14px;
-  line-height: 20px;
-  color: $colorDarkViolet;
-}
+  &-title {
+    max-width: 470px;
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    color: $colorDarkViolet;
+  }
 
-.excursion__information-title {
-  max-width: 470px;
-  font-family: $fontPlayfair;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 125%;
-  color: $colorDarkViolet;
-}
-
-.excursion__information-text {
-  max-width: 470px;
-  font-family: $fontRaleway;
-  font-size: 16px;
-  line-height: 150%;
-  color: $colorLightViolet;
-  padding-bottom: 60px;
+  &-text {
+    max-width: 470px;
+    font-family: $fontRaleway;
+    font-size: 16px;
+    line-height: 150%;
+    color: $colorLightViolet;
+    padding-bottom: 60px;
+  }
 }
 
 .events__masterclass {
@@ -85,27 +89,27 @@
 
 .masterclass_date {
   padding-right: 50px;
-}
 
-.masterclass_date-day {
-  font-family: $fontPlayfair;
-  font-weight: 700;
-  font-size: 55px;
-  line-height: 100%;
-  text-shadow: -1px 0 $colorLightRed,
-    0 1px $colorLightRed,
-    1px 0 $colorLightRed,
-    0 -1px $colorLightRed;
-  color: $colorLightWhite;
-}
+  &-day {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    text-shadow: -1px 0 $colorLightRed,
+      0 1px $colorLightRed,
+      1px 0 $colorLightRed,
+      0 -1px $colorLightRed;
+    color: $colorLightWhite;
+  }
 
-.masterclass_date-time {
-  font-family: $fontPlayfair;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 100%;
-  color: $colorLightRed;
-  padding-left: 80px;
+  &-time {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: $colorLightRed;
+    padding-left: 80px;
+  }
 }
 
 .masterclass__information-type {

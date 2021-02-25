@@ -57,12 +57,14 @@
 
 .exhibition__art {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .art__information {
   justify-content: start;
-  margin-left: 255px;
+  margin-left: 100px;
+  margin-right: 50px;
 }
 
 .art__date {
@@ -91,6 +93,14 @@
   margin-bottom: 70px;
 }
 
+.art__pictures {
+  position: relative;
+}
+
+.art-image {
+  width: 565px;
+}
+
 .back-text-art {
   font-family: $fontPlayfair;
   width: 568px;
@@ -106,18 +116,15 @@
     1px 0 $colorDarkGreen,
     0 -1px $colorDarkGreen;
   color: $colorLightWhite;
-  margin-top: -150px;
-  margin-left: -105px;
 }
 
 .front-picture-art {
-  position: relative;
-  margin-top: -485px;
+  position: absolute;
+  bottom: 145px;
   z-index: 10;
 }
 
 .exhibition__ancient {
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -125,6 +132,7 @@
 
 .ancient__pictures {
   position: relative;
+  padding-right: 30px;
 }
 
 .back-text-ancient {
@@ -196,7 +204,6 @@
   line-height: 100%;
   color: $colorDarkViolet;
   text-decoration: none;
-
 }
 
 .exhibition__archive::after {
