@@ -47,9 +47,13 @@
   }
 
   &__line {
-    border: 0.5px solid;
-    height: 1px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: $colorLightWhite;
+    height: 0.5px;
     width: 492px;
+    opacity: 0.3;
   }
 
   &__heading {
@@ -111,5 +115,28 @@
     &__text-4 {
       display: none;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: calc(100% - 40px);
+  }
+  .info__photo {
+    left: 85px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: calc(100% - 20px);
+  }
+  .info__photo {
+    max-width: 223px;
+    top: 334px;
   }
 }

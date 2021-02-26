@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 80px;
+    color: $colorBlack;
   }
 
   &__time {
@@ -44,6 +45,7 @@
   }
 
   &__name {
+    font-family: Playfair Display, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -59,6 +61,10 @@
     max-width: 370px;
   }
 
+  &__period {
+    color: $colorOrange;
+  }
+
   &__background {
     max-width: 100%;
     position: relative;
@@ -68,11 +74,11 @@
     position: absolute;
     left: 0;
     top: -175px;
-    transition: transform 0.4s linear 0s;
+    transition: transform 0.3s linear 0s;
     cursor: zoom-in;
 
     &:hover {
-      transform: scale(1.4);
+      transform: scale(1.2);
     }
   }
 
@@ -80,11 +86,11 @@
     position: absolute;
     right: 0;
     top: 35px;
-    transition: transform 0.4s linear 0s;
+    transition: transform 0.3s linear 0s;
     cursor: zoom-in;
 
     &:hover {
-      transform: scale(1.4);
+      transform: scale(1.2);
     }
   }
 
@@ -92,11 +98,11 @@
     position: absolute;
     left: 40px;
     top: -10px;
-    transition: transform 0.4s linear 0s;
+    transition: transform 0.3s linear 0s;
     cursor: zoom-in;
 
     &:hover {
-      transform: scale(1.6);
+      transform: scale(1.2);
     }
   }
 
@@ -113,6 +119,15 @@
     font-size: 16px;
     padding: 0 210px 35px;
     text-align: right;
+  }
+
+  &__line {
+    display: flex;
+    margin-top: 11px;
+    margin-left: 20px;
+    background-color: $colorBlack;
+    height: 0.5px;
+    width: 70px;
   }
 }
 
@@ -168,6 +183,12 @@
 
 @media (max-width: 400px) {
   .exhibitions {
+    &__heading {
+      padding-top: 60px;
+    }
+    &__info {
+      padding: 0;
+    }
     &__photo-3 {
       max-width: 380px;
       height: 225px;

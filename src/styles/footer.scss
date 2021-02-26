@@ -7,6 +7,7 @@
     padding-top: 156px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &__heading {
@@ -14,7 +15,7 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 125%;
-    padding-bottom: 70px;
+    padding: 0 22px 70px 0;
   }
 
   &__text {
@@ -51,14 +52,30 @@
     display: flex;
     justify-content: space-around;
   }
+
+  &__networks--icon {
+    background-color: $colorGray;
+    width: 22px;
+    height: 22px;
+    transition: transform 0.3s ease-in 0s;
+    &:hover {
+      transform: scale(1.6);
+    }
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .footer {
+    &__about {
+      padding-right: 70px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
   .footer {
     &__info {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      padding-top: 80px;
     }
   }
 }

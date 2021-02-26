@@ -16,7 +16,7 @@
       <div class="container">
         <div class="header__panel">
           <div class="header__logo">
-            <a href="https://www.facebook.com/namu.museum/" >
+            <a href="#home">
               <img src="../src/images/header-logo.svg" alt="logo-namu">
             </a>
           </div>
@@ -97,13 +97,15 @@
             </div>
           </div>
           <div class="exhibitions__block exhibitions__block--2">
-            <div class="exhibitions__date">Діє постійно
-              <div class="exhibitions__info">
-                <div class="exhibitions__name">Мистецтво ХХ ст. — XXI ст.</div>
-                <div class="exhibitions__text font-raleway">Знакові роботи Алли Горської, Миколи Самокиша, Федора Кричевського та інших митців.</div>
-                <button class="button exhibitions__button">
-                  Купити квиток
-                </button>
+            <div class="exhibitions__date">
+              <div class="exhibitions__period font-raleway">Діє постійно
+                <div class="exhibitions__info">
+                  <div class="exhibitions__name">Мистецтво ХХ ст. — XXI ст.</div>
+                  <div class="exhibitions__text font-raleway">Знакові роботи Алли Горської, Миколи Самокиша, Федора Кричевського та інших митців.</div>
+                  <button class="button exhibitions__button">
+                    Купити квиток
+                  </button>
+                </div>
               </div>
             </div>
             <div class="exhibitions__background">
@@ -132,17 +134,21 @@
                 alt="photo-ancient-art"
               >
             </div>
-            <div class="exhibitions__date">Діє постійно
-              <div class="exhibitions__info">
-                <p class="exhibitions__name">Стародавнє мистецтво</p>
-                <p class="exhibitions__text font-raleway">Визначні приклади стародавнього українського іконопису та живопису</p>
-                <button class="button exhibitions__button">
-                  Купити квиток
-                </button>
+            <div class="exhibitions__date">
+              <div class="exhibitions__period font-raleway">Діє постійно
+                <div class="exhibitions__info">
+                  <p class="exhibitions__name">Стародавнє мистецтво</p>
+                  <p class="exhibitions__text font-raleway">Визначні приклади стародавнього українського іконопису та живопису</p>
+                  <button class="button exhibitions__button">
+                    Купити квиток
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <div class="exhibitions__archive">Архів виставок</div>
+          <div class="exhibitions__archive">Архів виставок
+            <div class="exhibitions__line"></div>
+          </div>
         </div>
       </section>
       <section class="container">
@@ -189,7 +195,9 @@
               </button>
             </div>
           </div>
-          <div class="events__calendar">Календар подій</div>
+          <div class="events__calendar">Календар подій
+            <div class="events__line"></div>
+          </div>
         </div>
       </section>
       <section class="section">
@@ -240,7 +248,9 @@
               <p class="news__paragraph--text">Поруч із Тарасом Шевченком це найважливіша постать в українській культурі ХІХ століття...</p>
             </div>
           </div>
-          <div class="news__all">Усі новини</div>
+          <div class="news__all">Усі новини
+            <div class="news__line"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -251,7 +261,25 @@
             <div class="subscribe__heading">Підпишіться на дайджест</div>
             <div class="subscribe__body">
               <div class="subscribe__info">Першими дізнавайтесь про новини музею та розіграші, отримуйте запрошення на події та читайте статті від кураторів</div>
-              <div class="subscribe__email">e-mail</div>
+              <form class="input">
+                <label for="email">
+                  <input
+                    class="subscribe__email"
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="e-mail"
+                  >
+                </label>
+                <button class="subscribe__send">
+                  <img
+                    class="subscribe__send--icon"
+                    src="../src/images/send.svg"
+                    alt=""
+                  >
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -275,17 +303,29 @@
                 </p>
               </div>
               <div class="footer__networks">
-                <a href="https://www.facebook.com/namu.museum/">
-                  <img src="../src/images/facebook.svg" alt="facebook-link">
+                <a title="Заходьте на наш facebook" href="https://www.facebook.com/namu.museum/">
+                  <img
+                    class="footer__networks--icon"
+                    src="../src/images/facebook.svg"
+                    alt="facebook-link">
                 </a>
-                <a href="https://twitter.com/namu_120">
-                  <img src="../src/images/twitter.svg" alt="twitter-link">
+                <a title="Заходьте на наш twitter" href="https://twitter.com/namu_120">
+                  <img
+                    class="footer__networks--icon"
+                    src="../src/images/twitter.svg"
+                    alt="twitter-link">
                 </a>
-                <a href="https://t.me/namuofficial">
-                  <img src="../src/images/telegram.svg" alt="telegram-link">
+                <a title="Заходьте на наш telegram" href="https://t.me/namuofficial">
+                  <img
+                    class="footer__networks--icon"
+                    src="../src/images/telegram.svg"
+                    alt="telegram-link">
                 </a>
-                <a href="https://www.instagram.com/namu.museum/?fbclid=IwAR2O2RQaQ1aXdJnC7SFGVvbyS3F8QliVoza9V0UhK8jnvl1doQAFM_mW6wY">
-                  <img src="../src/images/instagram.svg" alt="instagram-link">
+                <a title="Заходьте на наш instagram" href="https://www.instagram.com/namu.museum/?fbclid=IwAR2O2RQaQ1aXdJnC7SFGVvbyS3F8QliVoza9V0UhK8jnvl1doQAFM_mW6wY">
+                  <img
+                    class="footer__networks--icon"
+                    src="../src/images/instagram.svg"
+                    alt="instagram-link">
                 </a>
               </div>
             </div>
@@ -330,30 +370,27 @@
               </p>
             </div>
           </div>
-          <div class="footer__heading">Про нас
-            <div class="footer__body">
-              <p class="footer__text">
-                <a href="#" class="footer__link">Історія</a>
-              </p>
-              <p class="footer__text">
-                <a href="#" class="footer__link">Обличчя музею</a>
-              </p>
-              <p class="footer__text">
-                <a href="#" class="footer__link">Вакансії</a>
-              </p>
-              <p class="footer__text">
-                <a href="#" class="footer__link">Новини</a>
-              </p>
+          <div class="footer__about">
+            <div class="footer__heading">Про нас
+              <div class="footer__body">
+                <p class="footer__text">
+                  <a href="#" class="footer__link">Історія</a>
+                </p>
+                <p class="footer__text">
+                  <a href="#" class="footer__link">Обличчя музею</a>
+                </p>
+                <p class="footer__text">
+                  <a href="#" class="footer__link">Вакансії</a>
+                </p>
+                <p class="footer__text">
+                  <a href="#" class="footer__link">Новини</a>
+                </p>
+              </div>
             </div>
-          </div>
-          <div>
-            <a href="#home">
-              <img src="../src/images/icon-home.svg" alt="icon-go-home">
-            </a>
           </div>
         </div>
         <div class="footer__develop">
-          © 2010 — 2020 &nbsp &nbsp &nbsp &nbsp Privacy — Terms
+          © 2010 — 2021 &nbsp &nbsp &nbsp &nbsp Privacy — Terms
         </div>
       </div>
     </footer>

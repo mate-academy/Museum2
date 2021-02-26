@@ -10,16 +10,15 @@
   color: $colorLightWhite;
   cursor: pointer;
   border: none;
-  transition: transform 0.4s linear 0s,
-    box-shadow 0.4s linear 0s,
-    color 0.4s linear 0s,
-    font-size 0.4s linear 0s;
+  transition: transform 0.3s linear 0s,
+    box-shadow 0.3s linear 0s,
+    color 0.3s linear 0s,
+    font-size 0.3s linear 0s;
 
   &:hover {
-    box-shadow: 15px 15px 15px $colorOrange;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 900;
-    transform: scale(1.4);
+    transform: scale(1.2);
     border: 3px solid $colorLightWhite;
   }
 }
@@ -27,5 +26,11 @@
 @media (max-width: 700px) {
   .button {
     width: 230px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 190px;
   }
 }

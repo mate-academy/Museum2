@@ -39,3 +39,14 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 400px) {
+  .header {
+    &__lang {
+      display: none;
+    }
+    &__menu {
+      padding-left: 70px;
+    }
+  }
+}
