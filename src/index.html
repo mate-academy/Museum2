@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>NAMU</title>
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap"
@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700;800;900&display=swap"
       rel="stylesheet">
 
+    <link
+      rel="shortcut icon"
+      href="./images/favicon.png"
+      type="image/x-icon"
+    >
   </head>
 
   <body>
@@ -41,9 +46,9 @@
               </div>
             </div>
             <ul class="burger__nav">
-              <li class="burger__item"><a href="#" class="burger__link">Спланувати візит</a></li>
-              <li class="burger__item"><a href="#" class="burger__link">Виставки та події</a></li>
-              <li class="burger__item"><a href="#" class="burger__link">Колекція</a></li>
+              <li class="burger__item"><a href="#plane" class="burger__link">Спланувати візит</a></li>
+              <li class="burger__item"><a href="#event" class="burger__link">Виставки та події</a></li>
+              <li class="burger__item"><a href="#news" class="burger__link">Новини</a></li>
             </ul>
             <div class="burger__buttons">
               <button class="button button__buy">Купити квиток</button>
@@ -97,7 +102,7 @@
     </header>
 
     <main>
-      <section class="section block">
+      <section class="section block" id="event">
         <h2 class="heading exhibition__heading">Актуальтні виставки</h2>
         <div class="exhibition__angels">
           <div class="angels__picture">
@@ -229,7 +234,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="plane">
         <div class="planning__back">
           <div class="planning block">
             <div class="planning__picture">
@@ -256,7 +261,7 @@
         </div>
       </section>
 
-      <section class="section block">
+      <section class="section block" id="news">
         <div class="news">
           <h2 class="heading news__heading">Новини</h2>
           <div class="news__boxes">
@@ -344,7 +349,7 @@
             <p class="box__text">тел.<a class="box__link" href="tel:278-13-57">278-13-57</a>,<br>
               <span class="text__padding"><a class="box__link" href="tel:278-74-54">278-74-54</a></span>
             </p>
-            <p class="box__text"><a class="box__link" href="email:info@namu.kiev.ua">info@namu.kiev.ua</a></p>
+            <p class="box__text"><a class="box__link" href="mailto:info@namu.kiev.ua">info@namu.kiev.ua</a></p>
             <div class="box__networks">
               <a href="#" class="box__link">
                 <img

@@ -418,6 +418,22 @@
     top: 20px;
     left: 0;
   }
+
+  .burger__item {
+    padding-bottom: 32px;
+    padding-left: 21px;
+    list-style-type: none;
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 30px !important;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 330px) {
+  .burger__buttons {
+    padding: 30px !important;
+  }
 }
 
 @media (max-width: 320px) {
