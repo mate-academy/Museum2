@@ -76,6 +76,7 @@
     background-color: $colorGray;
     overflow-y: auto;
     right: -100%;
+    visibility: hidden;
     transition: 0.5s;
   }
 
@@ -83,6 +84,7 @@
     left: 0;
     right: 0;
     width: 100%;
+    visibility: visible;
   }
 
   &__link {
