@@ -1,0 +1,202 @@
+.events {
+  padding-top: 190px;
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 58px;
+  }
+
+  &__excursions {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__excursions--two {
+    padding-top: 73px;
+  }
+
+  &__date {
+    padding-top: 86px;
+  }
+
+  &__info {
+    width: 440px;
+    padding-top: 86px;
+  }
+
+  &__date--number {
+    max-width: 200px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 100%;
+    color: $colorLightWhite;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: $colorOrange;
+  }
+
+  &__date--time {
+    margin-right: 30px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: right;
+  }
+
+  &__paragraph--info {
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__paragraph--name {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+    padding-bottom: 6px;
+  }
+
+  &__paragraph--text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    padding-bottom: 65px;
+  }
+
+  &__photo--man {
+    max-width: 100%;
+    transition: border-radius 1s ease 0s, transform 1s ease 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.2);
+      border-radius: 55px;
+    }
+  }
+
+  &__photo--woman {
+    max-width: 100%;
+    transition: border-radius 1s ease 0s, transform 1s ease 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.2);
+      border-radius: 55px;
+    }
+  }
+
+  &__calendar {
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 0 144px 175px;
+    text-align: right;
+  }
+
+  &__line {
+    display: flex;
+    margin-top: 11px;
+    margin-left: 20px;
+    background-color: $colorBlack;
+    height: 0.5px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .events {
+
+    &__excursions {
+      justify-content: center;
+    }
+
+    &__date {
+      padding-right: 30px;
+    }
+
+    &__photo--man {
+      display: none;
+    }
+
+    &__photo--woman {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .events {
+
+    &__excursions {
+      display: flex;
+    }
+
+    &__heading {
+      padding-bottom: 0;
+    }
+
+    &__date--number {
+      text-align: left;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    &__date--time {
+      text-align: left;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    &__date {
+      padding-top: 16px;
+      padding-right: 0;
+    }
+
+    &__info {
+      max-width: 240px;
+      padding-top: 16px;
+    }
+
+    &__paragraph--text {
+      max-width: 280px;
+    }
+
+    &__paragraph--name {
+      max-width: 280px;
+    }
+
+    &__calendar {
+      padding: 20px 0 75px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .events {
+
+    padding-top: 100px;
+
+    &__calendar {
+      padding: 60px 0 80px;
+      text-align: center;
+    }
+  }
+}
