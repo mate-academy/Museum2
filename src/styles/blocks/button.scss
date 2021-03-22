@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  padding: 21px;
+  min-width: 270px;
+
+  font-family: $Raleway;
+  font-size: $fs-smaller;
+  font-weight: $fw-normal;
+  line-height: 1rem;
+  border: 1px solid transparent;
+
+  color: $c-white;
+  background-color: $c-secondary;
+
+  cursor: pointer;
+}

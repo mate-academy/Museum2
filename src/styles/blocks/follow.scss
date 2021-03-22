@@ -1,0 +1,140 @@
+.follow {
+  padding: 80px 20px;
+
+  background-color: $c-secondary;
+  color: $c-white;
+
+  &__wrapper,
+  &__form {
+    margin: 0 auto;
+    width: 280px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    font-family: $Playfair;
+    font-weight: $fw-bold;
+    font-size: $fs-medium;
+    line-height: 2.25rem;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    line-height: 1.5rem;
+  }
+
+  &__icon {
+    width: 21px;
+    height: 21px;
+    fill: $c-white;
+
+    transition: fill $duration-half;
+  }
+
+  &__button {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid $c-white;
+    outline: none;
+
+    cursor: pointer;
+    transition: border-color $duration-half;
+
+    &:hover,
+    &:focus {
+      border-color: $c-main;
+    }
+
+    &:hover .follow__icon {
+      fill: $c-main;
+    }
+
+    animation: move 5s infinite;
+  }
+
+  @keyframes move {
+    0% {
+      transform: translateX(0);
+    }
+
+    75% {
+      transform: translateX(20px);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  &__input {
+    width: 228px;
+
+    transition: border-color $duration-half;
+
+    &:hover,
+    &:focus {
+      border-color: $c-main;
+    }
+
+    .follow__button {
+      display: none;
+    }
+    &:placeholder-shown ~ .follow__button {
+      visibility: hidden;
+    }
+
+    &::placeholder {
+      color: $c-white;
+    }
+  }
+}
+
+@include tablet {
+  .follow {
+    padding: 110px 99px 120px;
+
+    &__wrapper,
+    &__form {
+      width: 570px;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: $fs-big;
+      line-height: 3.6rem;
+    }
+
+    &__text {
+      margin-bottom: 80px;
+    }
+
+    &__input {
+      width: 300px;
+    }
+  }
+}
+
+@include desktop {
+  .follow {
+    display: flex;
+    align-items: flex-end;
+    padding: 160px 55px;
+    max-width: 1920px;
+
+    &__main {
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      margin-bottom: 0;
+    }
+  }
+}

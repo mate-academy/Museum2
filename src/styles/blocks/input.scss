@@ -1,0 +1,19 @@
+.input {
+  text-indent: 5px;
+  line-height: 1.5rem;
+
+  color: $c-white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid $c-white;
+  outline: none;
+  transition: box-shadow $duration-one linear, border $duration-quarter;
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    border: 1px solid $c-white;
+    -webkit-text-fill-color: $c-white;
+    box-shadow: 0 0 0 1000px $c-main inset;
+  }
+}

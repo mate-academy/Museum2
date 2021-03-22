@@ -1,0 +1,30 @@
+.header {
+  background-color: $c-main;
+
+  &__container {
+    @include flex-align(space-between, center);
+
+    position: relative;
+
+    padding: 0 20px;
+    margin: 0 auto;
+    height: $h-header;
+  }
+}
+
+@include tablet {
+  .header {
+    &__container {
+      padding: 0 134px 0 40px;
+    }
+  }
+}
+
+@include desktop {
+  .header {
+    &__container {
+      max-width: 1920px;
+      padding: 0 146px 0 56px;
+    }
+  }
+}

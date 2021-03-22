@@ -1,0 +1,159 @@
+.content {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: auto;
+  justify-items: center;
+  color: $c-white;
+  padding: 80px 20px 100px;
+
+  &__surface {
+    margin: 0 auto;
+  }
+
+  &__date {
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    width: 279px;
+
+    font-family: $Playfair;
+    font-size: $fs-big;
+    font-weight: $fw-bold;
+  }
+
+  &__line {
+    display: block;
+  }
+
+  &__description {
+    margin-bottom: 50px;
+
+    width: 267px;
+
+    line-height: 1.5rem;
+  }
+
+  &__button {
+    width: 280px;
+    outline: none;
+
+    transition: background-color $duration-half, box-shadow $duration-half;
+
+    &:hover {
+      box-shadow: $bs-hover;
+      background-color: rgba($c-secondary, $alpha: 0.9);
+    }
+
+    &:active {
+      box-shadow: $bs-active;
+    }
+
+    &:focus {
+      box-shadow: $bs-focus;
+    }
+  }
+
+  &__duration {
+    display: none;
+  }
+
+  &__img {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__person {
+    display: none;
+  }
+}
+
+@include tablet {
+  .content {
+    padding: 100px 100px 180px;
+
+    &__date {
+      margin-bottom: 10px;
+    }
+
+    &__title {
+      width: 569px;
+      margin-bottom: 40px;
+      font-size: $fs-bigger;
+    }
+
+    &__line {
+      margin-left: 45px;
+    }
+
+    &__description {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include desktop {
+  .content {
+    display: block;
+    max-width: 1920px;
+    padding: 100px 55px 52px;
+
+    &__title {
+      font-size: $fs-biggest;
+    }
+
+    &__line {
+      margin: 10px 0 0 100px;
+      width: 544px;
+    }
+
+    &__description {
+      margin: 0 0 60px 100px;
+      width: 370px;
+    }
+
+    &__button {
+      margin: 0 0 110px 100px;
+    }
+
+    &__duration {
+      position: relative;
+
+      display: block;
+
+      font-family: $Playfair;
+      font-size: $fs-smallest;
+      font-weight: $fw-bold;
+      line-height: 1.3em;
+
+      &::after {
+        position: absolute;
+        left: 102px;
+        right: 0;
+        bottom: 7px;
+        content: "";
+        display: block;
+        height: 1px;
+
+        background-color: rgba($c-white, $alpha: 0.3);
+      }
+    }
+
+    &__person {
+      position: absolute;
+      right: 54px;
+      bottom: 319px;
+
+      display: block;
+      width: 136px;
+      line-height: 1.5rem;
+    }
+  }
+}

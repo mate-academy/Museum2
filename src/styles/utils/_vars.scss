@@ -1,1 +1,51 @@
+// Breakpoints of screen;
+$bp-mobile: 320px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;
+
+// Type of fonts;
+$Raleway: raleway, sans-serif;
+$Playfair: "Playfair Display", sans-serif;
+
+// Font sizes;
+$fs-biggest: 96px;
+$fs-bigger: 72px;
+$fs-big: 48px;
+$fs-medium: 36px;
+$fs-small: 24px;
+$fs-smaller: 16px;
+$fs-smallest: 14px;
+
+// Font weights;
+$fw-light: 200;
+$fw-normal: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-extra-bold: 900;
+
+// Heights;
+$h-header: 80px;
+
+// Colors;
+$c-main: #3f5252;
+$c-white: #f1f4f5;
+$c-secondary: #cd4d31;
 $c-gray: #eee;
+$c-line: #c4c4c4;
+$c-text: #1c1b29;
+$c-text-secondary: #504f5e;
+
+//durations;
+$duration-one: 1s;
+$duration-half: 500ms;
+$duration-quarter: 250ms;
+
+$bs-hover: rgba(50, 50, 93, 0.25) 0 50px 100px -20px,
+  rgba(0, 0, 0, 0.3) 0 30px 60px -30px,
+  rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+
+$bs-active: rgba(50, 50, 93, 0.25) 0 30px 60px -12px inset,
+  rgba(0, 0, 0, 0.3) 0 18px 36px -18px inset;
+
+$bs-focus: rgb(204, 219, 232) 3px 3px 6px 0 inset,
+  rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;

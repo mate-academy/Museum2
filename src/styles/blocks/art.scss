@@ -1,0 +1,330 @@
+.art {
+  position: relative;
+
+  $padding-side: 20px;
+  $padding-bottom: 100px;
+  padding: 60px $padding-side $padding-bottom;
+  overflow: hidden;
+
+  &__title {
+    margin: 0 auto 60px;
+    max-width: max-content;
+
+    font-family: $Playfair;
+    font-size: $fs-medium;
+    font-weight: $fw-bold;
+    line-height: 2.81rem;
+
+    color: $c-text;
+  }
+
+  &__list {
+    position: relative;
+
+    width: 280px;
+
+    &--odd {
+      margin-left: auto;
+    }
+  }
+
+  &__date {
+    margin-bottom: 10px;
+
+    line-height: 1.5rem;
+
+    color: $c-secondary;
+
+    &--active {
+      margin-bottom: 5px;
+
+      font-family: $Playfair;
+      font-weight: $fw-bold;
+      font-size: $fs-small;
+      line-height: 1.88rem;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+
+    font-family: $Playfair;
+    font-size: $fs-small;
+    font-weight: $fw-bold;
+    line-height: 1.88rem;
+
+    color: $c-text;
+  }
+
+  &__transition {
+    display: block;
+  }
+
+  &__description {
+    margin: 30px 0 70px;
+    width: 130px;
+    height: 120px;
+
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    line-height: 1.5rem;
+
+    color: $c-text-secondary;
+
+    &--left {
+      margin-left: 150px;
+    }
+  }
+
+  &__mode {
+    &--tablet {
+      display: none;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+
+    &--first {
+      top: 55px;
+      right: -20px;
+    }
+
+    &--shift {
+      top: 120px;
+      right: calc(100% - 120px + #{$padding-side});
+    }
+
+    &--top {
+      top: 65px;
+      right: -20px;
+    }
+  }
+  &__img {
+    display: block;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__btn {
+    display: block;
+    margin: 143px auto 0;
+    width: 170px;
+  }
+}
+
+@include tablet {
+  .art {
+    $padding: 99px;
+    $m-left: 200px;
+
+    padding: 115px $padding;
+
+    overflow: hidden;
+
+    &__title {
+      margin: 0 0 55px;
+
+      font-size: $fs-big;
+      line-height: 58px;
+    }
+
+    &__list {
+      width: max-content;
+
+      &--odd {
+        margin: 0;
+        padding-left: 200px;
+      }
+
+      &--even {
+        margin: 0 200px 0 auto;
+      }
+    }
+
+    &__date {
+      margin-bottom: 5px;
+
+      &--active {
+        margin: 0 0 20px -100px;
+
+        font-size: $fs-big;
+        line-height: 3.62rem;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+      width: 370px;
+    }
+
+    &__transition {
+      display: inline;
+    }
+
+    &__description {
+      margin: 0 0 160px;
+      width: 270px;
+      height: 70px;
+
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+    }
+    &__mode {
+      &--mobile {
+        display: none;
+      }
+
+      &--tablet {
+        display: inline;
+      }
+    }
+
+    &__picture {
+      &--first {
+        top: -100px;
+        right: calc(100% - 281px + #{$padding});
+      }
+
+      &--shift {
+        top: -55px;
+        right: -296px;
+
+        width: 296px;
+        height: 288px;
+        background: url("../images/back-text-tablet.png") no-repeat;
+        background-size: contain;
+
+        & .art__img {
+          padding-top: 45px;
+        }
+      }
+
+      &--top {
+        background: url("../images/back-cossack-tablet.png") no-repeat;
+        width: 296px;
+        height: 288px;
+        top: -40px;
+        right: calc(100% - 296px + #{$padding});
+
+        & .art__img {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop {
+  .art {
+    $padding-side: 255px;
+    $padding-bottom: 260px;
+    padding: 160px $padding-side 260px;
+
+    max-width: 1920px;
+
+    &__main {
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin: 0 0 100px 100px;
+      margin-left: 100px;
+    }
+
+    &__list {
+      &--odd {
+        padding-left: 400px;
+      }
+      &--even {
+        margin-right: 400px;
+      }
+    }
+
+    &__date {
+      margin-left: 0;
+
+      &--active {
+        margin-left: -100px;
+      }
+    }
+
+    &__subtitle {
+      margin-left: 0;
+      width: max-content;
+    }
+
+    &__description {
+      margin-left: 0;
+      margin-bottom: 50px;
+      width: 370px;
+    }
+
+    &__picture {
+      &--first {
+        top: -280px;
+        right: calc(100% - 539px + #{$padding-side});
+      }
+
+      &--shift {
+        top: -110px;
+        right: -$padding-side - 410px;
+
+        width: 586px;
+        height: 576px;
+        background: url("../images/back-couple-desktop.png") no-repeat;
+
+        & .art__img {
+          padding-top: 60px;
+          padding-left: 50px;
+        }
+      }
+
+      &--top {
+        top: -90px;
+        right: calc(100% - 600px + #{$padding-side});
+
+        background: url("../images/back-cossack-desktop.png") no-repeat;
+        width: 570px;
+        height: 576px;
+      }
+    }
+
+    &__button {
+      position: relative;
+
+      display: block;
+      margin-left: 0;
+      margin-bottom: 226px;
+      outline: none;
+      transition: background-color $duration-half, box-shadow $duration-half;
+
+      &:hover {
+        box-shadow: $bs-hover;
+        background-color: rgba($c-secondary, $alpha: 0.9);
+      }
+
+      &:active {
+        box-shadow: $bs-active;
+      }
+
+      &:focus {
+        box-shadow: $bs-focus;
+      }
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: 0;
+      right: 150px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.addition {
+  display: none;
+}
+
+@include tablet {
+  .addition {
+    display: block;
+
+    &__nav {
+      margin-bottom: 55px;
+    }
+
+    &__text {
+      font-size: $fs-smallest;
+      font-weight: $fw-light;
+      line-height: 1.25rem;
+
+      color: $c-white;
+    }
+
+    &__modifier {
+      font-size: $fs-smaller;
+      font-weight: $fw-normal;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+@include desktop {
+  .addition {
+    &__nav {
+      margin-bottom: 80px;
+    }
+
+    &__text {
+      display: inline-block;
+      margin-right: 30px;
+      min-width: 170px;
+    }
+
+    &__modifier {
+      display: block;
+      margin-top: 2px;
+    }
+  }
+}

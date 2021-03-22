@@ -1,0 +1,155 @@
+.news {
+  position: relative;
+
+  padding: 80px 20px;
+
+  color: $c-text;
+
+  &__title {
+    width: 280px;
+    margin: 0 auto 60px;
+
+    font-family: $Playfair;
+    font-size: $fs-medium;
+    font-weight: $fw-bold;
+    line-height: 36px;
+  }
+
+  &__list {
+    width: 280px;
+    margin: 0 auto;
+
+    &--tablet,
+    &--desktop {
+      display: none;
+    }
+  }
+
+  &__date {
+    font-weight: $fw-light;
+    font-size: $fs-smallest;
+    line-height: 1.25rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+
+    font-family: $Playfair;
+    font-size: 18px;
+    font-weight: $fw-bold;
+    line-height: 22.5px;
+  }
+
+  &__text {
+    line-height: 24px;
+
+    &--modifier {
+      display: none;
+    }
+
+    &::after {
+      content: "...";
+    }
+  }
+
+  &__img {
+    display: block;
+    margin-bottom: 20px;
+
+    object-fit: cover;
+    cursor: pointer;
+
+    transition: transform $duration-one, box-shadow $duration-one;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: $bs-hover;
+    }
+  }
+
+  &__btn {
+    margin: 72px auto 0;
+  }
+}
+
+@include tablet {
+  .news {
+    padding: 115px 99px 120px;
+
+    &__title {
+      margin-left: calc((100vw - 770px) / 2);
+    }
+
+    &__item {
+      display: grid;
+      grid-template-columns: repeat(2, 270px);
+      justify-content: center;
+      gap: 30px;
+    }
+
+    &__list {
+      width: 270px;
+      &--tablet {
+        display: block;
+      }
+    }
+
+    &__text {
+      width: 260px;
+    }
+
+    &__img {
+      width: 270px;
+    }
+
+    &__btn {
+      margin-top: 80px;
+    }
+  }
+}
+
+@include desktop {
+  .news {
+    $padding-bottom: 184px;
+    padding: 120px 55px $padding-bottom;
+    max-width: 1920px;
+
+    &__main {
+      margin: 0 auto;
+    }
+
+    &__item {
+      margin-bottom: 60px;
+      grid-template-columns: repeat(3, 370px);
+    }
+
+    &__title {
+      margin-left: calc((100% - 770px) / 2);
+    }
+
+    &__list {
+      width: 370px;
+      &--desktop {
+        display: block;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      &--modifier {
+        display: inline;
+      }
+    }
+
+    &__img {
+      margin-bottom: 20px;
+      width: 370px;
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: $padding-bottom;
+      right: 150px;
+    }
+  }
+}

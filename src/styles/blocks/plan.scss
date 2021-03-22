@@ -1,0 +1,115 @@
+.plan {
+  padding: 80px 20px;
+
+  background-color: $c-main;
+
+  &__title {
+    margin-bottom: 40px;
+
+    font-family: $Playfair;
+    font-size: $fs-big;
+    line-height: 48px;
+
+    color: $c-white;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    line-height: 24px;
+
+    color: $c-white;
+  }
+
+  &__button {
+    margin: 0 auto;
+    width: 280px;
+
+    outline: none;
+    transition: background-color $duration-half, box-shadow $duration-half;
+
+    &:hover {
+      box-shadow: $bs-hover;
+      background-color: rgba($c-secondary, $alpha: 0.9);
+    }
+
+    &:active {
+      box-shadow: $bs-active;
+    }
+
+    &:focus {
+      box-shadow: $bs-focus;
+    }
+  }
+}
+
+@include tablet {
+  .plan {
+    position: relative;
+
+    padding: 120px 99px 170px;
+
+    &__title {
+      margin-bottom: 80px;
+      width: 523px;
+
+      font-size: $fs-bigger;
+      line-height: 72px;
+    }
+
+    &__text {
+      margin-left: 200px;
+      margin-bottom: 35px;
+
+      width: 370px;
+    }
+
+    &__button {
+      margin-left: 200px;
+    }
+
+    &__back {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      width: 431px;
+      height: 462px;
+      background: url("../images/woman-back-tablet.png") no-repeat;
+    }
+  }
+}
+
+@include desktop {
+  .plan {
+    padding: 190px 25px 160px 555px;
+    max-width: 1920px;
+
+    &__planning {
+      margin: 0 auto;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+      width: 700px;
+
+      font-size: $fs-biggest;
+      line-height: 100px;
+    }
+
+    &__text {
+      margin: 0 0 60px 100px;
+      width: 470px;
+      height: 70px;
+    }
+
+    &__button {
+      margin-left: 100px;
+    }
+
+    &__back {
+      width: 745px;
+      height: 800px;
+      background: url("../images/woman-back-desk.png") no-repeat;
+    }
+  }
+}

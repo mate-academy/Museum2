@@ -1,0 +1,57 @@
+.lang {
+  &__header {
+    position: absolute;
+
+    visibility: hidden;
+
+    top: 30px;
+    right: 72px;
+    z-index: 2;
+    outline: none;
+  }
+
+  &__text {
+    font-size: $fs-smaller;
+    font-weight: $fw-medium;
+    line-height: 1.5rem;
+
+    color: $c-white;
+    cursor: pointer;
+    outline: none;
+
+    transition: color $duration-half linear;
+  }
+
+  &:hover > &__text,
+  &:focus > &__text,
+  &:active > &__text {
+    color: $c-secondary;
+  }
+
+  &__icon {
+    margin-left: 5px;
+    fill: currentColor;
+  }
+
+  &--visible {
+    visibility: visible;
+  }
+}
+
+@include tablet {
+  .lang {
+    &__header {
+      visibility: visible;
+      top: 28px;
+      right: 60px;
+    }
+  }
+}
+
+@include desktop {
+  .lang {
+    &__header {
+      right: 72px;
+    }
+  }
+}

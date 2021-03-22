@@ -1,6 +1,43 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin mobile {
+  @media screen and (max-width: #{$bp-tablet - 1}) {
+    @content;
   }
+}
+
+@mixin tablet {
+  @media screen and (min-width: #{$bp-tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$bp-desktop}) {
+    @content;
+  }
+}
+
+// This mixin is created for flex-align by passing arguments;
+
+@mixin flex-align($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex-inline-align($justify: center, $align: center) {
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@mixin grid-align($justify: center, $align: center) {
+  display: grid;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin absolute-left-transform($left: 50%, $trans: -50%) {
+  position: absolute;
+  left: $left;
+  transform: translateX($trans);
 }

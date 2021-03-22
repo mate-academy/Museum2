@@ -1,0 +1,52 @@
+.btn {
+  position: relative;
+  padding: 0 20px 10px;
+
+  display: block;
+  font-weight: $fw-normal;
+  font-size: $fs-smaller;
+  line-height: 1rem;
+
+  color: $c-text;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: color $duration-half;
+
+  &::after {
+    position: absolute;
+    top: calc(#{$fs-smaller} + 10px);
+    right: 0;
+    left: 0;
+    content: "";
+
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+    transition: transform $duration-half, color $duration-half;
+  }
+
+  &:hover {
+    color: $c-secondary;
+  }
+
+  &:active,
+  &:focus {
+    transform: scale(1.2);
+    color: violet;
+  }
+}
+
+@include desktop {
+  .btn {
+    &:after {
+      top: calc(1rem / 2);
+      left: 100%;
+      right: -70px;
+    }
+  }
+}

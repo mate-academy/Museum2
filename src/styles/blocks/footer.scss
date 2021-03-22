@@ -1,0 +1,105 @@
+.footer {
+  background-color: $c-main;
+  $padding-top: 80px;
+  $padding-side: 20px;
+
+  &__container {
+    position: relative;
+    padding: $padding-top $padding-side 40px;
+  }
+
+  &__link {
+    position: absolute;
+    top: $padding-top;
+    right: $padding-side;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: translateY(0);
+      fill: $c-white;
+    }
+
+    75% {
+      transform: translateY(-20px);
+      fill: $c-secondary;
+    }
+
+    100% {
+      transform: translateY(0);
+      fill: $c-white;
+    }
+  }
+
+  &__text {
+    margin: 0 auto;
+    width: 110px;
+
+    font-size: $fs-smallest;
+    font-weight: $fw-light;
+    line-height: 1.25rem;
+
+    color: $c-white;
+
+    &::after {
+      content: "© 2010 — 2020";
+    }
+  }
+}
+
+@include tablet {
+  .footer {
+    $padding-top: 120px;
+    $padding-side: 99px;
+    &__container {
+      display: grid;
+      grid-template-areas: "contacts schedule" "about programs" "text text";
+      padding: $padding-top $padding-side 35px;
+    }
+
+    &__link {
+      top: $padding-top;
+      right: $padding-side;
+    }
+
+    &__text {
+      width: max-content;
+      grid-area: text;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        content: "© 2010 — 2020";
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .footer {
+    $padding-top: 160px;
+    $padding-side: 55px;
+
+    &__container {
+      grid-template-areas: "contacts schedule about programs" ". text text .";
+      padding: $padding-top $padding-side 60px;
+      max-width: 1920px;
+      margin: 0 auto;
+    }
+
+    &__link {
+      top: $padding-top;
+      right: $padding-side;
+    }
+  }
+}
