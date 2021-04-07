@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: $colorGray;
+
+  &__panel {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 36px;
+    line-height: 43px;
+    width: 123px;
+    height: 40px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    cursor: pointer;
+  }
+
+  &__lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__language {
+    border: none;
+    font-size: 20px;
+    background-color: $colorGray;
+    color: $colorLightWhite;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    &__lang {
+      display: none;
+    }
+    &__menu {
+      padding-left: 70px;
+    }
+  }
+}
