@@ -464,7 +464,7 @@
 
 @media (max-width: 540px) {
   .subscription {
-    height: 420px;
+    height: 620px;
   }
 }
 
@@ -472,9 +472,13 @@
   .burger__buttons {
     padding: 30px !important;
   }
+
+  .planning__back {
+    height: 520px;
+  }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 322px) {
   .planning__back {
     height: 520px;
   }
