@@ -1,7 +1,26 @@
 @import "utils";
 @import "fonts";
+@import "_reset.scss";
 @import "typography";
+@import "header.scss";
+@import "art.scss";
+@import "exhibition.scss";
+@import "button.scss";
+@import "event.scss";
+@import "visit.scss";
+@import "news.scss";
+@import "subscribe.scss";
+@import "footer.scss";
+@import "nav.scss";
+
+html {
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+
+  font-size: 16px;
+  font-weight: 400;
+}
 
 body {
-  background: $c-gray;
+  background: $bc-main;
 }

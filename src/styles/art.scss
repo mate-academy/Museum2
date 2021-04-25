@@ -1,0 +1,160 @@
+.art {
+  position: relative;
+  color: $bc-white;
+  overflow: hidden;
+  transition: opacity 1s ease;
+  &__close {
+    z-index: -1;
+    opacity: 0;
+  }
+
+  &__container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 190px 9vw;
+
+    &::before {
+
+      position: absolute;
+      top: 40px;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+      width: 673px;
+      height: 753px;
+
+      content: "";
+
+      background-image: url(../images/art_back.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 100%;
+  }
+  &__content {
+    padding-left: 7vw;
+  }
+
+  &__content--text {
+    padding: 5vh 0;
+    font-size: 1rem;
+    line-height: 150%;
+    max-width: 370px;
+  }
+
+  &__time {
+    font-size: 0.85rem;
+    font-weight: $fw-bold;
+    opacity: 0.7;
+    bottom: 40px;
+    position: relative;
+    &::after {
+      position: absolute;
+      left: 100px;
+      bottom: 45%;
+
+      width: 800px;
+      height: 1px;
+
+      background-color: $bc-white;
+      opacity: 0.3;
+
+      content: "";
+
+      overflow: hidden;
+      z-index: 0;
+    }
+  }
+
+  &__side--text {
+    position: absolute;
+    top: 55%;
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: $bp-large-navart) {
+  .art {
+    &__container {
+      padding: 130px 9vw 190px;
+      &::before {
+        width: 399px;
+        height: 465px;
+        bottom: 10px;
+        top: calc(100% - 425px);
+      }
+    }
+
+    &__side--text {
+      display: none;
+    }
+
+    &__time {
+      display: none;
+    }
+
+    &__content {
+      padding-left: 0;
+    }
+  }
+
+}
+
+@media screen and (max-width: 880px) {
+  .art {
+    &__title {
+      font-size: 72px;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-midle-art) {
+  .art {
+    &__container {
+      padding: 130px 9vw 100px;
+      &::before {
+        width: 399px;
+        height: 380px;
+        bottom: 10px;
+        top: calc(100% - 360px);
+        right: -150px;
+        z-index: -1;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: $bp-litle-art) {
+  .art {
+    &__container {
+      padding: 130px 20px 100px;
+      &::before {
+        width: 245px;
+        height: 273px;
+        bottom: 10px;
+        top: calc(100% - 273px);
+        right: -100px;
+        z-index: 1;
+      }
+
+    }
+
+    &__title {
+      font-size: 3rem;
+    }
+    &__content--text {
+      width: 250px ;
+    }
+  }
+}

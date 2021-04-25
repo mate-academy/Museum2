@@ -1,0 +1,326 @@
+.exhibition {
+  background-color: $bc-white;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 150px;
+  overflow: hidden;
+
+  &__container {
+    background-color: $bc-white;
+    position: relative;
+  }
+
+  &__img {
+    &--angel {
+      position: absolute;
+      max-width: 500px;
+      object-fit: cover;
+      top: 60px;
+      left: 0;
+    }
+
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+
+    text-align: center;
+  }
+
+  &__content {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    position: relative;
+
+    &--title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 125%;
+
+      padding: 10px 0;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 380px;
+
+    padding-left: 35vw;
+  }
+
+  &__time {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+
+    color: $bc-red;
+  }
+
+  &__content--text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: $bc-gray;
+
+    padding-bottom: 50px;
+  }
+
+  &__button {
+    padding-bottom: 92px;
+  }
+
+  &__img--people {
+    position: absolute;
+    top: 650px;
+    right: 0;
+  }
+
+  &__conseption {
+    display: flex;
+    justify-content: space-between;
+
+    &--wrap {
+      padding-top: 150px;
+      padding-left: 30vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 380px;
+      &:last-child {
+        padding-right: 25vw;
+        padding-left: 40px;
+      }
+    }
+
+    &--word {
+      color: $bc-red;
+      font-size: 18px;
+    }
+  }
+
+  &__conseption--title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+
+    padding: 10px 0;
+  }
+
+  &__conseption--text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    color: #504f5e;
+
+    padding-bottom: 50px;
+  }
+
+  &__title--text_first {
+    padding-left: 10vw;
+    width: 568px;
+    height: 576px;
+    background: url(../images/exhebitin_comseption_back_first.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__title--text_second {
+    width: 568px;
+    height: 576px;
+
+    background-image: url(../images/exhebitin_comseption_back_second.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 0 10vw;
+  }
+
+  &__img--cobzar {
+    position: absolute;
+    top: 1150px;
+    left: 5vw;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-end;
+    color: $bc-black;
+    text-decoration: none;
+    padding-right: 100px;
+    &::after {
+      content: "";
+      position: relative;
+      top: 7px;
+      left: 20px;
+      width: 50px;
+      height: 1px;
+      background-color: $bc-black;
+    }
+  }
+}
+
+@media screen and (max-width:$bp-large-navart) {
+  .exhibition {
+    &__img--cobzar {
+      width: 375px;
+    }
+
+    &__img--angel {
+      top: 150px;
+      width: 375px;
+    }
+
+    &__img--people {
+      width: 375px;
+    }
+
+    &__conseption--wrap {
+      padding-left: 20vw;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-midium-exhibition) {
+  .exhibition {
+    &__img--cobzar {
+      left: -50px;
+      top: 1350px;
+    }
+
+    &__link {
+      justify-content: center;
+      padding-right: 0;
+
+      &::after {
+        width: 0;
+      }
+    }
+
+    &__link--text {
+      padding-top: 50px;
+      width: 116px;
+      border-bottom: 1px solid $bc-black;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-midle-art) {
+  .exhibition {
+
+    &__content {
+      align-items: inherit;
+      position: relative;
+    }
+
+    &__conseption--midel {
+
+      &::before {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+
+        background-image: url(../images/people_320.png);
+        background-position: center;
+        background-size: cover;
+        content: "";
+        left: -40px;
+        bottom: 20px;
+        z-index: 0;
+      }
+    }
+    &__content--wrap {
+      padding-left: 10px;
+
+      &::after {
+        position: absolute;
+        content: "";
+        background-image: url(../images/exhibition_angel.png);
+        background-position: center;
+        background-size: cover;
+        width: 205px;
+        height: 255px;
+        top: 200px;
+        right: -50px;
+        transform: scaleX(-1);
+        z-index: 0;
+      }
+    }
+
+    &__img--angel {
+      display: none;
+    }
+
+    &__img--people {
+      display: none;
+    }
+
+    &__title--text_first {
+      display: none;
+    }
+
+    &__title--text_second {
+      display: none;
+    }
+    &__img--cobzar {
+      display: none;
+    }
+
+    &__conseption--wrap {
+      position: relative;
+      padding-left: 50vw;
+      padding-top: 0;
+
+      &:last-child {
+
+        padding-left: 0;
+        max-width: 250px;
+        &::before {
+          content: "";
+          background-image: url(../images/cobzar.png);
+          background-position: center;
+          background-size: cover;
+          width: 203px;
+          height: 174px;
+          position: absolute;
+          right: -75px;
+          top: 40px;
+        }
+      }
+    }
+
+    &__button {
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (max-width: $bp-small-exhibition) {
+  .exhibition {
+    &__content--text {
+      max-width: 200px;
+    }
+
+    &__conseption {
+      padding-right: 10px;
+    }
+
+    &__conseption--last {
+      padding-right: 10px;
+    }
+  }
+}

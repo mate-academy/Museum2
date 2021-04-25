@@ -1,0 +1,148 @@
+.nav {
+
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 50px 0 0 50px;
+  position: absolute;
+  top: 80px;
+  transform: translateX(-100%);
+  width: 100%;
+  background-color: $bc-main;
+  z-index: 1;
+  opacity: 0;
+  transition: transform 1s;
+  &__open {
+    opacity: 1;
+    transform: translateX(0%);
+    pointer-events: initial;
+    overflow-x: hidden;
+  }
+  &__img {
+    background-image: url(../images/nav_img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 650px;
+    height: 800px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 40vw;
+
+    padding-bottom: 70px;
+  }
+
+  &__date--text,
+  &__adress--text {
+    opacity: 0.5;
+  }
+
+  &__date--text,
+  &__date--time,
+  &__adress--text,
+  &__adress--place {
+    color: $bc-white;
+  }
+
+  &__item {
+    list-style: none;
+    padding: 40px 0;
+
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+
+    color: $bc-white;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 50vw;
+
+    border-top: 1px solid $bc-white;
+
+    margin-bottom: 100px;
+  }
+
+  &__button {
+    color: $bc-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 70px;
+    padding: 20px 90px;
+    text-align: center;
+    border: 1px solid transparent;
+    background: $bc-red;
+
+    cursor: pointer;
+
+    transition: all 1s;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $bc-white;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-large-navart) {
+  .nav {
+    grid-template-columns: 1fr;
+
+    &__img {
+      display: none;
+    }
+
+    &__header {
+      flex-direction: column;
+    }
+
+    &__adress,
+    &__date {
+      display: flex;
+    }
+
+    &__footer {
+      max-width: 80vw;
+    }
+  }
+}
+
+@media screen and (max-width: $bp-midle-art) {
+  .nav {
+    padding: 0;
+    justify-content: center;
+    &__footer {
+      flex-direction: column;
+      border: none;
+    }
+
+    &__header {
+      display: none;
+    }
+
+    &__item {
+      font-size: 24px;
+      padding: 20px 0;
+    }
+
+    &__button {
+      padding: 20px 40px;
+    }
+
+    &__button--color {
+      margin-top: 20px;
+    }
+
+    &__container {
+      max-width: 280px;
+      padding: 0 30px;
+    }
+  }
+
+}

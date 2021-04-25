@@ -1,0 +1,15 @@
+.button {
+  background: $bc-red;
+  padding: 20px 0;
+  width: 270px;
+  border: 1px solid $bc-red;
+
+  color: $bc-white;
+
+  transition: background-color 1s;
+  &:hover {
+    color: $bc-red;
+    background-color: transparent;
+    border: 1px solid $bc-red;
+  }
+}
