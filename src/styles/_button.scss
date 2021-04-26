@@ -1,0 +1,18 @@
+.button {
+  height: 60px;
+  width: 270px;
+  background: $colorLightRed;
+  font-family: $fontRaleway;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: $colorWhite;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 500ms;
+
+  &:hover {
+    background-color: $colorDarkRed;
+  }
+}

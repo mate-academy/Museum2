@@ -1,0 +1,68 @@
+.subscription {
+  height: 460px;
+  background-color: $colorLightRed;
+
+  &__textblock {
+    padding-right: 50px;
+  }
+
+  &__content {
+    padding: 85px;
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $fontPlayfair;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+  }
+
+  &__text {
+    max-width: 570px;
+    font-family: $fontRaleway;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: $colorWhite;
+  }
+
+  &__input {
+    display: flex;
+    padding-top: 100px;
+    width: 300px;
+  }
+}
+
+.email-input {
+  background-color: $colorLightRed;
+  color: $colorWhite;
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid $colorWhite;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.input_button {
+  padding-left: 20px;
+  border: none;
+  background: none;
+}
+
+.email-input::placeholder {
+  font-family: $fontRaleway;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: $colorWhite;
+}

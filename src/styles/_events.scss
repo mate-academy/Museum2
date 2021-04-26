@@ -1,0 +1,139 @@
+.events__heading {
+  font-family: $fontPlayfair;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  align-items: center;
+  text-align: center;
+  color: $colorDarkViolet;
+}
+
+.events__excursion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px 85px;
+}
+
+.excursion__textblock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.excursion_date {
+  padding-right: 50px;
+
+  &-day {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    text-shadow: -1px 0 $colorLightRed,
+      0 1px $colorLightRed,
+      1px 0 $colorLightRed,
+      0 -1px $colorLightRed;
+    color: $colorLightWhite;
+  }
+
+  &-time {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: $colorLightRed;
+    padding-left: 80px;
+  }
+}
+
+.excursion__information {
+  padding-right: 50px;
+
+  &-type {
+    font-family: $fontRaleway;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 20px;
+    color: $colorDarkViolet;
+  }
+
+  &-title {
+    max-width: 470px;
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    color: $colorDarkViolet;
+  }
+
+  &-text {
+    max-width: 470px;
+    font-family: $fontRaleway;
+    font-size: 16px;
+    line-height: 150%;
+    color: $colorLightViolet;
+    padding-bottom: 60px;
+  }
+}
+
+.events__masterclass {
+  display: flex;
+  align-items: center;
+  margin: 60px 85px;
+}
+
+.masterclass__textblock {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+
+.masterclass_date {
+  padding-right: 50px;
+
+  &-day {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100%;
+    text-shadow: -1px 0 $colorLightRed,
+      0 1px $colorLightRed,
+      1px 0 $colorLightRed,
+      0 -1px $colorLightRed;
+    color: $colorLightWhite;
+  }
+
+  &-time {
+    font-family: $fontPlayfair;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    color: $colorLightRed;
+    padding-left: 80px;
+  }
+}
+
+.masterclass__information-type {
+  font-family: $fontRaleway;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  color: $colorDarkViolet;
+}
+
+.masterclass__information-title {
+  max-width: 470px;
+  font-family: $fontPlayfair;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  color: $colorDarkViolet;
+}
+
+.masterclass__information-text {
+  max-width: 470px;
+  font-family: $fontRaleway;
+  font-size: 16px;
+  line-height: 150%;
+  color: $colorLightViolet;
+  padding-bottom: 60px;
+}

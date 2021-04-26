@@ -1,7 +1,39 @@
+@import "variables";
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "button";
+@import "header";
+@import "exhibition";
+@import "events";
+@import "planning";
+@import "news";
+@import "subscription";
+@import "footer";
+@import "mediaquaries";
+@import "burgermenu";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
+  margin: 0;
   background: $c-gray;
+  font-family: $fontPlayfair;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.section {
+  padding-top: 160px;
+}
+
+.block {
+  margin: 0 auto;
+  max-width: 1440px;
 }

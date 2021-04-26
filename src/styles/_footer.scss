@@ -1,0 +1,76 @@
+.footer__back {
+  height: 550px;
+  background-color: $colorDarkGreen;
+}
+
+.footer__boxes {
+  padding: 0 85px;
+  padding-top: 160px;
+  display: flex;
+  gap: 10px;
+  grid-template-columns: repeat(4, 250px);
+  justify-content: space-between;
+  padding-bottom: 55px;
+}
+
+.box__title {
+  font-family: $fontPlayfair;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  color: $colorWhite;
+  padding-bottom: 40px;
+  margin: 0;
+}
+
+.box__text {
+  font-family: $fontRaleway;
+  font-size: 16px;
+  line-height: 150%;
+  color: $colorWhite;
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.box__link {
+  text-decoration: none;
+  color: $colorWhite;
+}
+
+.text__padding {
+  padding-left: 33px;
+}
+
+.box_time {
+  padding-left: 10px;
+}
+
+.box__networks {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  padding-top: 40px;
+}
+
+.footer__text {
+  font-family: $fontRaleway;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: $colorWhite;
+
+  &-right {
+    padding-left: 40px;
+  }
+}
+
+.network_icon {
+  cursor: pointer;
+  transition: transform 300ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
