@@ -1,0 +1,51 @@
+.select {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  padding: 5px 0;
+  width: 50px;
+
+  background-color: $color-dark;
+  cursor: pointer;
+  z-index: 20;
+
+  &__lang {
+    margin-right: 5px;
+  }
+
+  &__lang-list {
+    position: absolute;
+    width: 50px;
+    top: 34px;
+
+    color: $color-dark;
+    visibility: hidden;
+
+    z-index: -1;
+
+    &--active {
+      visibility: visible;
+
+      box-shadow: 8px 9px 22px -7px #212b2b;
+      background-color: $color-light;
+
+      transition: background-color 0.35s ease-in, box-shadow 0.4s ease-in;
+    }
+  }
+
+  &__lang-item {
+    padding: 5px 0 5px 7px;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+  &__icon {
+    transition: transform 0.35s linear;
+    &--active {
+      transform: rotate(180deg) translateY(2px);
+    }
+  }
+}

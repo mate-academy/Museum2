@@ -1,0 +1,96 @@
+.subscribe {
+  padding: 160px 0;
+
+  @include screen-l {
+    padding: 110px 0;
+  }
+
+  background-color: $color-red;
+  color: $color-light;
+
+  &__header {
+    @include text-title;
+    margin-bottom: 40px;
+    line-height: 57.6px;
+
+    @include screen-m {
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @include screen-l {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    max-width: 570px;
+
+    @include screen-l {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    opacity: 0;
+
+    transition: opacity 1s ease, transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    width: 360px;
+
+    @include screen-m {
+      width: 280px;
+    }
+  }
+
+  &__input {
+    border: none;
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+
+    margin-right: 50px;
+    width: 300px;
+
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    border-bottom: 1px solid $color-light;
+    color: $color-light;
+
+    outline: none;
+
+    @include screen-m {
+      width: 230px;
+    }
+
+    &::placeholder {
+      color: $color-light;
+    }
+
+    &:focus {
+      .subscribe__button {
+        display: block;
+      }
+    }
+  }
+}

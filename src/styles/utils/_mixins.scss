@@ -1,6 +1,34 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin dark-background {
+  background-color: $color-dark;
+  color: $color-light;
+}
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Media:
+@mixin screen-s {
+  @media screen and (max-width: #{$screen-s}) {
+    @content;
+  }
+}
+
+@mixin screen-m {
+  @media screen and (max-width: #{$screen-m}) {
+    @content;
+  }
+}
+
+@mixin screen-l {
+  @media screen and (max-width: #{$screen-l}) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media screen and (max-width: #{$screen-xl}) {
+    @content;
   }
 }

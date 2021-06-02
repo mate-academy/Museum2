@@ -1,0 +1,161 @@
+.basic {
+  @include dark-background;
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 720px;
+
+    @include screen-l {
+      height: 690px;
+    }
+
+    @include screen-m {
+      height: 510px;
+    }
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+      width: 673px;
+      height: 753px;
+
+      content: "";
+
+      background-image: url(/images/general/main.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+
+      z-index: 1;
+
+      @include screen-xl {
+        height: 650px;
+      }
+
+      @include screen-l {
+        height: 445px;
+        right: -80px;
+        z-index: 3;
+        width: 420px;
+        background-position: bottom;
+      }
+
+      @include screen-m {
+        height: 350px;
+        width: 330px;
+      }
+
+      @include screen-s {
+        height: 275px;
+        width: 245px;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 85px;
+    margin-bottom: 15px;
+  }
+
+  &__text-block {
+    margin-bottom: 110px;
+    animation: 1s ease-out 0s 1 fadeInFull;
+    transform: translateX(100px);
+
+    @include screen-xl {
+      animation: 1s ease-out 0s 1 fadeInMid;
+      transform: translateX(60px);
+    }
+
+    @include screen-l {
+      z-index: 2;
+    }
+
+    @include screen-m {
+      animation: none;
+      transform: none;
+    }
+  }
+
+  &__title {
+    @include text-title--big;
+
+    @include screen-xl {
+      font-size: 86px;
+    }
+
+    @include screen-l {
+      font-size: 76px;
+    }
+
+    @include screen-m {
+      font-size: 48px;
+    }
+  }
+
+  &__details {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 60px;
+
+    @include screen-m {
+      margin: 30px 0 50px;
+      max-width: 260px;
+
+      & br {
+        display: none;
+      }
+    }
+  }
+
+  &__date {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.7;
+    bottom: 0;
+    position: relative;
+
+    @include screen-l {
+      display: none;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 100px;
+      bottom: 45%;
+
+      display: block;
+      width: 800px;
+      height: 1px;
+
+      background-color: $color-light;
+      opacity: 0.3;
+
+      overflow: hidden;
+      z-index: 0;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    right: 4%;
+
+    @include screen-xl {
+      top: 55%;
+    }
+
+    @include screen-l {
+      display: none;
+    }
+  }
+}

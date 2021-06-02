@@ -1,0 +1,63 @@
+.decoration {
+  position: relative;
+  width: 576px;
+  height: 576px;
+
+  @include screen-l {
+    height: 350px;
+  }
+
+  &__text {
+    text-shadow: -1px 0 $color-dark,
+      0 1px $color-dark,
+      1px 0 $color-dark,
+      0 -1px $color-dark;
+
+    &::before {
+      content: "Мистецтво ХХ ст. - ХХI ст.";
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      font-family: $font-title;
+      word-wrap: break-word;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 144px;
+      line-height: 100%;
+      text-transform: uppercase;
+
+      color: $color-light;
+      opacity: 0.3;
+      z-index: -1;
+      pointer-events: none;
+
+      @include screen-xl {
+        top: 60px;
+        font-size: 122px;
+        width: 480px;
+      }
+
+      @include screen-l {
+        font-size: 72px;
+        width: 300px;
+      }
+
+      @include screen-m {
+        display: none;
+      }
+    }
+
+    &--second {
+      &::before {
+        content: "Стародавнє мистецтво";
+      }
+    }
+  }
+
+}

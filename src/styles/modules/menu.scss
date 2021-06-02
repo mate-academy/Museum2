@@ -1,0 +1,166 @@
+.menu {
+  @include dark-background;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  width: 100%;
+
+  transform: translateX(100%);
+  transition: transform 1s cubic-bezier(0.23, 1, 0.32, 1);
+
+  z-index: 10;
+
+  @include screen-l {
+    top: 70px;
+  }
+
+  &--active {
+    transform: translateX(0%);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    height: 720px;
+
+    @include screen-l {
+      height: 690px;
+    }
+
+    @include screen-m {
+      height: 510px;
+    }
+
+    &::before {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+      width: 624px;
+      height: 720px;
+
+      content: "";
+
+      background-image: url(/images/content/menu-1.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      background-size: contain;
+
+      z-index: 1;
+
+      @include screen-xl {
+        height: 450px;
+      }
+
+      @include screen-l {
+        display: none;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    margin: 10px 0 80px;
+
+    @include screen-m {
+      display: none;
+    }
+  }
+
+  &__nav {
+    @include screen-m {
+      margin-top: 60px;
+    }
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+
+      @include screen-m {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__link {
+    font-family: $font-title;
+    font-size: 48px;
+    line-height: 57.6px;
+    font-weight: bold;
+
+    color: $color-light;
+    text-decoration: none;
+
+    @include screen-m {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  &__buttons {
+    position: relative;
+    display: flex;
+    margin-top: 120px;
+
+    @include screen-m {
+      margin-top: 80px;
+      flex-direction: column;
+    }
+
+    & > * {
+      &:not(:last-child) {
+        margin-right: 30px;
+
+        @include screen-m {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: -60px;
+
+      display: block;
+      width: 570px;
+      height: 1px;
+
+      background-color: $color-light;
+      opacity: 0.3;
+
+      @include screen-m {
+        display: none;
+      }
+    }
+  }
+}
+
+.info {
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    font-family: $font-base;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 20px;
+
+    &:not(:last-child) {
+      margin-right: 90px;
+    }
+  }
+
+  &__details {
+    margin-top: 10px;
+
+    font-weight: 400;
+    font-size: 16px;
+
+    text-decoration: none;
+    color: $color-light;
+  }
+}

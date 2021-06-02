@@ -1,0 +1,59 @@
+.header {
+  @include dark-background;
+  padding: 20px 0 30px;
+
+  @include screen-l {
+    padding: 15px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include screen-l {
+      padding: 0 55px;
+    }
+
+    @include screen-m {
+      padding: 0 20px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    width: 123px;
+    height: 40px;
+    transition: transform 0.4s linear;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__tools {
+    display: flex;
+  }
+
+  &__lang {
+    @include screen-m {
+      opacity: 0;
+      order: 1;
+      margin-right: 15px;
+      transition: opacity 0.5s ease;
+    }
+
+    &.header__lang--mobile-active {
+      @include screen-m {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__sandwich {
+    @include screen-m {
+      order: 2;
+    }
+  }
+}
