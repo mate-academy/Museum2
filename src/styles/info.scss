@@ -1,0 +1,142 @@
+.info {
+  background-color: $colorGray;
+  color: $colorLightWhite;
+  height: 720px;
+  position: relative;
+
+  &__photo {
+    position: absolute;
+    right: 0;
+    top: -34px;
+    max-width: 100%;
+  }
+
+  &__photo--about {
+    position: absolute;
+    right: 0;
+    top: 400px;
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  &__date {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  &__text-2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+  }
+
+  &__text-3 {
+    padding-top: 40px;
+    padding-bottom: 82px;
+  }
+
+  &__text-4 {
+    display: flex;
+    align-items: center;
+    padding-top: 110px;
+  }
+
+  &__line {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+    background-color: $colorLightWhite;
+    height: 0.5px;
+    width: 492px;
+    opacity: 0.3;
+  }
+
+  &__heading {
+    font-size: 96px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .info {
+    height: 682px;
+    &__photo {
+      width: 445px;
+      top: 184px;
+    }
+    &__photo--about {
+      display: none;
+    }
+    &__heading {
+      font-size: 72px;
+    }
+    &__date {
+      padding-top: 0;
+    }
+    &__line {
+      width: 292px;
+    }
+    &__text-2 {
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .info {
+    height: 584px;
+    &__photo {
+      max-width: 273px;
+      top: 280px;
+    }
+    &__photo--about {
+      display: none;
+    }
+    &__heading {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 100%;
+    }
+    &__date {
+      padding-top: 100px;
+    }
+    &__line {
+      display: none;
+    }
+    &__text-2 {
+      padding-left: 0;
+      max-width: 280px;
+    }
+    &__text-4 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: calc(100% - 40px);
+  }
+  .info__photo {
+    left: 85px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1170px;
+    width: calc(100% - 20px);
+  }
+  .info__photo {
+    max-width: 223px;
+    top: 334px;
+  }
+}

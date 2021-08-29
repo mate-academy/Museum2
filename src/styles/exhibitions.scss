@@ -1,0 +1,213 @@
+.exhibitions {
+
+  &__block {
+    display: flex;
+  }
+
+  &__block--2 {
+    justify-content: flex-end;
+  }
+
+  &__background--hidden {
+    visibility: hidden;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    padding-top: 157px;
+    padding-right: 74px;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+    color: $colorBlack;
+  }
+
+  &__time {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    color: $colorOrange;
+  }
+
+  &__name {
+    font-family: Playfair Display, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 30px;
+    max-width: 468px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding-bottom: 25px;
+    max-width: 370px;
+  }
+
+  &__period {
+    color: $colorOrange;
+  }
+
+  &__background {
+    max-width: 100%;
+    position: relative;
+  }
+
+  &__photo-1 {
+    position: absolute;
+    left: 0;
+    top: -175px;
+    transition: transform 0.3s linear 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__photo-2 {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    transition: transform 0.3s linear 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__photo-3 {
+    position: absolute;
+    left: 40px;
+    top: -10px;
+    transition: transform 0.3s linear 0s;
+    cursor: zoom-in;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    margin-bottom: 92px;
+  }
+
+  &__archive {
+    display: flex;
+    justify-content: flex-end;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    padding: 0 210px 35px;
+    text-align: right;
+  }
+
+  &__line {
+    display: flex;
+    margin-top: 11px;
+    margin-left: 20px;
+    background-color: $colorBlack;
+    height: 0.5px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .exhibitions {
+    &__photo-1 {
+      width: 253px;
+      height: 366px;
+      top: 0;
+    }
+    &__photo-2 {
+      width: 324px;
+      height: 371px;
+      top: 0;
+    }
+    &__photo-3 {
+      width: 400px;
+      height: 355px;
+      left: 15px;
+    }
+    &__archive {
+      padding: 0 20px 5px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .exhibitions {
+    &__heading {
+      padding-right: 0;
+    }
+    &__photo-1 {
+      width: 253px;
+      height: 366px;
+      top: 0;
+    }
+    &__photo-2 {
+      width: 224px;
+      height: 271px;
+      top: 0;
+    }
+    &__photo-3 {
+      width: 300px;
+      height: 255px;
+      left: 15px;
+    }
+    &__button {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .exhibitions {
+    &__heading {
+      padding-top: 60px;
+    }
+    &__info {
+      padding: 0;
+    }
+    &__photo-3 {
+      max-width: 380px;
+      height: 225px;
+      left: -40px;
+    }
+    &__block--1 {
+      display: flex;
+      flex-direction: column;
+    }
+    &__block--2 {
+      display: flex;
+      flex-direction: column;
+    }
+    &__block--3 {
+      display: flex;
+      flex-direction: column;
+    }
+    &__background {
+      display: none;
+    }
+  }
+}
