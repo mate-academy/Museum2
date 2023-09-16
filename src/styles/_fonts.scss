@@ -1,6 +1,51 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+h1 {
+  font-family: Playfair Display, sans-serif;
+  font-size: 48px;
   font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  color: $whiteColor;
+
+  @include tablet {
+    font-size: 72px;
+  }
+
+  @include desktop {
+    font-size: 96px;
+  }
+}
+
+h2 {
+  font-family: Playfair Display, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  color: $gray-headings;
+
+  @include tablet {
+    font-size: 40px;
+  }
+
+  @include desktop {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  font-family: Playfair Display, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  color: $gray-headings;
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 120%;
+  }
 }

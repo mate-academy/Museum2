@@ -1,0 +1,73 @@
+.nearestEvents {
+  background-color: $whiteColor;
+  padding: $smartPadding;
+
+  @include tablet {
+    padding: $tabletPadding;
+  }
+
+  @include desktop {
+    padding: $desktopPadding;
+  }
+
+  &__container {
+    
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    width: 450px;
+    height: 50px;
+
+    @include tablet {
+      margin-bottom: 70px;
+    }
+
+    @include desktop {
+      margin-bottom: 71px;
+    }
+  }
+
+  &__archive {
+    position: relative;
+    top: 1497px;
+
+    @include tablet {
+      position: unset;
+      width: 210px;
+      height: 60px;
+    }
+
+    @include desktop {
+      width: 270px;
+    }
+  }
+
+  &__event1 {
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 22px;
+    }
+
+    @include desktop {
+      margin-bottom: 25px;
+    }
+  }
+  
+  &__event2 {
+    margin-bottom: 180px;
+
+    @include tablet {
+      margin-bottom: 52px;
+    }
+    @include desktop {
+      margin-bottom: 75px;
+    }
+  }
+}

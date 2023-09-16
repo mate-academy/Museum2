@@ -1,0 +1,75 @@
+.block {
+  width: 100%;
+
+  @include tablet {
+    width: 48%;
+  }
+  
+  @include desktop {
+    width: 48.7%;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 356px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    @include tablet {
+      width: 100%;
+      height: 330px;
+      margin-bottom: 30px;
+    }
+
+    @include desktop {
+      height: 370px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__date {
+    color: $blackColor;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__smallTitle {
+    margin-bottom: 20px;
+
+    @include tablet {
+      width: 100%;
+      height: 60px;
+      margin-bottom: 18px;
+    }
+  }
+  
+  &__text {
+    height: 72px;
+    color: $grayColor;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+
+    @include tablet {
+      width: 100%;
+      height: 70px;
+    }
+
+    @include desktop {
+      width: 570px;
+      height: 50px;
+    }
+  }
+}

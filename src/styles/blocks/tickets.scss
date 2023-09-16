@@ -1,0 +1,32 @@
+.tickets {
+  
+  &__button {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: $mainColor;
+    border-style: none;
+    color: $whiteColor;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+
+    &:hover {
+      background-color: $hoverColor;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $pressedColor;
+    }
+
+    &:disabled {
+      background-color: $disabledColor;
+    }
+  }
+}

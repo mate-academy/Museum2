@@ -1,0 +1,7 @@
+.container {
+
+  @include desktop {
+    width: $maxwidth;
+    margin: 0 auto;
+  }
+}

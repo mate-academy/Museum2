@@ -1,0 +1,125 @@
+.subscribe {
+  background-color: $whiteColor;
+  padding: 0 20px 80px;
+
+  @include tablet {
+    padding: 0 39px 128px;
+  }
+
+  @include desktop {
+    padding: $desktopPadding;
+  }
+
+  &__container {
+
+    @include desktop {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    @include desktop {
+      width: 570px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    height: 96px;
+    color: $blackColor;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 50px;
+
+    @include tablet {
+      width: 570px;
+    }
+  }
+
+  &__field {
+    width: 100%;
+    
+
+    @include tablet {
+      width: 470px;
+    }
+
+    &--form {
+      width: 100%;
+      font-family: Raleway, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      background-color: $whiteColor;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid $blackColor;
+      margin-bottom: 30px;
+
+      @include desktop {
+        margin-bottom: 40px;
+      }
+
+      &::placeholder {
+        color: $blackColor;
+        opacity: 1;
+        font-weight: 400;
+      }
+
+      &:hover {
+        border-bottom: 1px solid $mainColor;
+
+        &::placeholder {
+          color: $mainColor;
+        }
+      }
+
+      &:focus {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid $mainColor;
+        background-color: $whiteColor;
+      }
+
+      &:focus-visible {
+        outline-style: none;
+        cursor: auto;
+        background-color: $whiteColor;
+
+        &::placeholder {
+          background-color: $whiteColor;
+          opacity: 0;
+        }
+      }
+
+      &:-webkit-autofill {
+        &,
+        &:hover,
+        &:focus {
+          appearance: none;
+          border-bottom: 1px solid $blackColor;
+          -webkit-box-shadow: 0 0 0 40rem $whiteColor inset;
+        }
+      }
+    }
+  }
+
+  &__tickets {
+
+    @include desktop {
+      margin-bottom: 200px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.topMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__logo {
+    flex-grow: 1;
+    pointer-events: none;
+    
+    &--image {
+      width: 123px;
+      height: 40px;
+      text-decoration-color: $whiteColor;
+    }
+  }
+
+  &__cross {
+    order: 1;
+    @include hover;
+
+    @include tablet {
+      order: 0;
+      margin-right: 40px;
+    }
+
+    &--image {
+      width: 30px;
+      height: 30px;
+      text-decoration-color: $whiteColor;
+    }
+  }
+
+  &__select {
+    display: block;
+    color: $whiteColor;
+    background-color: $headerColor;
+    border-style: none;
+    height: 30px;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin-right: 30px;
+    @include hover;
+
+    &:focus-visible {
+      outline-style: none;
+    }
+
+    @include tablet {
+      margin-right: 0;
+    }
+  }
+}
